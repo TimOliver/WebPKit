@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22DD0DCB250A80F1005B0371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0DCA250A80F1005B0371 /* AppDelegate.m */; };
+		22DD0DD1250A80F1005B0371 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0DD0250A80F1005B0371 /* ViewController.m */; };
+		22DD0DD4250A80F1005B0371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0DD2250A80F1005B0371 /* Main.storyboard */; };
+		22DD0DD8250A80F1005B0371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0DD7250A80F1005B0371 /* Assets.xcassets */; };
+		22DD0DDB250A80F1005B0371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0DD9250A80F1005B0371 /* LaunchScreen.storyboard */; };
+		22DD0DDE250A80F1005B0371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0DDD250A80F1005B0371 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22DD0DC6250A80F1005B0371 /* CocoaWebP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaWebP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DD0DC9250A80F1005B0371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22DD0DCA250A80F1005B0371 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22DD0DCF250A80F1005B0371 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22DD0DD0250A80F1005B0371 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22DD0DD3250A80F1005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22DD0DD7250A80F1005B0371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22DD0DDA250A80F1005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22DD0DDC250A80F1005B0371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DD0DDD250A80F1005B0371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22DD0DC3250A80F1005B0371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DD0DBD250A80F1005B0371 = {
+			isa = PBXGroup;
+			children = (
+				22DD0DE8250A8276005B0371 /* CocoaWebP */,
+				22DD0DC8250A80F1005B0371 /* CocoaWebPExample */,
+				22DD0DE9250A82A4005B0371 /* Frameworks */,
+				22DD0DC7250A80F1005B0371 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22DD0DC7250A80F1005B0371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DC6250A80F1005B0371 /* CocoaWebP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22DD0DC8250A80F1005B0371 /* CocoaWebPExample */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DE4250A8208005B0371 /* App */,
+				22DD0DE7250A822F005B0371 /* Scenes */,
+				22DD0DE6250A8224005B0371 /* Supporting */,
+				22DD0DE5250A8218005B0371 /* Resources */,
+			);
+			path = CocoaWebPExample;
+			sourceTree = "<group>";
+		};
+		22DD0DE4250A8208005B0371 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DC9250A80F1005B0371 /* AppDelegate.h */,
+				22DD0DCA250A80F1005B0371 /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22DD0DE5250A8218005B0371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DD2250A80F1005B0371 /* Main.storyboard */,
+				22DD0DD7250A80F1005B0371 /* Assets.xcassets */,
+				22DD0DD9250A80F1005B0371 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22DD0DE6250A8224005B0371 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DDC250A80F1005B0371 /* Info.plist */,
+				22DD0DDD250A80F1005B0371 /* main.m */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		22DD0DE7250A822F005B0371 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				22DD0DCF250A80F1005B0371 /* ViewController.h */,
+				22DD0DD0250A80F1005B0371 /* ViewController.m */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		22DD0DE8250A8276005B0371 /* CocoaWebP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CocoaWebP;
+			sourceTree = "<group>";
+		};
+		22DD0DE9250A82A4005B0371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22DD0DC5250A80F1005B0371 /* CocoaWebP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DD0DE1250A80F1005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebP" */;
+			buildPhases = (
+				22DD0DC2250A80F1005B0371 /* Sources */,
+				22DD0DC3250A80F1005B0371 /* Frameworks */,
+				22DD0DC4250A80F1005B0371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaWebP;
+			productName = CocoaWebP;
+			productReference = 22DD0DC6250A80F1005B0371 /* CocoaWebP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22DD0DBE250A80F1005B0371 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					22DD0DC5250A80F1005B0371 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 22DD0DC1250A80F1005B0371 /* Build configuration list for PBXProject "CocoaWebP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22DD0DBD250A80F1005B0371;
+			productRefGroup = 22DD0DC7250A80F1005B0371 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22DD0DC5250A80F1005B0371 /* CocoaWebP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22DD0DC4250A80F1005B0371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DD0DDB250A80F1005B0371 /* LaunchScreen.storyboard in Resources */,
+				22DD0DD8250A80F1005B0371 /* Assets.xcassets in Resources */,
+				22DD0DD4250A80F1005B0371 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22DD0DC2250A80F1005B0371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DD0DDE250A80F1005B0371 /* main.m in Sources */,
+				22DD0DD1250A80F1005B0371 /* ViewController.m in Sources */,
+				22DD0DCB250A80F1005B0371 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22DD0DD2250A80F1005B0371 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22DD0DD3250A80F1005B0371 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22DD0DD9250A80F1005B0371 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22DD0DDA250A80F1005B0371 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22DD0DDF250A80F1005B0371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22DD0DE0250A80F1005B0371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22DD0DE2250A80F1005B0371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = CocoaWebPExample/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CocoaWebP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22DD0DE3250A80F1005B0371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = CocoaWebPExample/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CocoaWebP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22DD0DC1250A80F1005B0371 /* Build configuration list for PBXProject "CocoaWebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DD0DDF250A80F1005B0371 /* Debug */,
+				22DD0DE0250A80F1005B0371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DD0DE1250A80F1005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DD0DE2250A80F1005B0371 /* Debug */,
+				22DD0DE3250A80F1005B0371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22DD0DBE250A80F1005B0371 /* Project object */;
+}
