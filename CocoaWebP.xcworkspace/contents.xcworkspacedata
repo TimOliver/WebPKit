@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CocoaWebP.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/iOS/CocoaWebPExample-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/macOS/CocoaWebPExample-macOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/tvOS/CocoaWebPExample-tvOS.xcodeproj">
+   </FileRef>
+</Workspace>
