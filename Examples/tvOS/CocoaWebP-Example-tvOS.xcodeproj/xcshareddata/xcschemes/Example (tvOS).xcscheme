@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22DD0E71250A8C5A005B0371"
-               BuildableName = "CocoaWebPExample-iOS.app"
-               BlueprintName = "CocoaWebPExample-iOS"
-               ReferencedContainer = "container:CocoaWebPExample-iOS.xcodeproj">
+               BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
+               BuildableName = "CocoaWebPExample-tvOS.app"
+               BlueprintName = "CocoaWebPExample-tvOS"
+               ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,12 +44,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DD0E71250A8C5A005B0371"
-            BuildableName = "CocoaWebPExample-iOS.app"
-            BlueprintName = "CocoaWebPExample-iOS"
-            ReferencedContainer = "container:CocoaWebPExample-iOS.xcodeproj">
+            BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
+            BuildableName = "CocoaWebP-Example-tvOS.app"
+            BlueprintName = "CocoaWebP-Example-tvOS"
+            ReferencedContainer = "container:CocoaWebP-Example-tvOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
+            BuildableName = "CocoaWebPExample-tvOS.app"
+            BlueprintName = "CocoaWebPExample-tvOS"
+            ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -61,10 +70,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DD0E71250A8C5A005B0371"
-            BuildableName = "CocoaWebPExample-iOS.app"
-            BlueprintName = "CocoaWebPExample-iOS"
-            ReferencedContainer = "container:CocoaWebPExample-iOS.xcodeproj">
+            BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
+            BuildableName = "CocoaWebPExample-tvOS.app"
+            BlueprintName = "CocoaWebPExample-tvOS"
+            ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

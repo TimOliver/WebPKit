@@ -5,12 +5,12 @@
       location = "group:CocoaWebP.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/iOS/CocoaWebPExample-iOS.xcodeproj">
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/iOS/CocoaWebP-Example-iOS.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/macOS/CocoaWebPExample-macOS.xcodeproj">
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/macOS/CocoaWebP-Example-macOS.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/tvOS/CocoaWebPExample-tvOS.xcodeproj">
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/tvOS/CocoaWebP-Example-tvOS.xcodeproj">
    </FileRef>
 </Workspace>

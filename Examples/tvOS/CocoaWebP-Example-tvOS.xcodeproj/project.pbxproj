@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22DD0E76250A8C5A005B0371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E75250A8C5A005B0371 /* AppDelegate.swift */; };
-		22DD0E7A250A8C5A005B0371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E79250A8C5A005B0371 /* ViewController.swift */; };
-		22DD0E7D250A8C5A005B0371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E7B250A8C5A005B0371 /* Main.storyboard */; };
-		22DD0E81250A8C5B005B0371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E80250A8C5B005B0371 /* Assets.xcassets */; };
-		22DD0E84250A8C5B005B0371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E82250A8C5B005B0371 /* LaunchScreen.storyboard */; };
+		22DD0E9E250A8CB9005B0371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E9D250A8CB9005B0371 /* AppDelegate.swift */; };
+		22DD0EA0250A8CB9005B0371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E9F250A8CB9005B0371 /* ViewController.swift */; };
+		22DD0EA3250A8CB9005B0371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0EA1250A8CB9005B0371 /* Main.storyboard */; };
+		22DD0EA7250A8CBA005B0371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0EA6250A8CBA005B0371 /* Assets.xcassets */; };
+		22DD0EAA250A8CBA005B0371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0EA8250A8CBA005B0371 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22DD0E72250A8C5A005B0371 /* CocoaWebPExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaWebPExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22DD0E75250A8C5A005B0371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22DD0E79250A8C5A005B0371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22DD0E7C250A8C5A005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		22DD0E80250A8C5B005B0371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22DD0E83250A8C5B005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		22DD0E85250A8C5B005B0371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DD0E9A250A8CB9005B0371 /* CocoaWebP-Example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaWebP-Example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DD0E9D250A8CB9005B0371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22DD0E9F250A8CB9005B0371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22DD0EA2250A8CB9005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22DD0EA6250A8CBA005B0371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22DD0EA9250A8CBA005B0371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22DD0EAB250A8CBA005B0371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22DD0E6F250A8C5A005B0371 /* Frameworks */ = {
+		22DD0E97250A8CB9005B0371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22DD0E69250A8C5A005B0371 = {
+		22DD0E91250A8CB9005B0371 = {
 			isa = PBXGroup;
 			children = (
-				22DD0E74250A8C5A005B0371 /* Sources */,
-				22DD0E73250A8C5A005B0371 /* Products */,
+				22DD0E9C250A8CB9005B0371 /* Sources */,
+				22DD0E9B250A8CB9005B0371 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		22DD0E73250A8C5A005B0371 /* Products */ = {
+		22DD0E9B250A8CB9005B0371 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22DD0E72250A8C5A005B0371 /* CocoaWebPExample-iOS.app */,
+				22DD0E9A250A8CB9005B0371 /* CocoaWebP-Example-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22DD0E74250A8C5A005B0371 /* Sources */ = {
+		22DD0E9C250A8CB9005B0371 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				22DD0E75250A8C5A005B0371 /* AppDelegate.swift */,
-				22DD0E79250A8C5A005B0371 /* ViewController.swift */,
-				22DD0E7B250A8C5A005B0371 /* Main.storyboard */,
-				22DD0E80250A8C5B005B0371 /* Assets.xcassets */,
-				22DD0E82250A8C5B005B0371 /* LaunchScreen.storyboard */,
-				22DD0E85250A8C5B005B0371 /* Info.plist */,
+				22DD0E9D250A8CB9005B0371 /* AppDelegate.swift */,
+				22DD0E9F250A8CB9005B0371 /* ViewController.swift */,
+				22DD0EA1250A8CB9005B0371 /* Main.storyboard */,
+				22DD0EA6250A8CBA005B0371 /* Assets.xcassets */,
+				22DD0EA8250A8CBA005B0371 /* LaunchScreen.storyboard */,
+				22DD0EAB250A8CBA005B0371 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -67,38 +67,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22DD0E71250A8C5A005B0371 /* CocoaWebPExample-iOS */ = {
+		22DD0E99250A8CB9005B0371 /* CocoaWebP-Example-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22DD0E88250A8C5B005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebPExample-iOS" */;
+			buildConfigurationList = 22DD0EAE250A8CBA005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebP-Example-tvOS" */;
 			buildPhases = (
-				22DD0E6E250A8C5A005B0371 /* Sources */,
-				22DD0E6F250A8C5A005B0371 /* Frameworks */,
-				22DD0E70250A8C5A005B0371 /* Resources */,
+				22DD0E96250A8CB9005B0371 /* Sources */,
+				22DD0E97250A8CB9005B0371 /* Frameworks */,
+				22DD0E98250A8CB9005B0371 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "CocoaWebPExample-iOS";
-			productName = "CocoaWebPExample-iOS";
-			productReference = 22DD0E72250A8C5A005B0371 /* CocoaWebPExample-iOS.app */;
+			name = "CocoaWebP-Example-tvOS";
+			productName = "CocoaWebPExample-tvOS";
+			productReference = 22DD0E9A250A8CB9005B0371 /* CocoaWebP-Example-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		22DD0E6A250A8C5A005B0371 /* Project object */ = {
+		22DD0E92250A8CB9005B0371 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					22DD0E71250A8C5A005B0371 = {
+					22DD0E99250A8CB9005B0371 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
-			buildConfigurationList = 22DD0E6D250A8C5A005B0371 /* Build configuration list for PBXProject "CocoaWebPExample-iOS" */;
+			buildConfigurationList = 22DD0E95250A8CB9005B0371 /* Build configuration list for PBXProject "CocoaWebP-Example-tvOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,54 +106,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 22DD0E69250A8C5A005B0371;
-			productRefGroup = 22DD0E73250A8C5A005B0371 /* Products */;
+			mainGroup = 22DD0E91250A8CB9005B0371;
+			productRefGroup = 22DD0E9B250A8CB9005B0371 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22DD0E71250A8C5A005B0371 /* CocoaWebPExample-iOS */,
+				22DD0E99250A8CB9005B0371 /* CocoaWebP-Example-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22DD0E70250A8C5A005B0371 /* Resources */ = {
+		22DD0E98250A8CB9005B0371 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DD0E84250A8C5B005B0371 /* LaunchScreen.storyboard in Resources */,
-				22DD0E81250A8C5B005B0371 /* Assets.xcassets in Resources */,
-				22DD0E7D250A8C5A005B0371 /* Main.storyboard in Resources */,
+				22DD0EAA250A8CBA005B0371 /* LaunchScreen.storyboard in Resources */,
+				22DD0EA7250A8CBA005B0371 /* Assets.xcassets in Resources */,
+				22DD0EA3250A8CB9005B0371 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22DD0E6E250A8C5A005B0371 /* Sources */ = {
+		22DD0E96250A8CB9005B0371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DD0E7A250A8C5A005B0371 /* ViewController.swift in Sources */,
-				22DD0E76250A8C5A005B0371 /* AppDelegate.swift in Sources */,
+				22DD0EA0250A8CB9005B0371 /* ViewController.swift in Sources */,
+				22DD0E9E250A8CB9005B0371 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		22DD0E7B250A8C5A005B0371 /* Main.storyboard */ = {
+		22DD0EA1250A8CB9005B0371 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				22DD0E7C250A8C5A005B0371 /* Base */,
+				22DD0EA2250A8CB9005B0371 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		22DD0E82250A8C5B005B0371 /* LaunchScreen.storyboard */ = {
+		22DD0EA8250A8CBA005B0371 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				22DD0E83250A8C5B005B0371 /* Base */,
+				22DD0EA9250A8CBA005B0371 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		22DD0E86250A8C5B005B0371 /* Debug */ = {
+		22DD0EAC250A8CBA005B0371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,17 +212,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 			};
 			name = Debug;
 		};
-		22DD0E87250A8C5B005B0371 /* Release */ = {
+		22DD0EAD250A8CBA005B0371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,78 +267,78 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		22DD0E89250A8C5B005B0371 /* Debug */ = {
+		22DD0EAF250A8CBA005B0371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		22DD0E8A250A8C5B005B0371 /* Release */ = {
+		22DD0EB0250A8CBA005B0371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22DD0E6D250A8C5A005B0371 /* Build configuration list for PBXProject "CocoaWebPExample-iOS" */ = {
+		22DD0E95250A8CB9005B0371 /* Build configuration list for PBXProject "CocoaWebP-Example-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22DD0E86250A8C5B005B0371 /* Debug */,
-				22DD0E87250A8C5B005B0371 /* Release */,
+				22DD0EAC250A8CBA005B0371 /* Debug */,
+				22DD0EAD250A8CBA005B0371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22DD0E88250A8C5B005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebPExample-iOS" */ = {
+		22DD0EAE250A8CBA005B0371 /* Build configuration list for PBXNativeTarget "CocoaWebP-Example-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22DD0E89250A8C5B005B0371 /* Debug */,
-				22DD0E8A250A8C5B005B0371 /* Release */,
+				22DD0EAF250A8CBA005B0371 /* Debug */,
+				22DD0EB0250A8CBA005B0371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 22DD0E6A250A8C5A005B0371 /* Project object */;
+	rootObject = 22DD0E92250A8CB9005B0371 /* Project object */;
 }

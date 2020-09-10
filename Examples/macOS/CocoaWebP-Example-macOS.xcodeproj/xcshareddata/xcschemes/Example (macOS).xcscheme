@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
-               BuildableName = "CocoaWebPExample-tvOS.app"
-               BlueprintName = "CocoaWebPExample-tvOS"
-               ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
+               BlueprintIdentifier = "22DD0E49250A8BE3005B0371"
+               BuildableName = "CocoaWebP-Example-macOS.app"
+               BlueprintName = "CocoaWebP-Example-macOS"
+               ReferencedContainer = "container:CocoaWebP-Example-macOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
-            BuildableName = "CocoaWebPExample-tvOS.app"
-            BlueprintName = "CocoaWebPExample-tvOS"
-            ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
+            BlueprintIdentifier = "22DD0E49250A8BE3005B0371"
+            BuildableName = "CocoaWebP-Example-macOS.app"
+            BlueprintName = "CocoaWebP-Example-macOS"
+            ReferencedContainer = "container:CocoaWebP-Example-macOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DD0E99250A8CB9005B0371"
-            BuildableName = "CocoaWebPExample-tvOS.app"
-            BlueprintName = "CocoaWebPExample-tvOS"
-            ReferencedContainer = "container:CocoaWebPExample-tvOS.xcodeproj">
+            BlueprintIdentifier = "22DD0E49250A8BE3005B0371"
+            BuildableName = "CocoaWebP-Example-macOS.app"
+            BlueprintName = "CocoaWebP-Example-macOS"
+            ReferencedContainer = "container:CocoaWebP-Example-macOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
