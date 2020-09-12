@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22836070250C917F00E46CD3"
-               BuildableName = "CocoaWebP.framework"
-               BlueprintName = "CocoaWebP (iOS)"
-               ReferencedContainer = "container:CocoaWebP.xcodeproj">
+               BlueprintIdentifier = "228360C6250D33CA00E46CD3"
+               BuildableName = "CocoaWebP-Example-watchOS WatchKit App.app"
+               BlueprintName = "CocoaWebP-Example-watchOS WatchKit App"
+               ReferencedContainer = "container:CocoaWebP-Example-watchOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "228360C2250D33CA00E46CD3"
+               BuildableName = "CocoaWebP-Example-watchOS.app"
+               BlueprintName = "CocoaWebP-Example-watchOS"
+               ReferencedContainer = "container:CocoaWebP-Example-watchOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +54,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "228360C6250D33CA00E46CD3"
+            BuildableName = "CocoaWebP-Example-watchOS WatchKit App.app"
+            BlueprintName = "CocoaWebP-Example-watchOS WatchKit App"
+            ReferencedContainer = "container:CocoaWebP-Example-watchOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +71,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22836070250C917F00E46CD3"
-            BuildableName = "CocoaWebP.framework"
-            BlueprintName = "CocoaWebP (iOS)"
-            ReferencedContainer = "container:CocoaWebP.xcodeproj">
+            BlueprintIdentifier = "228360C6250D33CA00E46CD3"
+            BuildableName = "CocoaWebP-Example-watchOS WatchKit App.app"
+            BlueprintName = "CocoaWebP-Example-watchOS WatchKit App"
+            ReferencedContainer = "container:CocoaWebP-Example-watchOS.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

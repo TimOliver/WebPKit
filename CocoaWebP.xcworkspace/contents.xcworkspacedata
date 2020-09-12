@@ -13,4 +13,7 @@
    <FileRef
       location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/tvOS/CocoaWebP-Example-tvOS.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Examples/watchOS/CocoaWebP-Example-watchOS.xcodeproj">
+   </FileRef>
 </Workspace>

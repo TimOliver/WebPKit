@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2283609E250C97EB00E46CD3 /* CocoaWebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283609D250C97EB00E46CD3 /* CocoaWebP.framework */; };
+		2283609F250C97EC00E46CD3 /* CocoaWebP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2283609D250C97EB00E46CD3 /* CocoaWebP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22DD0E4E250A8BE3005B0371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E4D250A8BE3005B0371 /* AppDelegate.swift */; };
 		22DD0E50250A8BE3005B0371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E4F250A8BE3005B0371 /* ViewController.swift */; };
 		22DD0E52250A8BE4005B0371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E51250A8BE4005B0371 /* Assets.xcassets */; };
 		22DD0E55250A8BE4005B0371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E53250A8BE4005B0371 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		228360A0250C97EC00E46CD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2283609F250C97EC00E46CD3 /* CocoaWebP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2283609B250C973E00E46CD3 /* CocoaWebP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaWebP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2283609D250C97EB00E46CD3 /* CocoaWebP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaWebP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DD0E4A250A8BE3005B0371 /* CocoaWebP-Example-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaWebP-Example-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DD0E4D250A8BE3005B0371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DD0E4F250A8BE3005B0371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2283609E250C97EB00E46CD3 /* CocoaWebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2283609A250C973E00E46CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2283609D250C97EB00E46CD3 /* CocoaWebP.framework */,
+				2283609B250C973E00E46CD3 /* CocoaWebP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22DD0E41250A8BE3005B0371 = {
 			isa = PBXGroup;
 			children = (
 				22DD0E4C250A8BE3005B0371 /* Sources */,
 				22DD0E4B250A8BE3005B0371 /* Products */,
+				2283609A250C973E00E46CD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +102,7 @@
 				22DD0E46250A8BE3005B0371 /* Sources */,
 				22DD0E47250A8BE3005B0371 /* Frameworks */,
 				22DD0E48250A8BE3005B0371 /* Resources */,
+				228360A0250C97EC00E46CD3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,12 +306,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "CocoaWebPExample-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -298,12 +328,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "CocoaWebPExample-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
