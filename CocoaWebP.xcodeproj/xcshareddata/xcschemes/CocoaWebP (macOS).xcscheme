@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22DD0E26250A8B25005B0371"
-               BuildableName = "CocoaWebP.framework"
-               BlueprintName = "CocoaWebP"
+               BlueprintIdentifier = "228E7D6C250C85E500C6B140"
+               BuildableName = "CocoaWebP__macOS_.framework"
+               BlueprintName = "CocoaWebP (macOS)"
                ReferencedContainer = "container:CocoaWebP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22DD0E2F250A8B25005B0371"
+               BlueprintIdentifier = "228E7D75250C85E600C6B140"
                BuildableName = "CocoaWebPTests.xctest"
                BlueprintName = "CocoaWebPTests"
                ReferencedContainer = "container:CocoaWebP.xcodeproj">
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DD0E26250A8B25005B0371"
-            BuildableName = "CocoaWebP.framework"
-            BlueprintName = "CocoaWebP"
+            BlueprintIdentifier = "228E7D6C250C85E500C6B140"
+            BuildableName = "CocoaWebP__macOS_.framework"
+            BlueprintName = "CocoaWebP (macOS)"
             ReferencedContainer = "container:CocoaWebP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

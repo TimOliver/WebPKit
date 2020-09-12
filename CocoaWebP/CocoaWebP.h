@@ -2,7 +2,7 @@
 //  CocoaWebP.h
 //  CocoaWebP
 //
-//  Created by Tim Oliver on 11/9/20.
+//  Created by Tim Oliver on 12/9/20.
 //
 
 #import <Foundation/Foundation.h>

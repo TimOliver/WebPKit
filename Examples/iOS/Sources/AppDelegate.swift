@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CocoaWebP
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
