@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/WebPKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/iOS/WebPKit-Example-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/macOS/WebPKit-Example-macOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/TiM/Projects/Cocoa-WebP/Examples/tvOS/WebPKit-Example-tvOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/watchOS/WebPKit-Example-watchOS.xcodeproj">
+   </FileRef>
+</Workspace>
