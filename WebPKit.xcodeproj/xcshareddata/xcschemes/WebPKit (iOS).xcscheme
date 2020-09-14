@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22836070250C917F00E46CD3"
-               BuildableName = "CocoaWebP.framework"
+               BuildableName = "WebPKit.framework"
                BlueprintName = "WebPKit (iOS)"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22836070250C917F00E46CD3"
-            BuildableName = "CocoaWebP.framework"
+            BuildableName = "WebPKit.framework"
             BlueprintName = "WebPKit (iOS)"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
