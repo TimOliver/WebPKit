@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		228360AB250C992800E46CD3 /* CocoaWebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228360AA250C992800E46CD3 /* CocoaWebP.framework */; };
 		22DD0E76250A8C5A005B0371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E75250A8C5A005B0371 /* AppDelegate.swift */; };
 		22DD0E7A250A8C5A005B0371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD0E79250A8C5A005B0371 /* ViewController.swift */; };
 		22DD0E7D250A8C5A005B0371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DD0E7B250A8C5A005B0371 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226E99B4251E550A005EECE9 /* WebPKit-Example-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebPKit-Example-iOS.entitlements"; sourceTree = "<group>"; };
 		2283607A250C92F400E46CD3 /* CocoaWebP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaWebP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		228360AA250C992800E46CD3 /* CocoaWebP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaWebP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DD0E72250A8C5A005B0371 /* WebPKit-Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKit-Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228360AB250C992800E46CD3 /* CocoaWebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +71,7 @@
 				22DD0E79250A8C5A005B0371 /* ViewController.swift */,
 				22DD0E7B250A8C5A005B0371 /* Main.storyboard */,
 				22DD0E80250A8C5B005B0371 /* Assets.xcassets */,
+				226E99B4251E550A005EECE9 /* WebPKit-Example-iOS.entitlements */,
 				22DD0E82250A8C5B005B0371 /* LaunchScreen.storyboard */,
 				22DD0E85250A8C5B005B0371 /* Info.plist */,
 			);
@@ -296,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sources/WebPKit-Example-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
@@ -306,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sources/WebPKit-Example-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
@@ -326,6 +329,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.CocoaWebPExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
