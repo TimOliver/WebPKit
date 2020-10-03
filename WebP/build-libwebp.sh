@@ -27,11 +27,12 @@ cat <<EOF
 Usage: sh $0 command [argument]
 
 command:
-  all:          builds all frameworks
-  ios:          builds iOS framework
-  tvos:         builds tvOS framework
-  macos:        builds macOS framework
-  watchos:      builds watchOS framework       
+  all:            builds all frameworks
+  ios:            builds iOS framework
+  ios-catalyst:   builds iOS framework (With Mac Catalyst)
+  tvos:           builds tvOS framework
+  macos:          builds macOS framework
+  watchos:        builds watchOS framework       
 EOF
 }
 
@@ -62,12 +63,40 @@ build_ios() {
 
   BUILDDIR="$(pwd)/iosbuild"
 
+  # Build all of the iOS native device slices
   build_common
-  build_slice "arm64" "aarch64-apple-ios" "arm-apple-darwin" "iPhoneOS" "-miphoneos-version-min=11.0"
-  build_slice "x86_64" "x86_64-apple-ios13.0-macabi" "x86_64-apple-darwin" "MacOSX" ""
-  build_slice "x86_64" "x86_64-apple-ios" "x86_64-apple-darwin" "iPhoneSimulator" "-miphoneos-version-min=11.0"
-  make_xcframeworks "iOS"
+  build_slice "armv7" "armv7-apple-ios" "arm-apple-darwin" "iphoneos" "-miphoneos-version-min=9.0"
+  build_slice "armv7s" "armv7s-apple-ios" "arm-apple-darwin" "iphoneos" "-miphoneos-version-min=9.0"
+  build_slice "arm64" "aarch64-apple-ios" "arm-apple-darwin" "iphoneos" "-miphoneos-version-min=9.0"
+  build_slice "x86_64" "x86_64-apple-ios" "x86_64-apple-darwin" "iphonesimulator" "-miphoneos-version-min=9.0"
+  build_slice "i386" "i386-apple-ios" "i386-apple-darwin" "iphonesimulator" "-miphoneos-version-min=9.0"
+  make_frameworks "iOS"
 }
+
+build_ios_catalyst() {
+  # Query for the SDK version installed
+  SDK=$(xcodebuild -showsdks \
+    | grep iphoneos | sort | tail -n 1 | awk '{print substr($NF, 9)}'
+  )
+
+  # Check to make sure we found the SDK version
+  if [[ -z "${SDK}" ]]; then
+    echo "iOS SDK not available"
+    exit 1
+  else 
+    echo "iOS SDK Version ${SDK}"
+  fi
+
+  BUILDDIR="$(pwd)/iosbuild-catalyst"
+
+  # Build all of the iOS native device slices
+  build_common
+  build_slice "x86_64" "x86_64-apple-ios13.0-macabi" "x86_64-apple-darwin" "macosx" "-miphoneos-version-min=11.0" 
+  build_slice "arm64" "aarch64-apple-ios" "arm-apple-darwin" "iphoneos" "-miphoneos-version-min=11.0"
+  build_slice "x86_64" "x86_64-apple-ios" "x86_64-apple-darwin" "iphonesimulator" "-miphoneos-version-min=11.0"
+  make_xcframeworks "iOS-MacCatalyst"
+}
+
 
 build_tvos() {
   # Query for the SDK version installed
@@ -86,8 +115,8 @@ build_tvos() {
   BUILDDIR="$(pwd)/tvosbuild"
 
   build_common
-  build_slice "arm64" "aarch64-apple-tvos" "arm-apple-darwin" "AppleTVOS" "-mtvos-version-min=9.0"
-  build_slice "x86_64" "x86_64-apple-tvos" "x86_64-apple-darwin" "AppleTVSimulator" "-mtvos-version-min=9.0"
+  build_slice "arm64" "aarch64-apple-tvos" "arm-apple-darwin" "appletvos" "-mtvos-version-min=9.0"
+  build_slice "x86_64" "x86_64-apple-tvos" "x86_64-apple-darwin" "appletvsimulator" "-mtvos-version-min=9.0"
   make_frameworks "tvOS"
 }
 
@@ -109,7 +138,7 @@ build_macos() {
 
   build_common
   # build_slice "arm64" "arm64-apple-macos11" "arm-apple-darwin" "MacOSX" ""
-  build_slice "x86_64" "x86_64-apple-macos10.12" "x86_64-apple-darwin" "MacOSX" "-mmacosx-version-min=10.12"
+  build_slice "x86_64" "x86_64-apple-macos10.12" "x86_64-apple-darwin" "macosx" "-mmacosx-version-min=10.12"
   make_frameworks "macOS"
 }
 
@@ -130,10 +159,10 @@ build_watchos() {
   BUILDDIR="$(pwd)/watchosbuild"
 
   build_common
-  build_slice "arm64_32" "arm64_32-apple-watchos" "arm-apple-darwin" "WatchOS" "-mwatchos-version-min=2.0"
-  build_slice "armv7k" "armv7k-apple-watchos" "arm-apple-darwin" "WatchOS" "-mwatchos-version-min=2.0"
-  build_slice "x86_64" "x86_64-apple-watchos" "x86_64-apple-darwin" "WatchSimulator" "-mwatchos-version-min=2.0"
-  build_slice "i386" "i386-apple-watchos" "i386-apple-darwin" "WatchSimulator" "-mwatchos-version-min=2.0"
+  build_slice "arm64_32" "arm64_32-apple-watchos" "arm-apple-darwin" "watchos" "-mwatchos-version-min=2.0"
+  build_slice "armv7k" "armv7k-apple-watchos" "arm-apple-darwin" "watchos" "-mwatchos-version-min=2.0"
+  build_slice "x86_64" "x86_64-apple-watchos" "x86_64-apple-darwin" "watchsimulator" "-mwatchos-version-min=2.0"
+  build_slice "i386" "i386-apple-watchos" "i386-apple-darwin" "watchsimulator" "-mwatchos-version-min=2.0"
   make_frameworks "watchOS"
 }
 
@@ -176,9 +205,8 @@ build_slice() {
   mkdir -p "${ROOTDIR}"
   
   DEVROOT="${DEVELOPER}/Toolchains/XcodeDefault.xctoolchain"
-  SDKROOT="${PLATFORMSROOT}/"
-  SDKROOT+="${PLATFORM}.platform/Developer/SDKs/${PLATFORM}.sdk/"
-  CFLAGS="-arch ${ARCH} -pipe -isysroot ${SDKROOT} -O3 -DNDEBUG -target ${TARGET}"
+  SDKROOT=`xcrun -sdk ${PLATFORM} --show-sdk-path`
+  CFLAGS=" -arch ${ARCH} -pipe -isysroot ${SDKROOT} -O3 -DNDEBUG -target ${TARGET}"
   CFLAGS+=" ${VERSION} ${EXTRA_CFLAGS}"
 
   # Add --disable-libwebpdemux \ to disable demux
@@ -207,98 +235,6 @@ build_slice() {
   cd ..
 
   export PATH=${OLDPATH}
-}
-
-make_xcframeworks() {
-  TARGETDIR=${TOPDIR}/$1
-
-  # Make WebP.xcframework
-  echo "LIBLIST = ${LIBLIST}"
-  rm -rf ${TARGETDIR}/WebP.xcframework
-  mkdir -p ${TARGETDIR}/Headers/
-cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
-module WebP {
-  header "decode.h"
-  header "encode.h"
-  header "types.h"
-  export *
-}
-EOT
-  LIBRARIES=''
-  for LIBRARY in ${LIBLIST}; do
-    LIBRARIES+="-library ${LIBRARY}} "
-  done
-  cp -a ${SRCDIR}/src/webp/{decode,encode,types}.h ${TARGETDIR}/Headers/
-  xcodebuild -create-xcframework ${LIBRARIES} \
-                -headers ${TARGETDIR}/Headers \
-                -output ${TARGETDIR}/WebP.xcframework
-  rm -rf ${TARGETDIR}/Headers
-
-  # Make WebPDecoder.xcframework
-  echo "DECLIBLIST = ${DECLIBLIST}"
-  rm -rf ${TARGETDIR}/WebPDecoder.xcframework
-  mkdir -p ${TARGETDIR}/Headers/
-cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
-module WebPDecoder {
-  header "decode.h"
-  header "types.h"
-  export *
-}
-EOT
-  LIBRARIES=''
-  for LIBRARY in ${DECLIBLIST}; do
-    LIBRARIES+="-library ${LIBRARY}} "
-  done
-  cp -a ${SRCDIR}/src/webp/{decode,types}.h ${TARGETDIR}/Headers/
-  xcodebuild -create-xcframework ${LIBRARIES} \
-                -headers ${TARGETDIR}/Headers \
-                -output ${TARGETDIR}/WebPDecoder.xcframework
-  rm -rf ${TARGETDIR}/Headers
-
-  # Make WebPMux.xcframework
-  echo "MUXLIBLIST = ${MUXLIBLIST}"
-  rm -rf ${TARGETDIR}/WebPMux.xcframework
-  mkdir -p ${TARGETDIR}/Headers/
-cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
-module WebPDecoder {
-  header "mux.h"
-  header "mux_types.h"
-  header "types.h"
-  export *
-}
-EOT
-  LIBRARIES=''
-  for LIBRARY in ${MUXLIBLIST}; do
-    LIBRARIES+="-library ${LIBRARY}} "
-  done
-  cp -a ${SRCDIR}/src/webp/{types,mux,mux_types}.h ${TARGETDIR}/Headers/
-  xcodebuild -create-xcframework ${LIBRARIES} \
-                -headers ${TARGETDIR}/Headers \
-                -output ${TARGETDIR}/WebPMux.xcframework
-  rm -rf ${TARGETDIR}/Headers
-
-  # Make WebPDemux.xcframework
-  echo "DEMUXLIBLIST = ${DEMUXLIBLIST}"
-  rm -rf ${TARGETDIR}/WebPDemux.xcframework
-  mkdir -p ${TARGETDIR}/Headers/
-cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
-module WebPDemux {
-  header "decode.h"
-  header "mux_types.h"
-  header "types.h"
-  header "demux.h"
-  export *
-}
-EOT
-  LIBRARIES=''
-  for LIBRARY in ${DEMUXLIBLIST}; do
-    LIBRARIES+="-library ${LIBRARY}} "
-  done
-  cp -a ${SRCDIR}/src/webp/{decode,types,mux_types,demux}.h ${TARGETDIR}/Headers/
-  xcodebuild -create-xcframework ${LIBRARIES} \
-                -headers ${TARGETDIR}/Headers \
-                -output ${TARGETDIR}/WebPDemux.xcframework
-  rm -rf ${TARGETDIR}/Headers
 }
 
 make_frameworks() {
@@ -370,6 +306,99 @@ EOT
   ${LIPO} -create ${DEMUXLIBLIST} -output ${TARGETDIR}/WebPDemux
 }
 
+make_xcframeworks() {
+  TARGETDIR=${TOPDIR}/$1
+
+  # Make WebP.xcframework
+  echo "LIBLIST = ${LIBLIST}"
+  rm -rf ${TARGETDIR}/WebP.xcframework
+  mkdir -p ${TARGETDIR}/Headers/
+cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
+module WebP [system] {
+  header "decode.h"
+  header "encode.h"
+  header "types.h"
+
+  export *
+}
+EOT
+  LIBRARIES=''
+  for LIBRARY in ${LIBLIST}; do
+    LIBRARIES+="-library ${LIBRARY} -headers ${TARGETDIR}/Headers "
+  done
+  echo ${LIBRARIES}
+  cp -a ${SRCDIR}/src/webp/{decode,encode,types}.h ${TARGETDIR}/Headers/
+  xcodebuild -create-xcframework ${LIBRARIES} \
+              -output ${TARGETDIR}/WebP.xcframework
+  rm -rf ${TARGETDIR}/Headers
+
+  # Make WebPDecoder.xcframework
+  echo "DECLIBLIST = ${DECLIBLIST}"
+  rm -rf ${TARGETDIR}/WebPDecoder.xcframework
+  mkdir -p ${TARGETDIR}/Headers/
+cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
+module WebPDecoder [system] {
+  header "decode.h"
+  header "types.h"
+
+  export *
+}
+EOT
+  LIBRARIES=''
+  for LIBRARY in ${DECLIBLIST}; do
+    LIBRARIES+="-library ${LIBRARY} -headers ${TARGETDIR}/Headers "
+  done
+  cp -a ${SRCDIR}/src/webp/{decode,types}.h ${TARGETDIR}/Headers/
+  xcodebuild -create-xcframework ${LIBRARIES} \
+              -output ${TARGETDIR}/WebPDecoder.xcframework
+  rm -rf ${TARGETDIR}/Headers
+
+  # Make WebPMux.xcframework
+  echo "MUXLIBLIST = ${MUXLIBLIST}"
+  rm -rf ${TARGETDIR}/WebPMux.xcframework
+  mkdir -p ${TARGETDIR}/Headers/
+cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
+module WebPMux [system] {
+  header "mux.h"
+  header "mux_types.h"
+  header "types.h"
+
+  export *
+}
+EOT
+  LIBRARIES=''
+  for LIBRARY in ${MUXLIBLIST}; do
+    LIBRARIES+="-library ${LIBRARY} -headers ${TARGETDIR}/Headers "
+  done
+  cp -a ${SRCDIR}/src/webp/{types,mux,mux_types}.h ${TARGETDIR}/Headers/
+  xcodebuild -create-xcframework ${LIBRARIES} \
+              -output ${TARGETDIR}/WebPMux.xcframework
+  rm -rf ${TARGETDIR}/Headers
+
+  # Make WebPDemux.xcframework
+  echo "DEMUXLIBLIST = ${DEMUXLIBLIST}"
+  rm -rf ${TARGETDIR}/WebPDemux.xcframework
+  mkdir -p ${TARGETDIR}/Headers/
+cat <<EOT >> ${TARGETDIR}/Headers/module.modulemap
+module WebPDemux [system] {
+  header "decode.h"
+  header "mux_types.h"
+  header "types.h"
+  header "demux.h"
+
+  export *
+}
+EOT
+  LIBRARIES=''
+  for LIBRARY in ${DEMUXLIBLIST}; do
+    LIBRARIES+="-library ${LIBRARY} -headers ${TARGETDIR}/Headers "
+  done
+  cp -a ${SRCDIR}/src/webp/{decode,types,mux_types,demux}.h ${TARGETDIR}/Headers/
+  xcodebuild -create-xcframework ${LIBRARIES} \
+              -output ${TARGETDIR}/WebPDemux.xcframework
+  rm -rf ${TARGETDIR}/Headers
+}
+
 # Commands
 COMMAND="$1"
 case "$COMMAND" in
@@ -377,6 +406,7 @@ case "$COMMAND" in
       "all")
         clone_repo
         build_ios
+        build_ios_catalyst
         build_tvos
         build_macos
         build_watchos
@@ -386,6 +416,12 @@ case "$COMMAND" in
     "ios")
         clone_repo
         build_ios
+        exit 0
+        ;;
+
+    "ios-catalyst")
+        clone_repo
+        build_ios_catalyst
         exit 0
         ;;
     
