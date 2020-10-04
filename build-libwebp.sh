@@ -2,6 +2,10 @@
 
 set -e
 
+# Perform all operations in a sub-directory
+mkdir -p build-libwebp
+cd build-libwebp
+
 # Global Valuess
 readonly TAG_VERSION="v1.1.0"
 readonly WEBP_GIT_URL="https://chromium.googlesource.com/webm/libwebp"
@@ -33,7 +37,8 @@ command:
   tvos:           builds tvOS framework
   macos:          builds macOS framework
   watchos:        builds watchOS framework
-  package:        packages all frameworks into ZIP files
+  package:        packages all built frameworks into separate ZIP files
+  package-all:    packages all built frameworks into one single ZIP file
 EOF
 }
 
@@ -400,36 +405,30 @@ EOT
   rm -rf ${TARGETDIR}/Headers
 }
 
-package_frameworks() {
+package_framework() {
   FRAMEWORK_NAME=$1
-  TEMP_FOLDER="tmp_${FRAMEWORK_NAME}"
-  FILE_PATHS=''
+  DESTINATION_NAME=$2
 
-  # Copy all frameworks to a holding folder
-  mkdir -p ${TEMP_FOLDER}
-
-  # Copy all of the fat frameworks
-  PLATFORMS="tvOS iOS macOS watchOS"
-  for PLATFORM in ${PLATFORMS}; do
-    if [[ -d "${PLATFORM}/${FRAMEWORK_NAME}.framework" ]]; then
-      DESTINATION="${TEMP_FOLDER}/${PLATFORM}"
-      mkdir -p ${DESTINATION}
-      cp -r "${PLATFORM}/${FRAMEWORK_NAME}.framework" ${DESTINATION}
-      FILE_PATHS+="${DESTINATION}/${FRAMEWORK_NAME}.framework "
-    fi
-  done
-
-  # Copy the Mac Catalyst xcframework
-  if [[ -d "iOS-MacCatalyst/${FRAMEWORK_NAME}.xcframework" ]]; then
-      DESTINATION="${TEMP_FOLDER}/iOS-MacCatalyst"
-      mkdir -p ${DESTINATION}
-      cp -r "iOS-MacCatalyst/${FRAMEWORK_NAME}.xcframework" ${DESTINATION}
-      FILE_PATHS+="${DESTINATION}/${FRAMEWORK_NAME}.xcframework "
+  # Check there is a valid build folder
+  if [[ ! -d ${FRAMEWORK_NAME} ]]; then
+    return
   fi
 
-  echo ${FILE_PATHS}
+  # Define the build folder name and delete if already there
+  ZIP_FILENAME="libwebp-${TAG_VERSION}-framework-${DESTINATION_NAME}"
+  if [[ -d ${ZIP_FILENAME} ]]; then
+    rm -rf ${ZIP_FILENAME}
+  fi
 
-  # rm -rf ${TEMP_FOLDER}
+  # Make a directory with that name and copy the framework folder in there
+  mkdir -p ${ZIP_FILENAME}
+  rsync -av --exclude=".*" ${FRAMEWORK_NAME}/. ${ZIP_FILENAME}
+
+  # Generate the ZIP file
+  zip -r "${ZIP_FILENAME}.zip" ${ZIP_FILENAME}
+
+  # Delete the folder copy
+  rm -rf ${ZIP_FILENAME}
 }
 
 # Commands
@@ -477,10 +476,11 @@ case "$COMMAND" in
         ;;
     
     "package")
-      package_frameworks "WebP"
-      package_frameworks "WebPDecoder"
-      package_frameworks "WebPDemux"
-      package_frameworks "WebPMux"
+      package_framework "iOS" "ios"
+      package_framework "tvOS" "tvos"
+      package_framework "watchOS" "watchos"
+      package_framework "macOS" "macos"
+      package_framework "iOS-MacCatalyst" "ios-catalyst"
       exit 0;;
 esac
 
