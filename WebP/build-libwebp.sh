@@ -27,12 +27,13 @@ cat <<EOF
 Usage: sh $0 command [argument]
 
 command:
-  all:            builds all frameworks
+  build:          builds all frameworks
   ios:            builds iOS framework
   ios-catalyst:   builds iOS framework (With Mac Catalyst)
   tvos:           builds tvOS framework
   macos:          builds macOS framework
-  watchos:        builds watchOS framework       
+  watchos:        builds watchOS framework
+  package:        packages all frameworks into ZIP files
 EOF
 }
 
@@ -399,11 +400,43 @@ EOT
   rm -rf ${TARGETDIR}/Headers
 }
 
+package_frameworks() {
+  FRAMEWORK_NAME=$1
+  TEMP_FOLDER="tmp_${FRAMEWORK_NAME}"
+  FILE_PATHS=''
+
+  # Copy all frameworks to a holding folder
+  mkdir -p ${TEMP_FOLDER}
+
+  # Copy all of the fat frameworks
+  PLATFORMS="tvOS iOS macOS watchOS"
+  for PLATFORM in ${PLATFORMS}; do
+    if [[ -d "${PLATFORM}/${FRAMEWORK_NAME}.framework" ]]; then
+      DESTINATION="${TEMP_FOLDER}/${PLATFORM}"
+      mkdir -p ${DESTINATION}
+      cp -r "${PLATFORM}/${FRAMEWORK_NAME}.framework" ${DESTINATION}
+      FILE_PATHS+="${DESTINATION}/${FRAMEWORK_NAME}.framework "
+    fi
+  done
+
+  # Copy the Mac Catalyst xcframework
+  if [[ -d "iOS-MacCatalyst/${FRAMEWORK_NAME}.xcframework" ]]; then
+      DESTINATION="${TEMP_FOLDER}/iOS-MacCatalyst"
+      mkdir -p ${DESTINATION}
+      cp -r "iOS-MacCatalyst/${FRAMEWORK_NAME}.xcframework" ${DESTINATION}
+      FILE_PATHS+="${DESTINATION}/${FRAMEWORK_NAME}.xcframework "
+  fi
+
+  echo ${FILE_PATHS}
+
+  # rm -rf ${TEMP_FOLDER}
+}
+
 # Commands
 COMMAND="$1"
 case "$COMMAND" in
 
-      "all")
+      "build")
         clone_repo
         build_ios
         build_ios_catalyst
@@ -442,6 +475,13 @@ case "$COMMAND" in
         build_watchos
         exit 0
         ;;
+    
+    "package")
+      package_frameworks "WebP"
+      package_frameworks "WebPDecoder"
+      package_frameworks "WebPDemux"
+      package_frameworks "WebPMux"
+      exit 0;;
 esac
 
 # Print usage instructions if no arguments were set
