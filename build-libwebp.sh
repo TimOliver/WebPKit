@@ -425,6 +425,35 @@ package_framework() {
   rsync -av --exclude=".*" ${FRAMEWORK_NAME}/. ${ZIP_FILENAME}
 
   # Generate the ZIP file
+  if [[ -d "${ZIP_FILENAME}.zip" ]]; then
+    rm -rf "${ZIP_FILENAME}.zip"
+  fi
+  zip -r "${ZIP_FILENAME}.zip" ${ZIP_FILENAME}
+
+  # Delete the folder copy
+  rm -rf ${ZIP_FILENAME}
+}
+
+package_all_frameworks() {
+  PLATFORMS="iOS iOS-MacCatalyst tvOS watchOS macOS"
+  ZIP_FILENAME="libwebp-${TAG_VERSION}-framework-all"
+
+  # Make a directory to copy all of the frameworks into
+  mkdir -p ${ZIP_FILENAME}
+
+  # Copy all framework folders
+  for PLATFORM in ${PLATFORMS}; do
+    if [[ ! -d ${PLATFORM} ]]; then
+      continue
+    fi
+
+    rsync -av --exclude=".*" ${PLATFORM} ${ZIP_FILENAME}
+  done
+
+  # Generate the ZIP file
+  if [[ -d "${ZIP_FILENAME}.zip" ]]; then
+    rm -rf "${ZIP_FILENAME}.zip"
+  fi
   zip -r "${ZIP_FILENAME}.zip" ${ZIP_FILENAME}
 
   # Delete the folder copy
@@ -482,6 +511,10 @@ case "$COMMAND" in
       package_framework "macOS" "macos"
       package_framework "iOS-MacCatalyst" "ios-catalyst"
       exit 0;;
+
+    "package-all")
+      package_all_frameworks
+      exit 0;
 esac
 
 # Print usage instructions if no arguments were set
