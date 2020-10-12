@@ -67,3 +67,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 /build*/
+*.xcframework
+*.framework

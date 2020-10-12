@@ -3,31 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2254A5952534595300813B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5942534595300813B84 /* AppDelegate.swift */; };
+		2254A5992534595300813B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5982534595300813B84 /* ViewController.swift */; };
+		2254A59C2534595300813B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59A2534595300813B84 /* Main.storyboard */; };
+		2254A59E2534595300813B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59D2534595300813B84 /* Assets.xcassets */; };
+		2254A5A12534595300813B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59F2534595300813B84 /* LaunchScreen.storyboard */; };
+		2254A5B8253459FA00813B84 /* CGImage+WebPDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22836095250C95D600E46CD3 /* CGImage+WebPDecoding.m */; };
+		2254A61425348EAD00813B84 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
+		2254A62E2534A6E800813B84 /* CoreWebPKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2254A62D2534A6E800813B84 /* CoreWebPKitTests.m */; };
+		2254A6392534A70C00813B84 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
+		2254A63C2534A80500813B84 /* CGImage+WebPDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22836095250C95D600E46CD3 /* CGImage+WebPDecoding.m */; };
+		2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
+		2254A6452534AAD100813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		22836080250C93AF00E46CD3 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22836096250C95D600E46CD3 /* CGImage+WebPDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 22836094250C95D600E46CD3 /* CGImage+WebPDecoding.h */; };
 		22836097250C95D600E46CD3 /* CGImage+WebPDecoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 22836094250C95D600E46CD3 /* CGImage+WebPDecoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22836098250C95D600E46CD3 /* CGImage+WebPDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22836095250C95D600E46CD3 /* CGImage+WebPDecoding.m */; };
 		22836099250C95D600E46CD3 /* CGImage+WebPDecoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22836095250C95D600E46CD3 /* CGImage+WebPDecoding.m */; };
-		228E7D77250C85E600C6B140 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228E7D6D250C85E500C6B140 /* WebPKit.framework */; };
-		228E7D7C250C85E600C6B140 /* CocoaWebPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E7D7B250C85E600C6B140 /* CocoaWebPTests.m */; };
 		228E7D7E250C85E600C6B140 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		228E7D78250C85E600C6B140 /* PBXContainerItemProxy */ = {
+		2254A6302534A6E800813B84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 228E7D6C250C85E500C6B140;
-			remoteInfo = CocoaWebP;
+			remoteGlobalIDString = 2254A5912534595300813B84;
+			remoteInfo = "WebPKitExample-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2254A5BE25345A2600813B84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22836091250C958400E46CD3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,18 +61,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2254A5922534595300813B84 /* WebPKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2254A5942534595300813B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2254A5982534595300813B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2254A59B2534595300813B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2254A59D2534595300813B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2254A5A02534595300813B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2254A5A22534595300813B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2254A5A92534596D00813B84 /* WebPKitExample-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WebPKitExample-iOS.entitlements"; sourceTree = "<group>"; };
+		2254A61325348EAD00813B84 /* WebP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebP.xcframework; sourceTree = "<group>"; };
+		2254A62B2534A6E800813B84 /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2254A62D2534A6E800813B84 /* CoreWebPKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreWebPKitTests.m; sourceTree = "<group>"; };
+		2254A62F2534A6E800813B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2254A6412534AACE00813B84 /* WebPKitLogo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = WebPKitLogo.webp; sourceTree = "<group>"; };
 		22836071250C917F00E46CD3 /* WebPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22836082250C94DD00E46CD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22836094250C95D600E46CD3 /* CGImage+WebPDecoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGImage+WebPDecoding.h"; sourceTree = "<group>"; };
 		22836095250C95D600E46CD3 /* CGImage+WebPDecoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CGImage+WebPDecoding.m"; sourceTree = "<group>"; };
 		228E7D6D250C85E500C6B140 /* WebPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		228E7D70250C85E500C6B140 /* WebPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPKit.h; sourceTree = "<group>"; };
-		228E7D76250C85E600C6B140 /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		228E7D7B250C85E600C6B140 /* CocoaWebPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaWebPTests.m; sourceTree = "<group>"; };
-		228E7D7D250C85E600C6B140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2254A58F2534595300813B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A61425348EAD00813B84 /* WebP.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2254A6282534A6E800813B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A6392534A70C00813B84 /* WebP.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2283606E250C917F00E46CD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,17 +113,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		228E7D73250C85E600C6B140 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				228E7D77250C85E600C6B140 /* WebPKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222CB1BA2532C721004FAF13 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		2254A5932534595300813B84 /* WebPKitExample-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2254A61325348EAD00813B84 /* WebP.xcframework */,
+				2254A5A92534596D00813B84 /* WebPKitExample-iOS.entitlements */,
+				2254A5942534595300813B84 /* AppDelegate.swift */,
+				2254A5982534595300813B84 /* ViewController.swift */,
+				2254A59A2534595300813B84 /* Main.storyboard */,
+				2254A59D2534595300813B84 /* Assets.xcassets */,
+				2254A59F2534595300813B84 /* LaunchScreen.storyboard */,
+				2254A5A22534595300813B84 /* Info.plist */,
+				2254A6412534AACE00813B84 /* WebPKitLogo.webp */,
+			);
+			path = "WebPKitExample-iOS";
+			sourceTree = "<group>";
+		};
+		2254A62C2534A6E800813B84 /* WebPKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2254A62D2534A6E800813B84 /* CoreWebPKitTests.m */,
+				2254A62F2534A6E800813B84 /* Info.plist */,
+			);
+			path = WebPKitTests;
+			sourceTree = "<group>";
+		};
 		22836081250C94DD00E46CD3 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				22836093250C95BF00E46CD3 /* Core */,
+				222CB1BA2532C721004FAF13 /* Swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -107,7 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				228E7D6F250C85E500C6B140 /* WebPKit */,
-				228E7D7A250C85E600C6B140 /* WebPKitTests */,
+				2254A5932534595300813B84 /* WebPKitExample-iOS */,
+				2254A62C2534A6E800813B84 /* WebPKitTests */,
 				228E7D6E250C85E500C6B140 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,8 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				228E7D6D250C85E500C6B140 /* WebPKit.framework */,
-				228E7D76250C85E600C6B140 /* WebPKitTests.xctest */,
 				22836071250C917F00E46CD3 /* WebPKit.framework */,
+				2254A5922534595300813B84 /* WebPKitExample-iOS.app */,
+				2254A62B2534A6E800813B84 /* WebPKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,15 +203,6 @@
 				22836081250C94DD00E46CD3 /* Supporting */,
 			);
 			path = WebPKit;
-			sourceTree = "<group>";
-		};
-		228E7D7A250C85E600C6B140 /* WebPKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				228E7D7B250C85E600C6B140 /* CocoaWebPTests.m */,
-				228E7D7D250C85E600C6B140 /* Info.plist */,
-			);
-			path = WebPKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +229,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2254A5912534595300813B84 /* WebPKitExample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2254A5A32534595300813B84 /* Build configuration list for PBXNativeTarget "WebPKitExample-iOS" */;
+			buildPhases = (
+				2254A58E2534595300813B84 /* Sources */,
+				2254A58F2534595300813B84 /* Frameworks */,
+				2254A5902534595300813B84 /* Resources */,
+				2254A5BE25345A2600813B84 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebPKitExample-iOS";
+			productName = "WebPKitExample-iOS";
+			productReference = 2254A5922534595300813B84 /* WebPKitExample-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2254A62A2534A6E800813B84 /* WebPKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2254A6322534A6E800813B84 /* Build configuration list for PBXNativeTarget "WebPKitTests" */;
+			buildPhases = (
+				2254A6272534A6E800813B84 /* Sources */,
+				2254A6282534A6E800813B84 /* Frameworks */,
+				2254A6292534A6E800813B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2254A6312534A6E800813B84 /* PBXTargetDependency */,
+			);
+			name = WebPKitTests;
+			productName = WebPKitTests;
+			productReference = 2254A62B2534A6E800813B84 /* WebPKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		22836070250C917F00E46CD3 /* WebPKit (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22836076250C917F00E46CD3 /* Build configuration list for PBXNativeTarget "WebPKit (iOS)" */;
@@ -202,39 +302,26 @@
 			productReference = 228E7D6D250C85E500C6B140 /* WebPKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		228E7D75250C85E600C6B140 /* WebPKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 228E7D84250C85E600C6B140 /* Build configuration list for PBXNativeTarget "WebPKitTests" */;
-			buildPhases = (
-				228E7D72250C85E600C6B140 /* Sources */,
-				228E7D73250C85E600C6B140 /* Frameworks */,
-				228E7D74250C85E600C6B140 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				228E7D79250C85E600C6B140 /* PBXTargetDependency */,
-			);
-			name = WebPKitTests;
-			productName = CocoaWebPTests;
-			productReference = 228E7D76250C85E600C6B140 /* WebPKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		228E7D64250C85E500C6B140 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					2254A5912534595300813B84 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					2254A62A2534A6E800813B84 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2254A5912534595300813B84;
+					};
 					22836070250C917F00E46CD3 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 					228E7D6C250C85E500C6B140 = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					228E7D75250C85E600C6B140 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -254,12 +341,32 @@
 			targets = (
 				228E7D6C250C85E500C6B140 /* WebPKit (macOS) */,
 				22836070250C917F00E46CD3 /* WebPKit (iOS) */,
-				228E7D75250C85E600C6B140 /* WebPKitTests */,
+				2254A5912534595300813B84 /* WebPKitExample-iOS */,
+				2254A62A2534A6E800813B84 /* WebPKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2254A5902534595300813B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A5A12534595300813B84 /* LaunchScreen.storyboard in Resources */,
+				2254A59E2534595300813B84 /* Assets.xcassets in Resources */,
+				2254A59C2534595300813B84 /* Main.storyboard in Resources */,
+				2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2254A6292534A6E800813B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A6452534AAD100813B84 /* WebPKitLogo.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2283606F250C917F00E46CD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,16 +381,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		228E7D74250C85E600C6B140 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2254A58E2534595300813B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A5B8253459FA00813B84 /* CGImage+WebPDecoding.m in Sources */,
+				2254A5992534595300813B84 /* ViewController.swift in Sources */,
+				2254A5952534595300813B84 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2254A6272534A6E800813B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2254A63C2534A80500813B84 /* CGImage+WebPDecoding.m in Sources */,
+				2254A62E2534A6E800813B84 /* CoreWebPKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2283606D250C917F00E46CD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,25 +419,140 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		228E7D72250C85E600C6B140 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				228E7D7C250C85E600C6B140 /* CocoaWebPTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		228E7D79250C85E600C6B140 /* PBXTargetDependency */ = {
+		2254A6312534A6E800813B84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 228E7D6C250C85E500C6B140 /* WebPKit (macOS) */;
-			targetProxy = 228E7D78250C85E600C6B140 /* PBXContainerItemProxy */;
+			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
+			targetProxy = 2254A6302534A6E800813B84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2254A59A2534595300813B84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2254A59B2534595300813B84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2254A59F2534595300813B84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2254A5A02534595300813B84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2254A5A42534595300813B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/WebPKitExample-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPKitExample-iOS",
+				);
+				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2254A5A52534595300813B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/WebPKitExample-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPKitExample-iOS",
+				);
+				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2254A6332534A6E800813B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
+			};
+			name = Debug;
+		};
+		2254A6342534A6E800813B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		22836077250C917F00E46CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,9 +567,10 @@
 					"$(PROJECT_DIR)/CocoaWebP/Frameworks",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CocoaWebP/Supporting/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WebPKit/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,9 +600,10 @@
 					"$(PROJECT_DIR)/CocoaWebP/Frameworks",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CocoaWebP/Supporting/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WebPKit/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +754,7 @@
 					"$(PROJECT_DIR)/CocoaWebP/Frameworks",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CocoaWebP/Supporting/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WebPKit/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,7 +786,7 @@
 					"$(PROJECT_DIR)/CocoaWebP/Frameworks",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = CocoaWebP/Supporting/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WebPKit/Supporting/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,43 +801,27 @@
 			};
 			name = Release;
 		};
-		228E7D85250C85E600C6B140 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				INFOPLIST_FILE = CocoaWebPTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CocoaWebPTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		228E7D86250C85E600C6B140 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				INFOPLIST_FILE = CocoaWebPTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CocoaWebPTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2254A5A32534595300813B84 /* Build configuration list for PBXNativeTarget "WebPKitExample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2254A5A42534595300813B84 /* Debug */,
+				2254A5A52534595300813B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2254A6322534A6E800813B84 /* Build configuration list for PBXNativeTarget "WebPKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2254A6332534A6E800813B84 /* Debug */,
+				2254A6342534A6E800813B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22836076250C917F00E46CD3 /* Build configuration list for PBXNativeTarget "WebPKit (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,15 +845,6 @@
 			buildConfigurations = (
 				228E7D82250C85E600C6B140 /* Debug */,
 				228E7D83250C85E600C6B140 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		228E7D84250C85E600C6B140 /* Build configuration list for PBXNativeTarget "WebPKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				228E7D85250C85E600C6B140 /* Debug */,
-				228E7D86250C85E600C6B140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

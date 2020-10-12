@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  CocoaWebPExample-iOS
+//  WebPKitExample-iOS
 //
-//  Created by Tim Oliver on 11/9/20.
+//  Created by Tim Oliver on 12/10/20.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
 
 }
 
