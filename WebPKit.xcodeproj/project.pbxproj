@@ -17,6 +17,7 @@
 		2203B93D2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		2203B93E2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		2203B95425376AC60069098A /* WebPDecodingImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingImageTests.swift */; };
 		2254A5952534595300813B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5942534595300813B84 /* AppDelegate.swift */; };
 		2254A5992534595300813B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5982534595300813B84 /* ViewController.swift */; };
 		2254A59C2534595300813B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59A2534595300813B84 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		2203B93525375E690069098A /* Data+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingDataTests.swift; sourceTree = "<group>"; };
+		2203B95325376AC60069098A /* WebPDecodingImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingImageTests.swift; sourceTree = "<group>"; };
 		2254A5922534595300813B84 /* WebPKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2254A5942534595300813B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2254A5982534595300813B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				2203B921253759B10069098A /* WebPDecodingURLTests.swift */,
 				2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */,
+				2203B95325376AC60069098A /* WebPDecodingImageTests.swift */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				2203B93225375C130069098A /* URL+WebPDecoding.swift in Sources */,
 				2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */,
 				2203B922253759B10069098A /* WebPDecodingURLTests.swift in Sources */,
+				2203B95425376AC60069098A /* WebPDecodingImageTests.swift in Sources */,
 				2203B93725375E690069098A /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
