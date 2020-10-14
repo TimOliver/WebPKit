@@ -35,6 +35,42 @@ enum WebPDecodingError: UInt32, Error {
 /// to decode images from the WebP file format
 extension CGImage {
 
+    /// Reads the header of a WebP image file and extracts
+    /// the pixel resolution of the image.
+    /// - Parameter url: The file URL of the WebP image
+    /// - Returns: The size of the image, or nil if it failed
+    public static func sizeOfWebP(at url: URL)  -> CGSize? {
+        guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
+            return nil
+        }
+        return CGImage.sizeOfWebP(with: data)
+    }
+
+    /// Reads the header of a WebP image file and extracts
+    /// the pixel resolution of the image.
+    /// - Parameter data: The WebP image data
+    /// - Returns: The size of the image, or nil if it failed
+    public static func sizeOfWebP(with data: Data) -> CGSize? {
+        var width: Int32 = 0, height: Int32 = 0
+
+        if !data.withUnsafeBytes({ bytes -> Bool in
+            guard let boundPtr = bytes.baseAddress?
+                    .assumingMemoryBound(to: UInt8.self) else { return false }
+            return (WebPGetInfo(boundPtr, bytes.count, &width, &height) != 0)
+        }) { return nil }
+
+        return CGSize(width: Int(width), height: Int(height))
+    }
+
+    /// Decode a WebP image from a file on disk and return it as a CGImage
+    /// - Parameter url: The URL path to the file
+    /// - Throws: If the data was unabled to be decoded
+    /// - Returns: The decoded image as a CGImage
+    public static func webpImage(contentsOf url: URL) throws -> CGImage {
+        let data = try Data(contentsOf: url, options: .alwaysMapped)
+        return try CGImage.webpImage(from: data)
+    }
+
     /// Decode a WebP image from memory and return it as a CGImage
     /// - Parameter data: The data to decode
     /// - Throws: If the data was unabled to be decoded
@@ -44,9 +80,10 @@ extension CGImage {
         var width: Int32 = 0, height: Int32 = 0
 
         // Check this is a valid WebP image stream, and retrieve the properties we need
-        let result = data.withUnsafeBytes { ptr -> Bool in
-            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return false }
-            return (WebPGetInfo(boundPtr, ptr.count, &width, &height) != 0)
+        let result = data.withUnsafeBytes { bytes -> Bool in
+            guard let boundPtr = bytes.baseAddress?
+                                        .assumingMemoryBound(to: UInt8.self) else { return false }
+            return (WebPGetInfo(boundPtr, bytes.count, &width, &height) != 0)
         }
         guard result == true else { throw WebPDecodingError.invalidHeader }
 
