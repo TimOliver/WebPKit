@@ -15,8 +15,6 @@ class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         let webpImage = UIImage.webpNamed("WebPKitLogo")
-        print(webpImage)
+        interfaceImage.setImage(webpImage)
     }
-    
-
 }
