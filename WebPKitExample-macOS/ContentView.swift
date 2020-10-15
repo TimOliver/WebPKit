@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    var webpLogo: NSImage {
+        let url = Bundle.main.url(forResource: "WebPKitLogo",
+                                  withExtension: "webp")!
+        return NSImage(contentsOfWebPFile: url)!
+    }
+
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(nsImage: webpLogo)
+            .resizable()
+            .scaledToFit()
+            .padding()
     }
 }
 

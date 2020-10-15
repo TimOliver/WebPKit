@@ -58,6 +58,17 @@
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
+		22E0C7852538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22E0C7862538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22E0C7872538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22E0C7882538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22E0C7952538AFB6008F5183 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		22E0C7962538AFB6008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22E0C7972538AFB6008F5183 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		22E0C7982538AFB6008F5183 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		22E0C7992538AFB6008F5183 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
+		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +182,8 @@
 		22E0C7502538AE61008F5183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E0C7522538AE61008F5183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E0C7532538AE61008F5183 /* WebPKitExample_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPKitExample_macOS.entitlements; sourceTree = "<group>"; };
+		22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPDecoding.swift"; sourceTree = "<group>"; };
+		22E0C7B42538B197008F5183 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +237,7 @@
 				2203B93525375E690069098A /* Data+WebPDecoding.swift */,
 				2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */,
 				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
+				22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -427,6 +442,7 @@
 				22E0C76B2538AED1008F5183 /* Sources */,
 				22E0C76A2538AEBF008F5183 /* Resources */,
 				22E0C7632538AEA3008F5183 /* Supporting */,
+				22E0C7B42538B197008F5183 /* WebP.framework */,
 			);
 			path = "WebPKitExample-macOS";
 			sourceTree = "<group>";
@@ -701,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E0C7512538AE61008F5183 /* Main.storyboard in Resources */,
+				22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */,
 				22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,6 +732,7 @@
 				224DC03F2538A48D000A0A36 /* Data+WebPDecoding.swift in Sources */,
 				224DC03E2538A48D000A0A36 /* UIImage+WebPDecoding.swift in Sources */,
 				224DC0402538A48D000A0A36 /* CGImage+WebPDecoding.swift in Sources */,
+				22E0C7882538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 				224DC0062538A1D4000A0A36 /* ExtensionDelegate.swift in Sources */,
 				224DC03D2538A48D000A0A36 /* URL+WebPDecoding.swift in Sources */,
 				224DC0042538A1D4000A0A36 /* InterfaceController.swift in Sources */,
@@ -728,6 +746,7 @@
 				2203B95D25386DDA0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2254A5992534595300813B84 /* ViewController.swift in Sources */,
 				2203B914253753F90069098A /* URL+WebPDecoding.swift in Sources */,
+				22E0C7852538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 				2203B93D2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */,
 				2203B93625375E690069098A /* Data+WebPDecoding.swift in Sources */,
 				2254A5952534595300813B84 /* AppDelegate.swift in Sources */,
@@ -745,6 +764,7 @@
 				2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */,
 				2203B922253759B10069098A /* WebPDecodingURLTests.swift in Sources */,
 				2203B95425376AC60069098A /* WebPDecodingCGImageTests.swift in Sources */,
+				22E0C7872538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 				2203B95825386D5D0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2203B93725375E690069098A /* Data+WebPDecoding.swift in Sources */,
 			);
@@ -757,6 +777,7 @@
 				2282DDE82538946A004913CF /* UIImage+WebPDecoding.swift in Sources */,
 				2282DDC02538929B004913CF /* ViewController.swift in Sources */,
 				2282DDE92538946A004913CF /* CGImage+WebPDecoding.swift in Sources */,
+				22E0C7862538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 				2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */,
 				2282DDEA2538946A004913CF /* URL+WebPDecoding.swift in Sources */,
 				2282DDE72538946A004913CF /* Data+WebPDecoding.swift in Sources */,
@@ -767,8 +788,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E0C7992538AFB6008F5183 /* URL+WebPDecoding.swift in Sources */,
+				22E0C7952538AFB6008F5183 /* UIImage+WebPDecoding.swift in Sources */,
 				22E0C7492538AE60008F5183 /* ContentView.swift in Sources */,
+				22E0C7982538AFB6008F5183 /* Data+WebPDecoding.swift in Sources */,
+				22E0C7972538AFB6008F5183 /* CGImage+WebPDecoding.swift in Sources */,
 				22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */,
+				22E0C7962538AFB6008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1276,6 +1302,11 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WebPKitExample-macOS",
+				);
 				INFOPLIST_FILE = "WebPKitExample-macOS/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1303,6 +1334,11 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WebPKitExample-macOS",
+				);
 				INFOPLIST_FILE = "WebPKitExample-macOS/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
