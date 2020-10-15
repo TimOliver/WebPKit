@@ -30,7 +30,6 @@
 		2254A61425348EAD00813B84 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		2254A6392534A70C00813B84 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
-		2254A6452534AAD100813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		22836080250C93AF00E46CD3 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		228E7D7E250C85E600C6B140 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -167,14 +166,11 @@
 		2254A5932534595300813B84 /* WebPKitExample-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2254A61325348EAD00813B84 /* WebP.xcframework */,
-				2254A5A92534596D00813B84 /* WebPKitExample-iOS.entitlements */,
 				2254A5942534595300813B84 /* AppDelegate.swift */,
 				2254A5982534595300813B84 /* ViewController.swift */,
-				2254A59A2534595300813B84 /* Main.storyboard */,
-				2254A59D2534595300813B84 /* Assets.xcassets */,
-				2254A59F2534595300813B84 /* LaunchScreen.storyboard */,
-				2254A5A22534595300813B84 /* Info.plist */,
+				2282DDAE2538916D004913CF /* Resources */,
+				2282DDAD2538913D004913CF /* Supporting */,
+				2254A61325348EAD00813B84 /* WebP.xcframework */,
 				2254A6412534AACE00813B84 /* WebPKitLogo.webp */,
 			);
 			path = "WebPKitExample-iOS";
@@ -188,6 +184,25 @@
 				2254A62F2534A6E800813B84 /* Info.plist */,
 			);
 			path = WebPKitTests;
+			sourceTree = "<group>";
+		};
+		2282DDAD2538913D004913CF /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				2254A5A92534596D00813B84 /* WebPKitExample-iOS.entitlements */,
+				2254A5A22534595300813B84 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		2282DDAE2538916D004913CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2254A59A2534595300813B84 /* Main.storyboard */,
+				2254A59D2534595300813B84 /* Assets.xcassets */,
+				2254A59F2534595300813B84 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		22836081250C94DD00E46CD3 /* Supporting */ = {
@@ -388,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2203B92B25375B9E0069098A /* logo-lossless.webp in Resources */,
-				2254A6452534AAD100813B84 /* WebPKitLogo.webp in Resources */,
 				2203B92A25375B9E0069098A /* logo-lossy.WEBP in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,14 +502,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/WebPKitExample-iOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/Supporting/WebPKitExample-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPKitExample-iOS",
 				);
-				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
+				INFOPLIST_FILE = "WebPKitExample-iOS/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,14 +531,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/WebPKitExample-iOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WebPKitExample-iOS/Supporting/WebPKitExample-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPKitExample-iOS",
 				);
-				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
+				INFOPLIST_FILE = "WebPKitExample-iOS/Supporting/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
