@@ -15,7 +15,8 @@ import WatchKit
 #endif
 
 /// A global image cache that stores and serves images
-/// created with "webpNamed"
+/// created with "webpNamed". The value is weak referenced so that
+/// instances will free themselves when no external objects are retaining them.
 let imageCache = NSMapTable<NSString, UIImage>(keyOptions: .strongMemory,
                                                 valueOptions: .weakMemory)
 
