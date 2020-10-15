@@ -102,7 +102,7 @@ extension CGImage {
                                           releaseData: releaseData)
 
         let colorspace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(rawValue: CGBitmapInfo.byteOrder32Big.rawValue | CGImageAlphaInfo.last.rawValue)
+        let bitmapInfo = CGBitmapInfo(rawValue: CGBitmapInfo.byteOrder32Big.rawValue | CGImageAlphaInfo.premultipliedLast.rawValue)
         let renderingIntent = CGColorRenderingIntent.defaultIntent
 
         guard let imageRef = CGImage(width: Int(config.output.width),
