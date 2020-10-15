@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebPKitExample_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An9-qK-WQn">
+                                <rect key="frame" x="474" y="54" width="972" height="972"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-0m-6q9">
+                                        <rect key="frame" x="73" y="73" width="826" height="826"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="An9-qK-WQn" secondAttribute="height" multiplier="1:1" id="5gy-GZ-04m"/>
+                                    <constraint firstItem="MCk-0m-6q9" firstAttribute="centerX" secondItem="An9-qK-WQn" secondAttribute="centerX" id="8Gg-QY-KZ7"/>
+                                    <constraint firstItem="MCk-0m-6q9" firstAttribute="centerY" secondItem="An9-qK-WQn" secondAttribute="centerY" id="Ymj-mn-muS"/>
+                                    <constraint firstItem="MCk-0m-6q9" firstAttribute="height" secondItem="An9-qK-WQn" secondAttribute="height" multiplier="0.85" id="kQH-fv-Tuz"/>
+                                    <constraint firstItem="MCk-0m-6q9" firstAttribute="width" secondItem="An9-qK-WQn" secondAttribute="width" multiplier="0.85" id="rKh-j2-nzX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="An9-qK-WQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZYd-Ad-g0a"/>
+                            <constraint firstItem="An9-qK-WQn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i7Z-Am-SnX"/>
+                            <constraint firstItem="An9-qK-WQn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" priority="750" id="vac-x3-c27"/>
+                            <constraint firstItem="An9-qK-WQn" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.9" id="wg7-3O-7w8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="An9-qK-WQn" id="0da-VH-Hgj"/>
+                        <outlet property="imageView" destination="MCk-0m-6q9" id="5e8-Bk-x8G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-9"/>
+        </scene>
+    </scenes>
+</document>
