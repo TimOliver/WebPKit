@@ -10,7 +10,6 @@ import CoreGraphics
 
 #if canImport(WebP)
 import WebP.Decoder
-#endif
 
 /// Errors that can potentially occur when
 /// tying to decode WebP data
@@ -36,7 +35,7 @@ enum WebPDecodingError: UInt32, Error {
 extension CGImage {
 
     /// Reads the header of a WebP image file and extracts
-    /// the pixel resolution of the image.
+    /// the pixel resolution of the image without performing a full decode.
     /// - Parameter url: The file URL of the WebP image
     /// - Returns: The size of the image, or nil if it failed
     public static func sizeOfWebP(at url: URL)  -> CGSize? {
@@ -47,7 +46,7 @@ extension CGImage {
     }
 
     /// Reads the header of a WebP image file and extracts
-    /// the pixel resolution of the image.
+    /// the pixel resolution of the image without performing a full decode.
     /// - Parameter data: The WebP image data
     /// - Returns: The size of the image, or nil if it failed
     public static func sizeOfWebP(with data: Data) -> CGSize? {
@@ -66,28 +65,21 @@ extension CGImage {
     /// - Parameter url: The URL path to the file
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(contentsOf url: URL) throws -> CGImage {
+    public static func webpImage(contentsOfFile url: URL) throws -> CGImage {
         let data = try Data(contentsOf: url, options: .alwaysMapped)
-        return try CGImage.webpImage(from: data)
+        return try CGImage.webpImage(data: data)
     }
 
     /// Decode a WebP image from memory and return it as a CGImage
     /// - Parameter data: The data to decode
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(from data: Data) throws -> CGImage {
-        var config = WebPDecoderConfig()
-        var width: Int32 = 0, height: Int32 = 0
-
-        // Check this is a valid WebP image stream, and retrieve the properties we need
-        let result = data.withUnsafeBytes { bytes -> Bool in
-            guard let boundPtr = bytes.baseAddress?
-                                        .assumingMemoryBound(to: UInt8.self) else { return false }
-            return (WebPGetInfo(boundPtr, bytes.count, &width, &height) != 0)
-        }
-        guard result == true else { throw WebPDecodingError.invalidHeader }
-
+    public static func webpImage(data: Data) throws -> CGImage {
+        // Check the header before proceeding to ensure this is a valid WebP file
+        guard data.isWebPFormat else { throw WebPDecodingError.invalidHeader }
+        
         // Init the config
+        var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
         config.output.colorspace = MODE_RGBA;
         config.options.bypass_filtering = 1;
@@ -129,3 +121,5 @@ extension CGImage {
     }
 
 }
+
+#endif

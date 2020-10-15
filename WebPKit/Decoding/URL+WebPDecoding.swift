@@ -17,7 +17,7 @@ extension URL {
     /// Returns whether this file URL points to a WebP image file.
     /// It initially checks the file name to see if it contains the WebP file extension,
     /// but if that files, it will check the contents of the file for the WebP format magic number.
-    public var isWebPFile: Bool { isWebPFile() }
+    public var isWebPFile: Bool { isWebPFile(ignoringFileExtension: false) }
 
     /// Returns whether this file URL points to a WebP image file.
     /// It initially checks the file name to see if it contains the WebP file extension,
@@ -29,7 +29,6 @@ extension URL {
         // If desired, check the file format extension
         if !ignoringFileExtension && self.pathExtension.lowercased() == URL.webpFileExtension {
             return true
-
         }
 
         // Load the file as mapped memory, and check the header
@@ -37,7 +36,6 @@ extension URL {
             return data.isWebPFormat
         }
 
-        // Default to false
         return false
     }
 
