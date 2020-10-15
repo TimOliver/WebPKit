@@ -7,20 +7,16 @@
 
 import WatchKit
 import Foundation
-
+import UIKit
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var interfaceImage: WKInterfaceImage!
+
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
+        let webpImage = UIImage.webpNamed("WebPKitLogo")
+        print(webpImage)
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-    }
 
 }
