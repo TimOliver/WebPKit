@@ -81,7 +81,7 @@ extension CGImage {
         // Init the config
         var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
-        config.output.colorspace = MODE_RGBA;
+        config.output.colorspace = MODE_rgbA;
         config.options.bypass_filtering = 1;
         config.options.no_fancy_upsampling = 1;
         config.options.use_threads = 1;
