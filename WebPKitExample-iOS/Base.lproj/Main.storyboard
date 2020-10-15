@@ -16,13 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w4u-4z-0Xb">
+                                <rect key="frame" x="52" y="298" width="310.5" height="310.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w4u-4z-0Xb" secondAttribute="height" multiplier="1:1" id="SSx-eB-PS1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w4u-4z-0Xb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="09z-Ew-4sc"/>
+                            <constraint firstItem="w4u-4z-0Xb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HBt-g0-grS"/>
+                            <constraint firstItem="w4u-4z-0Xb" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="aDI-Mi-ahp"/>
+                            <constraint firstItem="w4u-4z-0Xb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hCc-hi-vdB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="w4u-4z-0Xb" id="Ndk-3F-cPZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="-9"/>
+            <point key="canvasLocation" x="944.92753623188412" y="-9.375"/>
         </scene>
     </scenes>
     <resources>
