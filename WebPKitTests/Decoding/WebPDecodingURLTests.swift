@@ -7,22 +7,7 @@
 
 import XCTest
 
-class WebPDecodingURLTests: XCTestCase {
-
-    /// The bundle hosting these tests
-    lazy var testBundle: Bundle = {
-        return Bundle(for: type(of: self))
-    }()
-
-    /// A file URL to a lossless WebP test file
-    lazy var losslessWebPFileURL: URL = {
-        return testBundle.url(forResource: "logo-lossless", withExtension: "webp")!
-    }()
-
-    /// A file URL to a lossless WebP test file
-    lazy var lossyWebPFileURL: URL = {
-        return testBundle.url(forResource: "logo-lossy", withExtension: "WEBP")!
-    }()
+class WebPDecodingURLTests: WebPDecodingTests {
 
     // Test checking the file's path extension
     func testFileExtensionCheck() {
