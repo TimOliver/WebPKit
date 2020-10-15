@@ -17,7 +17,11 @@
 		2203B93D2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		2203B93E2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		2203B95425376AC60069098A /* WebPDecodingImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingImageTests.swift */; };
+		2203B95425376AC60069098A /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		2203B95825386D5D0069098A /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		2203B95D25386DDA0069098A /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		2203B966253881B60069098A /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
+		2203B96D253882300069098A /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
 		2254A5952534595300813B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5942534595300813B84 /* AppDelegate.swift */; };
 		2254A5992534595300813B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5982534595300813B84 /* ViewController.swift */; };
 		2254A59C2534595300813B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59A2534595300813B84 /* Main.storyboard */; };
@@ -72,7 +76,10 @@
 		2203B93525375E690069098A /* Data+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingDataTests.swift; sourceTree = "<group>"; };
-		2203B95325376AC60069098A /* WebPDecodingImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingImageTests.swift; sourceTree = "<group>"; };
+		2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingCGImageTests.swift; sourceTree = "<group>"; };
+		2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WebPDecoding.swift"; sourceTree = "<group>"; };
+		2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingUIImageTests.swift; sourceTree = "<group>"; };
+		2203B96B253882300069098A /* WebPDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingTests.swift; sourceTree = "<group>"; };
 		2254A5922534595300813B84 /* WebPKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2254A5942534595300813B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2254A5982534595300813B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,20 +132,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2203B90F2537539F0069098A /* Core */ = {
+		2203B9192537548D0069098A /* Decoding */ = {
 			isa = PBXGroup;
 			children = (
 				2203B910253753D20069098A /* URL+WebPDecoding.swift */,
 				2203B93525375E690069098A /* Data+WebPDecoding.swift */,
 				2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		2203B9192537548D0069098A /* Decoding */ = {
-			isa = PBXGroup;
-			children = (
-				2203B90F2537539F0069098A /* Core */,
+				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -146,9 +146,11 @@
 		2203B9202537598C0069098A /* Decoding */ = {
 			isa = PBXGroup;
 			children = (
+				2203B96B253882300069098A /* WebPDecodingTests.swift */,
 				2203B921253759B10069098A /* WebPDecodingURLTests.swift */,
 				2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */,
-				2203B95325376AC60069098A /* WebPDecodingImageTests.swift */,
+				2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */,
+				2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -329,7 +331,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					2254A5912534595300813B84 = {
 						CreatedOnToolsVersion = 12.0;
@@ -412,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2203B95D25386DDA0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2254A5992534595300813B84 /* ViewController.swift in Sources */,
 				2203B914253753F90069098A /* URL+WebPDecoding.swift in Sources */,
 				2203B93D2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */,
@@ -424,11 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2203B96D253882300069098A /* WebPDecodingTests.swift in Sources */,
+				2203B966253881B60069098A /* WebPDecodingUIImageTests.swift in Sources */,
 				2203B93E2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */,
 				2203B93225375C130069098A /* URL+WebPDecoding.swift in Sources */,
 				2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */,
 				2203B922253759B10069098A /* WebPDecodingURLTests.swift in Sources */,
-				2203B95425376AC60069098A /* WebPDecodingImageTests.swift in Sources */,
+				2203B95425376AC60069098A /* WebPDecodingCGImageTests.swift in Sources */,
+				2203B95825386D5D0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2203B93725375E690069098A /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +496,7 @@
 					"$(PROJECT_DIR)/WebPKitExample-iOS",
 				);
 				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +525,7 @@
 					"$(PROJECT_DIR)/WebPKitExample-iOS",
 				);
 				INFOPLIST_FILE = "WebPKitExample-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -765,6 +771,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -775,7 +782,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -810,7 +817,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
