@@ -10,6 +10,10 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 
+#if canImport(WatchKit)
+import WatchKit
+#endif
+
 /// A global image cache that stores and serves images
 /// created with "webpNamed"
 let imageCache = NSMapTable<NSString, UIImage>(keyOptions: .strongMemory,
@@ -26,7 +30,7 @@ extension UIImage {
     convenience init?(webpData: Data, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(data: webpData) else { return nil }
         #if os(watchOS)
-        let imageScale = CGFloat(2.0)
+        let imageScale = WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
@@ -42,7 +46,7 @@ extension UIImage {
     convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(contentsOfFile: url) else { return nil }
         #if os(watchOS)
-        let imageScale = CGFloat(2.0)
+        let imageScale = WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
@@ -60,7 +64,7 @@ extension UIImage {
     static func webpNamed(_ name: String, bundle: Bundle = Bundle.main) -> UIImage? {
         // Check to see if we're on a Retina Display
         #if os(watchOS)
-        let scale = 2
+        let scale = Int(WKInterfaceDevice.current().screenScale)
         #else
         let scale = Int(UIScreen.main.scale)
         #endif
