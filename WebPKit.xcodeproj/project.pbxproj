@@ -28,7 +28,6 @@
 		224DBFFF2538A1D4000A0A36 /* WebPKitExample-watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 224DBFFE2538A1D4000A0A36 /* WebPKitExample-watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DC0042538A1D4000A0A36 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DC0032538A1D4000A0A36 /* InterfaceController.swift */; };
 		224DC0062538A1D4000A0A36 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DC0052538A1D4000A0A36 /* ExtensionDelegate.swift */; };
-		224DC0082538A1D4000A0A36 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DC0072538A1D4000A0A36 /* ComplicationController.swift */; };
 		224DC00A2538A1D4000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DC0092538A1D4000A0A36 /* Assets.xcassets */; };
 		2254A5952534595300813B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5942534595300813B84 /* AppDelegate.swift */; };
 		2254A5992534595300813B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5982534595300813B84 /* ViewController.swift */; };
@@ -142,7 +141,6 @@
 		224DBFFE2538A1D4000A0A36 /* WebPKitExample-watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebPKitExample-watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DC0032538A1D4000A0A36 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		224DC0052538A1D4000A0A36 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		224DC0072538A1D4000A0A36 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		224DC0092538A1D4000A0A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224DC00B2538A1D4000A0A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2254A5922534595300813B84 /* WebPKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,7 +265,6 @@
 			children = (
 				224DC0032538A1D4000A0A36 /* InterfaceController.swift */,
 				224DC0052538A1D4000A0A36 /* ExtensionDelegate.swift */,
-				224DC0072538A1D4000A0A36 /* ComplicationController.swift */,
 				224DC0092538A1D4000A0A36 /* Assets.xcassets */,
 				224DC00B2538A1D4000A0A36 /* Info.plist */,
 			);
@@ -729,7 +726,6 @@
 			files = (
 				224DC0062538A1D4000A0A36 /* ExtensionDelegate.swift in Sources */,
 				224DC0042538A1D4000A0A36 /* InterfaceController.swift in Sources */,
-				224DC0082538A1D4000A0A36 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
