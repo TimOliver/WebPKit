@@ -25,7 +25,11 @@ extension UIImage {
     ///            If nil is specified, the screen scale is used
     convenience init?(webpData: Data, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(data: webpData) else { return nil }
+        #if os(watchOS)
+        let imageScale = CGFloat(2.0)
+        #else
         let imageScale = scale ?? UIScreen.main.scale
+        #endif
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
     }
 
@@ -37,7 +41,11 @@ extension UIImage {
     ///            If nil is specified, the screen scale is used
     convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(contentsOfFile: url) else { return nil }
+        #if os(watchOS)
+        let imageScale = CGFloat(2.0)
+        #else
         let imageScale = scale ?? UIScreen.main.scale
+        #endif
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
     }
 
@@ -51,7 +59,11 @@ extension UIImage {
     /// - Returns: The decoded image if successful, or nil if not
     static func webpNamed(_ name: String, bundle: Bundle = Bundle.main) -> UIImage? {
         // Check to see if we're on a Retina Display
+        #if os(watchOS)
+        let scale = 2
+        #else
         let scale = Int(UIScreen.main.scale)
+        #endif
         var scaleSuffix = ""
         if scale > 1 {
             scaleSuffix = "@\(scale)x"
