@@ -233,11 +233,9 @@
 		2203B9192537548D0069098A /* Decoding */ = {
 			isa = PBXGroup;
 			children = (
-				2203B910253753D20069098A /* URL+WebPDecoding.swift */,
-				2203B93525375E690069098A /* Data+WebPDecoding.swift */,
-				2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */,
-				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
-				22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */,
+				22E0C7CA253930A5008F5183 /* Core */,
+				22E0C7CB253930AF008F5183 /* Platforms */,
+				22E0C7C925393099008F5183 /* Utilities */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -471,6 +469,32 @@
 				22E0C7462538AE60008F5183 /* AppDelegate.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		22E0C7C925393099008F5183 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2203B910253753D20069098A /* URL+WebPDecoding.swift */,
+				2203B93525375E690069098A /* Data+WebPDecoding.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		22E0C7CA253930A5008F5183 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		22E0C7CB253930AF008F5183 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
+				22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */,
+			);
+			path = Platforms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

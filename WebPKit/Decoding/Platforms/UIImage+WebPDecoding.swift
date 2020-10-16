@@ -31,7 +31,7 @@ extension UIImage {
     convenience init?(webpData: Data, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(data: webpData) else { return nil }
         #if os(watchOS)
-        let imageScale = WKInterfaceDevice.current().screenScale
+        let imageScale = scale ?? WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
@@ -47,7 +47,7 @@ extension UIImage {
     convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil) {
         guard let cgImage = try? CGImage.webpImage(contentsOfFile: url) else { return nil }
         #if os(watchOS)
-        let imageScale = WKInterfaceDevice.current().screenScale
+        let imageScale = scale ?? WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
