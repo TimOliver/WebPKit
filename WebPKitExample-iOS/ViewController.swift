@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Decode and set a WebP image to
-        // the image view in this view controller
-        imageView.image = UIImage.webpNamed("WebPKitLogo")
+        // Locate the file on disk
+        guard let url = Bundle.main.url(forResource: "WebPKitLogo",
+                                        withExtension: "webp")  else { return }
 
-        // As this is a large image, enable trilinear filtering
-        // to allow better re-sampling at smaller screen sizes
-        imageView.layer.minificationFilter = .trilinear
+        // Work out the smallest dimension of this window so we can scale to it
+        let width = min(view.frame.width, view.frame.height)
+
+        // Decode a copy of the image scaled to the size of the screen
+        imageView.image = UIImage(contentsOfWebPFile: url, width: width)
     }
 }
 
