@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var webpLogo: NSImage {
-        let url = Bundle.main.url(forResource: "WebPKitLogo",
-                                  withExtension: "webp")!
-        return NSImage(contentsOfWebPFile: url)!
+        return NSImage.webpNamed("WebPKitLogo")!
     }
 
     var body: some View {

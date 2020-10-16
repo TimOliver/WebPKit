@@ -22,6 +22,10 @@
 		2203B95D25386DDA0069098A /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
 		2203B966253881B60069098A /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
 		2203B96D253882300069098A /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		2233C9082539D8AB00A7F029 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		2233C90F2539D8AE00A7F029 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		2233C9162539D8B400A7F029 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		2233C91D2539D8B400A7F029 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -58,12 +62,7 @@
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
-		22E0C7852538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		22E0C7862538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		22E0C7872538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		22E0C7882538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		22E0C7952538AFB6008F5183 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		22E0C7962538AFB6008F5183 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		22E0C7972538AFB6008F5183 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		22E0C7982538AFB6008F5183 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
 		22E0C7992538AFB6008F5183 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
@@ -233,8 +232,9 @@
 		2203B9192537548D0069098A /* Decoding */ = {
 			isa = PBXGroup;
 			children = (
+				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
+				22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */,
 				22E0C7CA253930A5008F5183 /* Core */,
-				22E0C7CB253930AF008F5183 /* Platforms */,
 				22E0C7C925393099008F5183 /* Utilities */,
 			);
 			path = Decoding;
@@ -486,15 +486,6 @@
 				2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		22E0C7CB253930AF008F5183 /* Platforms */ = {
-			isa = PBXGroup;
-			children = (
-				2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */,
-				22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */,
-			);
-			path = Platforms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -756,7 +747,7 @@
 				224DC03F2538A48D000A0A36 /* Data+WebPDecoding.swift in Sources */,
 				224DC03E2538A48D000A0A36 /* UIImage+WebPDecoding.swift in Sources */,
 				224DC0402538A48D000A0A36 /* CGImage+WebPDecoding.swift in Sources */,
-				22E0C7882538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
+				2233C90F2539D8AE00A7F029 /* NSImage+WebPDecoding.swift in Sources */,
 				224DC0062538A1D4000A0A36 /* ExtensionDelegate.swift in Sources */,
 				224DC03D2538A48D000A0A36 /* URL+WebPDecoding.swift in Sources */,
 				224DC0042538A1D4000A0A36 /* InterfaceController.swift in Sources */,
@@ -770,7 +761,7 @@
 				2203B95D25386DDA0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2254A5992534595300813B84 /* ViewController.swift in Sources */,
 				2203B914253753F90069098A /* URL+WebPDecoding.swift in Sources */,
-				22E0C7852538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
+				2233C91D2539D8B400A7F029 /* NSImage+WebPDecoding.swift in Sources */,
 				2203B93D2537621E0069098A /* CGImage+WebPDecoding.swift in Sources */,
 				2203B93625375E690069098A /* Data+WebPDecoding.swift in Sources */,
 				2254A5952534595300813B84 /* AppDelegate.swift in Sources */,
@@ -788,7 +779,6 @@
 				2203B94E253769AC0069098A /* WebPDecodingDataTests.swift in Sources */,
 				2203B922253759B10069098A /* WebPDecodingURLTests.swift in Sources */,
 				2203B95425376AC60069098A /* WebPDecodingCGImageTests.swift in Sources */,
-				22E0C7872538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 				2203B95825386D5D0069098A /* UIImage+WebPDecoding.swift in Sources */,
 				2203B93725375E690069098A /* Data+WebPDecoding.swift in Sources */,
 			);
@@ -801,7 +791,7 @@
 				2282DDE82538946A004913CF /* UIImage+WebPDecoding.swift in Sources */,
 				2282DDC02538929B004913CF /* ViewController.swift in Sources */,
 				2282DDE92538946A004913CF /* CGImage+WebPDecoding.swift in Sources */,
-				22E0C7862538AF96008F5183 /* NSImage+WebPDecoding.swift in Sources */,
+				2233C9162539D8B400A7F029 /* NSImage+WebPDecoding.swift in Sources */,
 				2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */,
 				2282DDEA2538946A004913CF /* URL+WebPDecoding.swift in Sources */,
 				2282DDE72538946A004913CF /* Data+WebPDecoding.swift in Sources */,
@@ -815,10 +805,10 @@
 				22E0C7992538AFB6008F5183 /* URL+WebPDecoding.swift in Sources */,
 				22E0C7952538AFB6008F5183 /* UIImage+WebPDecoding.swift in Sources */,
 				22E0C7492538AE60008F5183 /* ContentView.swift in Sources */,
+				2233C9082539D8AB00A7F029 /* NSImage+WebPDecoding.swift in Sources */,
 				22E0C7982538AFB6008F5183 /* Data+WebPDecoding.swift in Sources */,
 				22E0C7972538AFB6008F5183 /* CGImage+WebPDecoding.swift in Sources */,
 				22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */,
-				22E0C7962538AFB6008F5183 /* NSImage+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,7 +934,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -966,7 +956,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -996,7 +986,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1026,7 +1016,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
