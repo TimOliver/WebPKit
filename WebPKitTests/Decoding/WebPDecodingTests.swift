@@ -24,6 +24,16 @@ public class WebPDecodingTests: XCTestCase {
         return testBundle.url(forResource: "logo-lossy", withExtension: "WEBP")!
     }()
 
+    /// A file URL to a lossless rectangle
+    public lazy var horizontalRectWebPFileURL: URL = {
+        return testBundle.url(forResource: "rect-horizontal", withExtension: "webp")!
+    }()
+
+    /// A file URL to a lossless rectangle
+    public lazy var verticalRectWebPFileURL: URL = {
+        return testBundle.url(forResource: "rect-vertical", withExtension: "webp")!
+    }()
+
     /// A file URL to a lossless WebP test file
     public lazy var losslessWebPFileData: Data = {
         let url = testBundle.url(forResource: "logo-lossless", withExtension: "webp")!

@@ -109,15 +109,15 @@ extension CGImage {
             }
 
             // Configure the target size, using the original size as default
-            var size = CGSize(width: width ?? originalSize.width,
-                              height: height ?? originalSize.height)
-
-            if scalingMode == .aspectFit {
-                let scale = min(size.width/originalSize.width, size.height/originalSize.width)
+            var size = CGSize.zero
+            if scalingMode == .aspectFit { // Shrink the image to fit inside the provided size
+                let scaleSize = CGSize(width: width ?? originalSize.width, height: height ?? originalSize.height)
+                let scale = min(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
                 size.width = originalSize.width * scale
                 size.height = originalSize.height * scale
-            } else if scalingMode == .aspectFill {
-                let scale = max(size.width/originalSize.width, size.height/originalSize.width)
+            } else if scalingMode == .aspectFill { // Shrink the image to completely fill the provided size
+                let scaleSize = CGSize(width: width ?? 0, height: height ?? 0)
+                let scale = max(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
                 size.width = originalSize.width * scale
                 size.height = originalSize.height * scale
             }

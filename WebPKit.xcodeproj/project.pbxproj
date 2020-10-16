@@ -58,6 +58,8 @@
 		2282DDE92538946A004913CF /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		2282DDEA2538946A004913CF /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
+		22985954253A0C6700D904A4 /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
+		22985955253A0C6700D904A4 /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7462538AE60008F5183 /* AppDelegate.swift */; };
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
@@ -174,6 +176,8 @@
 		2282DDEE253894B0004913CF /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22836082250C94DD00E46CD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228E7D70250C85E500C6B140 /* WebPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPKit.h; sourceTree = "<group>"; };
+		22985952253A0C6700D904A4 /* rect-horizontal.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-horizontal.webp"; sourceTree = "<group>"; };
+		22985953253A0C6700D904A4 /* rect-vertical.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-vertical.webp"; sourceTree = "<group>"; };
 		22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7462538AE60008F5183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E0C7482538AE60008F5183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 		2203B92725375B9E0069098A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				22985952253A0C6700D904A4 /* rect-horizontal.webp */,
+				22985953253A0C6700D904A4 /* rect-vertical.webp */,
 				2203B92825375B9E0069098A /* logo-lossy.WEBP */,
 				2203B92925375B9E0069098A /* logo-lossless.webp */,
 			);
@@ -712,7 +718,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2203B92B25375B9E0069098A /* logo-lossless.webp in Resources */,
+				22985954253A0C6700D904A4 /* rect-horizontal.webp in Resources */,
 				2203B92A25375B9E0069098A /* logo-lossy.WEBP in Resources */,
+				22985955253A0C6700D904A4 /* rect-vertical.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
