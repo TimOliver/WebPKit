@@ -112,11 +112,11 @@ extension CGImage {
             var size = CGSize.zero
             if scalingMode == .aspectFit { // Shrink the image to fit inside the provided size
                 let scaleSize = CGSize(width: width ?? originalSize.width, height: height ?? originalSize.height)
-                let scale = min(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
+                let scale = min(1.0, min(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height))
                 size.width = originalSize.width * scale
                 size.height = originalSize.height * scale
             } else if scalingMode == .aspectFill { // Shrink the image to completely fill the provided size
-                let scaleSize = CGSize(width: width ?? 0, height: height ?? 0)
+                let scaleSize = CGSize(width: min(originalSize.width, width ?? 0), height: min(originalSize.height, height ?? 0))
                 let scale = max(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
                 size.width = originalSize.width * scale
                 size.height = originalSize.height * scale
