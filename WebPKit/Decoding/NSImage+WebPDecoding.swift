@@ -18,8 +18,12 @@ extension NSImage {
     ///   - webpData: The WebP encoded data to decode
     ///   - scale: The scale factor to scale the content to.
     ///            If nil is specified, the screen scale is used
-    convenience init?(webpData: Data, scale: CGFloat? = nil) {
-        guard let cgImage = try? CGImage.webpImage(data: webpData) else { return nil }
+    convenience init?(webpData: Data, width: CGFloat? = nil, height: CGFloat? = nil,
+                      scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+        guard let cgImage = try? CGImage.webpImage(data: webpData,
+                                                   width: width,
+                                                   height: height,
+                                                   scalingMode: scalingMode) else { return nil }
         self.init(cgImage: cgImage, size: CGSize(width: cgImage.width, height: cgImage.height))
     }
 
@@ -29,8 +33,12 @@ extension NSImage {
     ///   - url: The WebP file to decode
     ///   - scale: The scale factor to scale the content to.
     ///            If nil is specified, the screen scale is used
-    convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil) {
-        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url) else { return nil }
+    convenience init?(contentsOfWebPFile url: URL, width: CGFloat? = nil, height: CGFloat? = nil,
+                      scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url,
+                                                   width: width,
+                                                   height: height,
+                                                   scalingMode: scalingMode) else { return nil }
         self.init(cgImage: cgImage, size: CGSize(width: cgImage.width, height: cgImage.height))
     }
 

@@ -34,6 +34,14 @@ enum WebPDecodingError: UInt32, Error {
 /// to decode images from the WebP file format
 extension CGImage {
 
+    /// The different scaling behaviours available
+    /// when optionally decoding WebP images to custom sizes.
+    public enum WebPScalingMode {
+        case aspectFit  // Scaled to fit the size, preserving aspect ratio
+        case aspectFill // Scaled to fill the size, preserving aspect ratio
+        case scale      // Scaled to fill the size, disregarding aspect ratio
+    }
+
     /// Reads the header of a WebP image file and extracts
     /// the pixel resolution of the image without performing a full decode.
     /// - Parameter url: The file URL of the WebP image
@@ -65,19 +73,26 @@ extension CGImage {
     /// - Parameter url: The URL path to the file
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(contentsOfFile url: URL) throws -> CGImage {
+    public static func webpImage(contentsOfFile url: URL,
+                                 width: CGFloat? = nil,
+                                 height: CGFloat? = nil,
+                                 scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
         let data = try Data(contentsOf: url, options: .alwaysMapped)
-        return try CGImage.webpImage(data: data)
+        return try CGImage.webpImage(data: data, width: width,
+                                     height: height, scalingMode: scalingMode)
     }
 
     /// Decode a WebP image from memory and return it as a CGImage
     /// - Parameter data: The data to decode
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(data: Data) throws -> CGImage {
+    public static func webpImage(data: Data,
+                                 width: CGFloat? = nil,
+                                 height: CGFloat? = nil,
+                                 scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
         // Check the header before proceeding to ensure this is a valid WebP file
         guard data.isWebPFormat else { throw WebPDecodingError.invalidHeader }
-        
+
         // Init the config
         var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
@@ -85,6 +100,34 @@ extension CGImage {
         config.options.bypass_filtering = 1;
         config.options.no_fancy_upsampling = 1;
         config.options.use_threads = 1;
+
+        // If desired, set the config to decode at a custom size
+        if width != nil || height != nil {
+            // Fetch the size of the image so we can calculate aspect ratio
+            guard let originalSize = sizeOfWebP(with: data) else {
+                throw WebPDecodingError.notEnoughData
+            }
+
+            // Configure the target size, using the original size as default
+            var size = CGSize(width: width ?? originalSize.width,
+                              height: height ?? originalSize.height)
+
+            if scalingMode == .aspectFit {
+                let scale = min(size.width/originalSize.width, size.height/originalSize.width)
+                size.width = originalSize.width * scale
+                size.height = originalSize.height * scale
+            } else if scalingMode == .aspectFill {
+                let scale = max(size.width/originalSize.width, size.height/originalSize.width)
+                size.width = originalSize.width * scale
+                size.height = originalSize.height * scale
+            }
+
+            // Set the config to use custom scale decoding,
+            // and supply the calculated sizes
+            config.options.use_scaling = 1
+            config.options.scaled_width = Int32(size.width)
+            config.options.scaled_height = Int32(size.height)
+        }
 
         // Decode the image
         let status = data.withUnsafeBytes { ptr -> VP8StatusCode in

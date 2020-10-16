@@ -27,14 +27,26 @@ extension UIImage {
     /// - Parameters:
     ///   - webpData: The WebP encoded data to decode
     ///   - scale: The scale factor to scale the content to.
-    ///            If nil is specified, the screen scale is used
-    convenience init?(webpData: Data, scale: CGFloat? = nil) {
-        guard let cgImage = try? CGImage.webpImage(data: webpData) else { return nil }
+    ///            If nil is specified, the screen scale is used.
+    ///   - width: Optionally, a custom width to decode the image to.
+    ///   - height: Optionally, a custom height to decode the image to.
+    ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
+    convenience init?(webpData: Data, scale: CGFloat? = nil, width: CGFloat? = nil,
+                      height: CGFloat? = nil, scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+        // Decode the WebP image from memory
+        guard let cgImage = try? CGImage.webpImage(data: webpData,
+                                                   width: width,
+                                                   height: height,
+                                                   scalingMode: scalingMode) else { return nil }
+
+        // Depending on platform, retrieve the screen scale
         #if os(watchOS)
         let imageScale = scale ?? WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
+
+        // Initialize the UIImage
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
     }
 
@@ -44,16 +56,27 @@ extension UIImage {
     ///   - url: The WebP file to decode
     ///   - scale: The scale factor to scale the content to.
     ///            If nil is specified, the screen scale is used
-    convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil) {
-        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url) else { return nil }
+    ///   - width: Optionally, a custom width to decode the image to.
+    ///   - height: Optionally, a custom height to decode the image to.
+    ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
+    convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil, width: CGFloat? = nil,
+                      height: CGFloat? = nil, scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+        // Decode the WebP image from disk
+        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url,
+                                                   width: width,
+                                                   height: height,
+                                                   scalingMode: scalingMode) else { return nil }
+
+        // Depending on platform, retrieve the screen scale
         #if os(watchOS)
         let imageScale = scale ?? WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
+
+        // Initialize the UIImage
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
     }
-
 
     /// Load a WebP image file from this app's resources bundle.
     /// If successfully loaded, the image is cached so it can be re-used
@@ -63,12 +86,14 @@ extension UIImage {
     ///   - bundle: Optionally, the bundle to target (By default, the main bundle is used)
     /// - Returns: The decoded image if successful, or nil if not
     static func webpNamed(_ name: String, bundle: Bundle = Bundle.main) -> UIImage? {
-        // Check to see if we're on a Retina Display
+        // Retrieve the scale of the screen
         #if os(watchOS)
         let scale = Int(WKInterfaceDevice.current().screenScale)
         #else
         let scale = Int(UIScreen.main.scale)
         #endif
+
+        // If a scale was discovered, configure the default file name
         var scaleSuffix = ""
         if scale > 1 {
             scaleSuffix = "@\(scale)x"
@@ -78,6 +103,7 @@ extension UIImage {
         var pathExtension = (name as NSString).pathExtension
         if pathExtension.isEmpty { pathExtension = "webp" }
 
+        // Extract the file name minus the extension
         let fileName = (name as NSString).deletingPathExtension
 
         // Format the name to include the Retina scale suffix
