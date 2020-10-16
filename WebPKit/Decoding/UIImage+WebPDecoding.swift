@@ -102,7 +102,7 @@ extension UIImage {
 
         // Work out the file extension
         var pathExtension = (name as NSString).pathExtension
-        if pathExtension.isEmpty { pathExtension = "webp" }
+        if pathExtension.isEmpty { pathExtension = URL.webpFileExtension }
 
         // Extract the file name minus the extension
         let fileName = (name as NSString).deletingPathExtension
