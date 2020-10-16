@@ -33,11 +33,6 @@ extension UIImage {
     ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
     convenience init?(webpData: Data, scale: CGFloat? = nil, width: CGFloat? = nil,
                       height: CGFloat? = nil, scalingMode: CGImage.WebPScalingMode = .aspectFit) {
-        // Decode the WebP image from memory
-        guard let cgImage = try? CGImage.webpImage(data: webpData,
-                                                   width: width,
-                                                   height: height,
-                                                   scalingMode: scalingMode) else { return nil }
 
         // Depending on platform, retrieve the screen scale
         #if os(watchOS)
@@ -45,6 +40,12 @@ extension UIImage {
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
+
+        // Decode the WebP image from memory
+        guard let cgImage = try? CGImage.webpImage(data: webpData,
+                                                   width: (width != nil) ? width! * imageScale : nil,
+                                                   height: (height != nil) ? height! * imageScale : nil,
+                                                   scalingMode: scalingMode) else { return nil }
 
         // Initialize the UIImage
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
@@ -61,18 +62,18 @@ extension UIImage {
     ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
     convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil, width: CGFloat? = nil,
                       height: CGFloat? = nil, scalingMode: CGImage.WebPScalingMode = .aspectFit) {
-        // Decode the WebP image from disk
-        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url,
-                                                   width: width,
-                                                   height: height,
-                                                   scalingMode: scalingMode) else { return nil }
-
         // Depending on platform, retrieve the screen scale
         #if os(watchOS)
         let imageScale = scale ?? WKInterfaceDevice.current().screenScale
         #else
         let imageScale = scale ?? UIScreen.main.scale
         #endif
+
+        // Decode the WebP image from disk
+        guard let cgImage = try? CGImage.webpImage(contentsOfFile: url,
+                                                   width: (width != nil) ? width! * imageScale : nil,
+                                                   height: (height != nil) ? height! * imageScale : nil,
+                                                   scalingMode: scalingMode) else { return nil }
 
         // Initialize the UIImage
         self.init(cgImage: cgImage, scale: imageScale, orientation: .up)
