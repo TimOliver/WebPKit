@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import WebPKit
 
 public class WebPDecodingTests: XCTestCase {
 
