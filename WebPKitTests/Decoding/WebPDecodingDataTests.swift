@@ -11,13 +11,13 @@ class WebPDecodingDataTests: WebPDecodingTests {
 
     // Test checking the file's path extension
     func testDataContentsCheck() {
-        XCTAssertTrue(losslessWebPFileData.isWebPFormat)
-        XCTAssertTrue(lossyWebPFileData.isWebPFormat)
+        XCTAssertTrue(losslessWebPFileData.isWebP)
+        XCTAssertTrue(lossyWebPFileData.isWebP)
     }
 
     // Test an incorrect data stream
     func testInvalidData() {
         let data = "InvalidData".data(using: .ascii)!
-        XCTAssertFalse(data.isWebPFormat)
+        XCTAssertFalse(data.isWebP)
     }
 }

@@ -8,16 +8,16 @@
 import XCTest
 
 class WebPDecodingURLTests: WebPDecodingTests {
-
+    
     // Test checking the file's path extension
     func testFileExtensionCheck() {
-        XCTAssertTrue(losslessWebPFileURL.isWebPFile)
-        XCTAssertTrue(lossyWebPFileURL.isWebPFile)
+        XCTAssertTrue(losslessWebPFileURL.isWebP)
+        XCTAssertTrue(lossyWebPFileURL.isWebP)
     }
 
     // Test checking the header of each file
     func testFileContentsCheck() {
-        XCTAssertTrue(losslessWebPFileURL.isWebPFile(ignoringFileExtension: true))
-        XCTAssertTrue(lossyWebPFileURL.isWebPFile(ignoringFileExtension: true))
+        XCTAssertTrue(losslessWebPFileURL.isWebP(ignoringFileExtension: true))
+        XCTAssertTrue(lossyWebPFileURL.isWebP(ignoringFileExtension: true))
     }
 }

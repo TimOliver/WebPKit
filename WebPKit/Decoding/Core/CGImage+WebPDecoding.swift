@@ -111,7 +111,7 @@ extension CGImage {
                                  height: CGFloat? = nil,
                                  scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
         // Check the header before proceeding to ensure this is a valid WebP file
-        guard data.isWebPFormat else { throw WebPDecodingError.invalidHeader }
+        guard data.isWebP else { throw WebPDecodingError.invalidHeader }
 
         // Init the config
         var config = WebPDecoderConfig()

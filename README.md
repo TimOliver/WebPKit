@@ -41,11 +41,11 @@ import WebPKit
 
 // Check a `Data` object to see if it contains WebP data
 let webpData = Data(...) 
-print(webp.isWebPFormat)
+print(webp.isWebP)
 
 // Check a file on disk to see if it is a WebP file
 let url = URL(...) 
-print(url.isWebPFile)
+print(url.isWebP)
 
 // Retrieve the pixel size of the image without decoding it
 let size = CGImage.sizeOfWebP(with: Data())

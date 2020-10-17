@@ -339,6 +339,9 @@
 		22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		22E0C7B42538B197008F5183 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22F6F268253B108B00C0C62B /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F6F362253B19C800C0C62B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		22F6F363253B19DE00C0C62B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22F6F364253B19F500C0C62B /* WebPKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WebPKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -610,6 +613,9 @@
 				224DC01D2538A1F1000A0A36 /* WebPKitExample-watchOS */,
 				228E7D6E250C85E500C6B140 /* Products */,
 				2282DE042538964F004913CF /* Frameworks */,
+				22F6F363253B19DE00C0C62B /* README.md */,
+				22F6F362253B19C800C0C62B /* CHANGELOG.md */,
+				22F6F364253B19F500C0C62B /* WebPKit.podspec */,
 			);
 			sourceTree = "<group>";
 		};

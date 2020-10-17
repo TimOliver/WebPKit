@@ -32,14 +32,14 @@ extension URL {
     /// Returns whether this file URL points to a WebP image file.
     /// It initially checks the file name to see if it contains the WebP file extension,
     /// but if that files, it will check the contents of the file for the WebP format magic number.
-    public var isWebPFile: Bool { isWebPFile(ignoringFileExtension: false) }
+    public var isWebP: Bool { isWebP(ignoringFileExtension: false) }
 
     /// Returns whether this file URL points to a WebP image file.
     /// It initially checks the file name to see if it contains the WebP file extension,
     /// but if that files, it will check the contents of the file for the WebP format magic number.
     /// - Parameter ignoringFileExtension: Whether to skip checking the extension and go straight to checking the contents
     /// - Returns: Whether the file is in the WebP format or not
-    public func isWebPFile(ignoringFileExtension: Bool = false) -> Bool {
+    public func isWebP(ignoringFileExtension: Bool = false) -> Bool {
 
         // If desired, check the file format extension
         if !ignoringFileExtension && self.pathExtension.lowercased() == URL.webpFileExtension {
@@ -48,7 +48,7 @@ extension URL {
 
         // Load the file as mapped memory, and check the header
         if let data = try? Data(contentsOf: self, options: .alwaysMapped) {
-            return data.isWebPFormat
+            return data.isWebP
         }
 
         return false

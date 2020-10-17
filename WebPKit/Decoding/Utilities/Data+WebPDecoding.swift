@@ -28,7 +28,7 @@ extension Data {
 
     /// Checks the contents of the data to see if the
     /// header matches that of the WebP file format.
-    public var isWebPFormat: Bool {
+    public var isWebP: Bool {
         return withUnsafeBytes { bytes in
             // The first 4 bytes are the ASCII letters "RIFF"
             // Skipping 4 bytes for the file size, the next 4 bytes after
