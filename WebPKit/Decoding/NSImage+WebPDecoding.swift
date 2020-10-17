@@ -19,7 +19,7 @@ extension NSImage {
     ///   - scale: The scale factor to scale the content to.
     ///            If nil is specified, the screen scale is used
     convenience init?(webpData: Data, width: CGFloat? = nil, height: CGFloat? = nil,
-                      scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+                      scalingMode: WebPScalingMode = .aspectFit) {
         guard let cgImage = try? CGImage.webpImage(data: webpData,
                                                    width: width,
                                                    height: height,
@@ -34,7 +34,7 @@ extension NSImage {
     ///   - scale: The scale factor to scale the content to.
     ///            If nil is specified, the screen scale is used
     convenience init?(contentsOfWebPFile url: URL, width: CGFloat? = nil, height: CGFloat? = nil,
-                      scalingMode: CGImage.WebPScalingMode = .aspectFit) {
+                      scalingMode: WebPScalingMode = .aspectFit) {
         guard let cgImage = try? CGImage.webpImage(contentsOfFile: url,
                                                    width: width,
                                                    height: height,

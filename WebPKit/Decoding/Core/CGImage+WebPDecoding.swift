@@ -8,8 +8,13 @@
 import Foundation
 import CoreGraphics
 
+#if canImport(WebP) || canImport(libwebp)
+
 #if canImport(WebP)
 import WebP.Decoder
+#elseif canImport(libwebp)
+import libwebp
+#endif
 
 /// Errors that can potentially occur when
 /// tying to decode WebP data
@@ -30,17 +35,17 @@ enum WebPDecodingError: UInt32, Error {
     case imageRenderFailed
 }
 
+/// The different scaling behaviours available
+/// when optionally decoding WebP images to custom sizes.
+public enum WebPScalingMode {
+    case aspectFit  // Scaled to fit the size, preserving aspect ratio
+    case aspectFill // Scaled to fill the size, preserving aspect ratio
+    case scale      // Scaled to fill the size, disregarding aspect ratio
+}
+
 /// Extends CGImage with the ability
 /// to decode images from the WebP file format
 extension CGImage {
-
-    /// The different scaling behaviours available
-    /// when optionally decoding WebP images to custom sizes.
-    public enum WebPScalingMode {
-        case aspectFit  // Scaled to fit the size, preserving aspect ratio
-        case aspectFill // Scaled to fill the size, preserving aspect ratio
-        case scale      // Scaled to fill the size, disregarding aspect ratio
-    }
 
     /// Reads the header of a WebP image file and extracts
     /// the pixel resolution of the image without performing a full decode.
