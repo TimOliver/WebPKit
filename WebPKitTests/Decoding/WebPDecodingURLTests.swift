@@ -20,4 +20,12 @@ class WebPDecodingURLTests: WebPDecodingTests {
         XCTAssertTrue(losslessWebPFileURL.isWebP(ignoringFileExtension: true))
         XCTAssertTrue(lossyWebPFileURL.isWebP(ignoringFileExtension: true))
     }
+
+    // Test different types of invalid URLs
+    func testInvalidURLValues() {
+        XCTAssertFalse(URL(string: "~/image.webp")!.isWebP(ignoringFileExtension: true))
+        XCTAssertFalse(URL(string: "~/image.jpeg")!.isWebP)
+        XCTAssertFalse(URL(string: "http://google.com/image.jpg")!.isWebP)
+        XCTAssertFalse(URL(string: "http://google.com/image.webp")!.isWebP(ignoringFileExtension: true))
+    }
 }
