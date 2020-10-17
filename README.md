@@ -1,2 +1,1 @@
-# Cocoa-WebP
-A cross-platform, multi-language framework for reading/writing WebP files on Apple platforms.
+<img src="https://github.com/TimOliver/WebPKit/raw/master/screenshot.png" alt="WebPKit running on various devices" width="720" />
