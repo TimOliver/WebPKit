@@ -9,7 +9,7 @@ URL=$3
 cd ${FOLDER}
 
 if [[ ! -d ${FRAMEWORK} ]]; then
-    curl -sS ${URL} > framework.zip
+    curl -L -sS ${URL} > framework.zip
     unzip framework.zip
     cp -r libwebp*/${FRAMEWORK} .
     rm -r libwebp*/
