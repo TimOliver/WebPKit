@@ -226,6 +226,13 @@
 			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
 			remoteInfo = "Download WebP (watchOS)";
 		};
+		22F6F245253B0DEF00C0C62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
+			remoteInfo = "Download WebP (macOS)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -906,6 +913,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22F6F246253B0DEF00C0C62B /* PBXTargetDependency */,
 				22CDC503253A94A900F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-macOS";
@@ -1119,7 +1127,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh  download.sh iOS xcframework ios-catalyst\n";
+			shellScript = "sh download.sh iOS xcframework ios-catalyst\n";
 		};
 		22CDC78F253AC5BB00F7D212 /* Download WebP.framework */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1346,6 +1354,11 @@
 			isa = PBXTargetDependency;
 			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
 			targetProxy = 22F6F224253B0BEA00C0C62B /* PBXContainerItemProxy */;
+		};
+		22F6F246253B0DEF00C0C62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
+			targetProxy = 22F6F245253B0DEF00C0C62B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
