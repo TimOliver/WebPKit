@@ -567,8 +567,8 @@
 		22E0C7C925393099008F5183 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2203B910253753D20069098A /* URL+WebPDecoding.swift */,
 				2203B93525375E690069098A /* Data+WebPDecoding.swift */,
+				2203B910253753D20069098A /* URL+WebPDecoding.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
