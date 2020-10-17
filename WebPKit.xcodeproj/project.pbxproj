@@ -77,12 +77,12 @@
 		2282DDC82538929B004913CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC62538929B004913CF /* LaunchScreen.storyboard */; };
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
-		22A7B441253AFC210032F825 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; };
-		22A7B456253AFC580032F825 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		22A7B457253AFC580032F825 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		22A7B458253AFC580032F825 /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
-		22A7B459253AFC580032F825 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		22A7B45A253AFC580032F825 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		22A7B441253AFC210032F825 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; platformFilter = ios; };
+		22A7B456253AFC580032F825 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; platformFilter = ios; };
+		22A7B457253AFC580032F825 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; platformFilter = ios; };
+		22A7B458253AFC580032F825 /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; platformFilter = ios; };
+		22A7B459253AFC580032F825 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; platformFilter = ios; };
+		22A7B45A253AFC580032F825 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; platformFilter = ios; };
 		22A7B479253AFC7D0032F825 /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
 		22A7B47A253AFC7D0032F825 /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		22A7B47B253AFC7D0032F825 /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
@@ -155,6 +155,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2254A5912534595300813B84;
 			remoteInfo = "WebPKitExample-iOS";
+		};
+		22A7B515253B01490032F825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
+			remoteInfo = "Download WebP (iOS)";
 		};
 		22CDC4A5253A933D00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -795,6 +802,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22A7B516253B01490032F825 /* PBXTargetDependency */,
 				22A7B443253AFC210032F825 /* PBXTargetDependency */,
 				22A7B505253AFE440032F825 /* PBXTargetDependency */,
 			);
@@ -1272,13 +1280,21 @@
 		};
 		22A7B443253AFC210032F825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 22CDC49F253A933D00F7D212 /* WebPKit-iOS */;
 			targetProxy = 22A7B442253AFC210032F825 /* PBXContainerItemProxy */;
 		};
 		22A7B505253AFE440032F825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
 			targetProxy = 22A7B504253AFE440032F825 /* PBXContainerItemProxy */;
+		};
+		22A7B516253B01490032F825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
+			targetProxy = 22A7B515253B01490032F825 /* PBXContainerItemProxy */;
 		};
 		22CDC4A6253A933D00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
