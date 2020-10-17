@@ -6,6 +6,53 @@
 	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22CDC754253ABFCB00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (iOS)" */;
+			buildPhases = (
+				22CDC763253ABFD400F7D212 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Download WebP (iOS)";
+			productName = "Download WebP (iOS)";
+		};
+		22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22CDC77F253AC5B400F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (macOS)" */;
+			buildPhases = (
+				22CDC78F253AC5BB00F7D212 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Download WebP (macOS)";
+			productName = "Download WebP (macOS)";
+		};
+		22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22CDC793253AC5D900F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (tvOS)" */;
+			buildPhases = (
+				22CDC7A4253AC5E000F7D212 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Download WebP (tvOS)";
+			productName = "Download WebP (tvOS)";
+		};
+		22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22CDC7A6253AC5FC00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (watchOS)" */;
+			buildPhases = (
+				22CDC7B8253AC5FF00F7D212 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Download WebP (watchOS)";
+			productName = "Download WebP (watchOS)";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2203B922253759B10069098A /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
 		2203B92A25375B9E0069098A /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
@@ -134,6 +181,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 22CDC545253A977700F7D212;
 			remoteInfo = "WebPKit-watchOS";
+		};
+		22CDC770253AC13000F7D212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
+			remoteInfo = "Download WebP (iOS)";
+		};
+		22CDC790253AC5CE00F7D212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
+			remoteInfo = "Download WebP (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -737,6 +798,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22CDC771253AC13000F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-iOS";
 			productName = WebPKitFramework;
@@ -755,6 +817,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22CDC791253AC5CE00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-macOS";
 			productName = WebPKitFramework;
@@ -856,6 +919,18 @@
 					22CDC580253A97FD00F7D212 = {
 						CreatedOnToolsVersion = 12.1;
 					};
+					22CDC753253ABFCB00F7D212 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					22CDC77E253AC5B400F7D212 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					22CDC792253AC5D900F7D212 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					22CDC7A5253AC5FC00F7D212 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					22E0C7432538AE60008F5183 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -885,6 +960,10 @@
 				22CDC4FC253A94A900F7D212 /* WebPKit-macOS */,
 				22CDC580253A97FD00F7D212 /* WebPKit-tvOS */,
 				22CDC545253A977700F7D212 /* WebPKit-watchOS */,
+				22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */,
+				22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */,
+				22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */,
+				22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -987,6 +1066,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22CDC763253ABFD400F7D212 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh download.sh WebPKitExample-iOS WebP.xcframework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-ios-catalyst-webp.zip\"\n";
+		};
+		22CDC78F253AC5BB00F7D212 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh download.sh WebPKitExample-macOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-macos-webp.zip\"\n";
+		};
+		22CDC7A4253AC5E000F7D212 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh download.sh WebPKitExample-tvOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-tvos-webp.zip\"\n";
+		};
+		22CDC7B8253AC5FF00F7D212 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh download.sh WebPKitExample-watchOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-watchos-webp.zip\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		224DBFFA2538A1D4000A0A36 /* Sources */ = {
@@ -1123,6 +1273,16 @@
 			isa = PBXTargetDependency;
 			target = 22CDC545253A977700F7D212 /* WebPKit-watchOS */;
 			targetProxy = 22CDC64E253A9CF400F7D212 /* PBXContainerItemProxy */;
+		};
+		22CDC771253AC13000F7D212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
+			targetProxy = 22CDC770253AC13000F7D212 /* PBXContainerItemProxy */;
+		};
+		22CDC791253AC5CE00F7D212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
+			targetProxy = 22CDC790253AC5CE00F7D212 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1896,6 +2056,78 @@
 			};
 			name = Release;
 		};
+		22CDC755253ABFCB00F7D212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22CDC756253ABFCB00F7D212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22CDC780253AC5B400F7D212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22CDC781253AC5B400F7D212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22CDC794253AC5D900F7D212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22CDC795253AC5D900F7D212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22CDC7A7253AC5FC00F7D212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22CDC7A8253AC5FC00F7D212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		22E0C7542538AE61008F5183 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2063,6 +2295,42 @@
 			buildConfigurations = (
 				22CDC58B253A97FD00F7D212 /* Debug */,
 				22CDC58C253A97FD00F7D212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CDC754253ABFCB00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CDC755253ABFCB00F7D212 /* Debug */,
+				22CDC756253ABFCB00F7D212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CDC77F253AC5B400F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CDC780253AC5B400F7D212 /* Debug */,
+				22CDC781253AC5B400F7D212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CDC793253AC5D900F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CDC794253AC5D900F7D212 /* Debug */,
+				22CDC795253AC5D900F7D212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CDC7A6253AC5FC00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CDC7A7253AC5FC00F7D212 /* Debug */,
+				22CDC7A8253AC5FC00F7D212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
