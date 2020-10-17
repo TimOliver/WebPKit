@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 22CDC754253ABFCB00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (iOS)" */;
 			buildPhases = (
-				22CDC763253ABFD400F7D212 /* ShellScript */,
+				22CDC763253ABFD400F7D212 /* Download WebP.xcframework */,
 			);
 			dependencies = (
 			);
@@ -22,7 +22,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 22CDC77F253AC5B400F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (macOS)" */;
 			buildPhases = (
-				22CDC78F253AC5BB00F7D212 /* ShellScript */,
+				22CDC78F253AC5BB00F7D212 /* Download WebP.framework */,
 			);
 			dependencies = (
 			);
@@ -33,7 +33,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 22CDC793253AC5D900F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (tvOS)" */;
 			buildPhases = (
-				22CDC7A4253AC5E000F7D212 /* ShellScript */,
+				22CDC7A4253AC5E000F7D212 /* Download WebP.framework */,
 			);
 			dependencies = (
 			);
@@ -44,7 +44,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 22CDC7A6253AC5FC00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (watchOS)" */;
 			buildPhases = (
-				22CDC7B8253AC5FF00F7D212 /* ShellScript */,
+				22CDC7B8253AC5FF00F7D212 /* Download WebP.framework */,
 			);
 			dependencies = (
 			);
@@ -182,19 +182,33 @@
 			remoteGlobalIDString = 22CDC545253A977700F7D212;
 			remoteInfo = "WebPKit-watchOS";
 		};
-		22CDC770253AC13000F7D212 /* PBXContainerItemProxy */ = {
+		22CDC813253AF37600F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
 			remoteInfo = "Download WebP (iOS)";
 		};
-		22CDC790253AC5CE00F7D212 /* PBXContainerItemProxy */ = {
+		22CDC815253AF37B00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
 			remoteInfo = "Download WebP (macOS)";
+		};
+		22CDC817253AF38100F7D212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC792253AC5D900F7D212;
+			remoteInfo = "Download WebP (tvOS)";
+		};
+		22CDC819253AF38400F7D212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
+			remoteInfo = "Download WebP (watchOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -798,7 +812,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC771253AC13000F7D212 /* PBXTargetDependency */,
+				22CDC814253AF37600F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-iOS";
 			productName = WebPKitFramework;
@@ -817,7 +831,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC791253AC5CE00F7D212 /* PBXTargetDependency */,
+				22CDC816253AF37B00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-macOS";
 			productName = WebPKitFramework;
@@ -836,6 +850,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22CDC81A253AF38400F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-watchOS";
 			productName = WebPKitFramework;
@@ -854,6 +869,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22CDC818253AF38100F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-tvOS";
 			productName = WebPKitFramework;
@@ -1068,25 +1084,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22CDC763253ABFD400F7D212 /* ShellScript */ = {
+		22CDC763253ABFD400F7D212 /* Download WebP.xcframework */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
 			);
+			name = "Download WebP.xcframework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh download.sh WebPKitExample-iOS WebP.xcframework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-ios-catalyst-webp.zip\"\n";
+			shellScript = "sh  download.sh iOS xcframework ios-catalyst\n";
 		};
-		22CDC78F253AC5BB00F7D212 /* ShellScript */ = {
+		22CDC78F253AC5BB00F7D212 /* Download WebP.framework */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1094,16 +1113,18 @@
 			);
 			inputPaths = (
 			);
+			name = "Download WebP.framework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh download.sh WebPKitExample-macOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-macos-webp.zip\"\n";
+			shellScript = "sh download.sh macOS framework macos\n";
 		};
-		22CDC7A4253AC5E000F7D212 /* ShellScript */ = {
+		22CDC7A4253AC5E000F7D212 /* Download WebP.framework */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1111,16 +1132,18 @@
 			);
 			inputPaths = (
 			);
+			name = "Download WebP.framework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh download.sh WebPKitExample-tvOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-tvos-webp.zip\"\n";
+			shellScript = "sh download.sh tvOS framework tvos\n";
 		};
-		22CDC7B8253AC5FF00F7D212 /* ShellScript */ = {
+		22CDC7B8253AC5FF00F7D212 /* Download WebP.framework */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1128,13 +1151,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Download WebP.framework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh download.sh WebPKitExample-watchOS WebP.framework \"https://github.com/TimOliver/WebP-Cocoa/releases/download/v1.1.0/libwebp-v1.1.0-framework-watchos-webp.zip\"\n";
+			shellScript = "sh download.sh watchOS framework watchos\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1274,15 +1298,25 @@
 			target = 22CDC545253A977700F7D212 /* WebPKit-watchOS */;
 			targetProxy = 22CDC64E253A9CF400F7D212 /* PBXContainerItemProxy */;
 		};
-		22CDC771253AC13000F7D212 /* PBXTargetDependency */ = {
+		22CDC814253AF37600F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
-			targetProxy = 22CDC770253AC13000F7D212 /* PBXContainerItemProxy */;
+			targetProxy = 22CDC813253AF37600F7D212 /* PBXContainerItemProxy */;
 		};
-		22CDC791253AC5CE00F7D212 /* PBXTargetDependency */ = {
+		22CDC816253AF37B00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
-			targetProxy = 22CDC790253AC5CE00F7D212 /* PBXContainerItemProxy */;
+			targetProxy = 22CDC815253AF37B00F7D212 /* PBXContainerItemProxy */;
+		};
+		22CDC818253AF38100F7D212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */;
+			targetProxy = 22CDC817253AF38100F7D212 /* PBXContainerItemProxy */;
+		};
+		22CDC81A253AF38400F7D212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
+			targetProxy = 22CDC819253AF38400F7D212 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
