@@ -20,4 +20,10 @@ class WebPDecodingDataTests: WebPDecodingTests {
         let data = "InvalidData".data(using: .ascii)!
         XCTAssertFalse(data.isWebP)
     }
+
+    // Test an incorrect data stream which is shorter than the WebP magic
+    func testTooShortData() {
+        let data = "Tom".data(using: .ascii)!
+        XCTAssertFalse(data.isWebP)
+    }
 }
