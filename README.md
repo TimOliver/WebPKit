@@ -41,7 +41,7 @@ import WebPKit
 
 // Check a `Data` object to see if it contains WebP data
 let webpData = Data(...) 
-print(webp.isWebP)
+print(webpData.isWebP)
 
 // Check a file on disk to see if it is a WebP file
 let url = URL(...) 
