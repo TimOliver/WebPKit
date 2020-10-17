@@ -79,6 +79,9 @@ print(webp.isWebPFormat)
 // Check a file on disk to see if it is a WebP file
 let url = URL(...) 
 print(url.isWebPFile)
+
+// Retrieve the pixel size of the image without decoding it
+let size = CGImage.sizeOfWebP(with: Data())
 ```
 
 ### Decoding a WebP image
