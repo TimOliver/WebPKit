@@ -12,4 +12,4 @@ jobs:
     - name: Run unit tests
       run: '(curl -s -L https://tim.dev/install_ios_oss_ci | bash -s arg1 arg2) && bundle exec fastlane test'
       env:
-        TEST_SCHEME: "TORoundedButtonTests"
+        TEST_SCHEME: "WebPKitTests"
