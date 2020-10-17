@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2254A5912534595300813B84"
-               BuildableName = "WebPKitExample-iOS.app"
-               BlueprintName = "WebPKitExample-iOS"
+               BlueprintIdentifier = "22E0C7432538AE60008F5183"
+               BuildableName = "WebPKitExample-macOS.app"
+               BlueprintName = "WebPKitExample-macOS"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22A7B43B253AFC210032F825"
+               BlueprintIdentifier = "22F6F267253B108B00C0C62B"
                BuildableName = "WebPKitTests.xctest"
                BlueprintName = "WebPKitTests"
                ReferencedContainer = "container:WebPKit.xcodeproj">
@@ -50,15 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2254A5912534595300813B84"
-            BuildableName = "WebPKitExample-iOS.app"
-            BlueprintName = "WebPKitExample-iOS"
-            ReferencedContainer = "container:WebPKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -69,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2254A5912534595300813B84"
-            BuildableName = "WebPKitExample-iOS.app"
-            BlueprintName = "WebPKitExample-iOS"
+            BlueprintIdentifier = "22E0C7432538AE60008F5183"
+            BuildableName = "WebPKitExample-macOS.app"
+            BlueprintName = "WebPKitExample-macOS"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
