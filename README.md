@@ -8,7 +8,9 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/WebPKit/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/WebPKit.svg?style=flat)](http://cocoadocs.org/docsets/WebPKit)
 
-WebPKit is an open source Cocoa framework that wraps the [WebP library](https://developers.google.com/speed/webp) enabling working with WebP image files on all of Apple's platforms. This allows quick and easy integration of reading (and later writing) WebP image files into your apps. It also includes advanced features such decoding WebP images to custom sizes.
+`WebPKit` is an open source framework that wraps Google's [WebP library](https://developers.google.com/speed/webp) to provide native Cocoa APIs for working with WebP image files on all of Apple's platforms.
+
+`WebPKit` allows for easily decoding WebP files to `UIImage` or `NSImage` instances. It also includes advanced features such as decoding WebP images to custom sizes, and will later support writing to WebP image files as well.
 
 # Features
 * Read image files in the WebP format.
@@ -25,41 +27,6 @@ WebPKit is an open source Cocoa framework that wraps the [WebP library](https://
 * **watchOS:** 2.0 and above
 
 When installing manually, you will also need Google's `WebP` C library as well. Precompiled static binaries are available at [the Cocoa-WebP repo](https://github.com/TimOliver/WebP-Cocoa).
-
-# Installation
-
-<details>
-  <summary><strong>CocoaPods</strong></summary>
-	
-Add the following to your `Podfile`:
-
-```
-pod 'WebPKit'
-```
-	  
-</details>
-
-<details>
-  <summary><strong>Carthage</strong></summary>
-	
-Carthage support is coming soon. Stay tuned!
-</details>
-
-<details>
-  <summary><strong>Swift Package Manager</strong></summary>
-	
-SPM support is coming soon. Stay tuned!
-</details>
-
-<details>
-  <summary><strong>Manual Installation</strong></summary>
-	
-	1. Download this repository.
-	2. Copy the `WebPKit` folder to your Xcode project.
-	3. Download the precompiled WebP binary from [the Cocoa-WebP repo](https://github.com/TimOliver/WebP-Cocoa) for your desired platform.
-	4. Drag that framework into your Xcode project.
-	  
-</details>
 
 # Usage
 
@@ -117,4 +84,60 @@ let webpImage = NSImage(contentsOfWebPFile: URL())
 // Load from resource bundle
 let webpImage = NSImage.webpNamed("MyWebPImage")
 ```
+
+# Installation
+
+<details>
+  <summary><strong>CocoaPods</strong></summary>
+	
+Add the following to your `Podfile`:
+
+```
+pod 'WebPKit'
+```
+	  
+</details>
+
+<details>
+  <summary><strong>Carthage</strong></summary>
+	
+Carthage support is coming soon. Stay tuned!
+</details>
+
+<details>
+  <summary><strong>Swift Package Manager</strong></summary>
+	
+SPM support is coming soon. Stay tuned!
+</details>
+
+<details>
+  <summary><strong>Manual Installation</strong></summary>
+	
+	1. Download this repository.
+	2. Copy the `WebPKit` folder to your Xcode project.
+	3. Download the precompiled WebP binary from [the Cocoa-WebP repo](https://github.com/TimOliver/WebP-Cocoa) for your desired platform.
+	4. Drag that framework into your Xcode project.
+	  
+</details>
+
+# Why Build This?
+
+Support for WebP image files had been a growing feature request in my comic reader app [iComics](http://icomics/co) for a number of years. With iComics being in Objective-C, I was able to use [one of the many libraries](https://github.com/mattt/WebPImageSerialization) on GitHub out there to easily support it.
+
+But while that was the case for Objective-C, while I've been working on iComics 2, I started to realise that there still wasn't a great amount of WebP support for Apple's more modern platforms and features. 
+
+Google's own precompiled binaries don't support either Swift or Mac Catalyst, and all the Swift libraries I found didn't provide features I needed, like CocoaPods support, or decoding at different sizes.
+
+For a feature that will be an extremely fundamental pillar in iComics 2, I decided that it would be worth the time and investment to make a *really* good WebP framework for the Apple ecosystem.
+
+# Credits
+
+`WebPKit` was created by [Tim Oliver](http://twitter.com/TimOliverAU).
+
+A huge shout-out also goes to the `SDWebImage` team for [maintaining CocoaPods and Carthage releases](https://github.com/SDWebImage/libwebp-Xcode) for WebP all this time as well.
+
+# License
+
+`WebPKit` is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
+
 
