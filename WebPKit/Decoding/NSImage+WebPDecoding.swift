@@ -10,7 +10,7 @@ import Foundation
 #if !targetEnvironment(macCatalyst) && canImport(AppKit)
 import AppKit
 
-extension NSImage {
+public extension NSImage {
 
     /// Create a new image object by the decoding
     /// data in the WebP format

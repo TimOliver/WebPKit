@@ -20,7 +20,7 @@ import WatchKit
 let imageCache = NSMapTable<NSString, UIImage>(keyOptions: .strongMemory,
                                                 valueOptions: .weakMemory)
 
-extension UIImage {
+public extension UIImage {
 
     /// Create a new image object by the decoding
     /// data in the WebP format

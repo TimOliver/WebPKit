@@ -18,7 +18,7 @@ import libwebp
 
 /// Errors that can potentially occur when
 /// tying to decode WebP data
-enum WebPDecodingError: UInt32, Error {
+public enum WebPDecodingError: UInt32, Error {
     // VP8_STATUS errors
     case ok=0
     case outOfMemory

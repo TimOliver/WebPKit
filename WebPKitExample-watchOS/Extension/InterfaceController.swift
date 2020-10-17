@@ -8,6 +8,7 @@
 import WatchKit
 import Foundation
 import UIKit
+import WebPKit
 
 class InterfaceController: WKInterfaceController {
 

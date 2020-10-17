@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebPKit
 
 class ViewController: UIViewController {
 

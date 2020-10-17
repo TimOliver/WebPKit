@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebPKit
 
 struct ContentView: View {
     var webpLogo: NSImage {
