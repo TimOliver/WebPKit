@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Install WebP.framework
+      run: 'sh download.sh iOS xcframework ios-catalyst'
     - name: Run unit tests
       run: '(curl -s -L https://tim.dev/install_ios_oss_ci | bash -s arg1 arg2) && bundle exec fastlane test'
       env:
