@@ -68,7 +68,6 @@
 		2254A59C2534595300813B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59A2534595300813B84 /* Main.storyboard */; };
 		2254A59E2534595300813B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59D2534595300813B84 /* Assets.xcassets */; };
 		2254A5A12534595300813B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59F2534595300813B84 /* LaunchScreen.storyboard */; };
-		2254A61425348EAD00813B84 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBD2538929B004913CF /* AppDelegate.swift */; };
 		2282DDC02538929B004913CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBF2538929B004913CF /* ViewController.swift */; };
@@ -125,6 +124,7 @@
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
 		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
+		22F6F235253B0C0A00C0C62B /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,26 +142,12 @@
 			remoteGlobalIDString = 224DBFFD2538A1D4000A0A36;
 			remoteInfo = "WebPKitExample-watchOS WatchKit Extension";
 		};
-		22A7B442253AFC210032F825 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC49F253A933D00F7D212;
-			remoteInfo = "WebPKit-iOS";
-		};
 		22A7B504253AFE440032F825 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2254A5912534595300813B84;
 			remoteInfo = "WebPKitExample-iOS";
-		};
-		22A7B515253B01490032F825 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
-			remoteInfo = "Download WebP (iOS)";
 		};
 		22CDC4A5253A933D00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -213,6 +199,27 @@
 			remoteInfo = "Download WebP (tvOS)";
 		};
 		22CDC819253AF38400F7D212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
+			remoteInfo = "Download WebP (watchOS)";
+		};
+		22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
+			remoteInfo = "Download WebP (iOS)";
+		};
+		22F6F222253B0BD500C0C62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC792253AC5D900F7D212;
+			remoteInfo = "Download WebP (tvOS)";
+		};
+		22F6F224253B0BEA00C0C62B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
@@ -327,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC4A7253A933D00F7D212 /* WebPKit.framework in Frameworks */,
-				2254A61425348EAD00813B84 /* WebP.xcframework in Frameworks */,
+				22F6F235253B0C0A00C0C62B /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +755,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22F6F225253B0BEA00C0C62B /* PBXTargetDependency */,
 				22CDC64F253A9CF400F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-watchOS-Extension";
@@ -766,6 +774,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22F6F212253B0BCB00C0C62B /* PBXTargetDependency */,
 				22CDC4A6253A933D00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-iOS";
@@ -784,6 +793,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22F6F223253B0BD500C0C62B /* PBXTargetDependency */,
 				22CDC587253A97FD00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-tvOS";
@@ -802,8 +812,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22A7B516253B01490032F825 /* PBXTargetDependency */,
-				22A7B443253AFC210032F825 /* PBXTargetDependency */,
 				22A7B505253AFE440032F825 /* PBXTargetDependency */,
 			);
 			name = WebPKitTests;
@@ -1278,23 +1286,11 @@
 			target = 224DBFFD2538A1D4000A0A36 /* WebPKitExample-watchOS-Extension */;
 			targetProxy = 224DC0002538A1D4000A0A36 /* PBXContainerItemProxy */;
 		};
-		22A7B443253AFC210032F825 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 22CDC49F253A933D00F7D212 /* WebPKit-iOS */;
-			targetProxy = 22A7B442253AFC210032F825 /* PBXContainerItemProxy */;
-		};
 		22A7B505253AFE440032F825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
 			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
 			targetProxy = 22A7B504253AFE440032F825 /* PBXContainerItemProxy */;
-		};
-		22A7B516253B01490032F825 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
-			targetProxy = 22A7B515253B01490032F825 /* PBXContainerItemProxy */;
 		};
 		22CDC4A6253A933D00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1335,6 +1331,21 @@
 			isa = PBXTargetDependency;
 			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
 			targetProxy = 22CDC819253AF38400F7D212 /* PBXContainerItemProxy */;
+		};
+		22F6F212253B0BCB00C0C62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
+			targetProxy = 22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */;
+		};
+		22F6F223253B0BD500C0C62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */;
+			targetProxy = 22F6F222253B0BD500C0C62B /* PBXContainerItemProxy */;
+		};
+		22F6F225253B0BEA00C0C62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
+			targetProxy = 22F6F224253B0BEA00C0C62B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
