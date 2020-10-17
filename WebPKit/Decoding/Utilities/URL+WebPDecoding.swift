@@ -42,12 +42,13 @@ extension URL {
     public func isWebP(ignoringFileExtension: Bool = false) -> Bool {
 
         // If desired, check the file format extension
-        if !ignoringFileExtension && self.pathExtension.lowercased() == URL.webpFileExtension {
+        if !ignoringFileExtension, self.pathExtension.lowercased() == URL.webpFileExtension {
             return true
         }
 
         // Load the file as mapped memory, and check the header
-        if let data = try? Data(contentsOf: self, options: .alwaysMapped) {
+        // Ensure we only try this on URLs representing local files on disk.
+        if isFileURL, let data = try? Data(contentsOf: self, options: .alwaysMapped) {
             return data.isWebP
         }
 
