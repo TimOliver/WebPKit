@@ -149,6 +149,13 @@
 			remoteGlobalIDString = 22CDC49F253A933D00F7D212;
 			remoteInfo = "WebPKit-iOS";
 		};
+		22A7B504253AFE440032F825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2254A5912534595300813B84;
+			remoteInfo = "WebPKitExample-iOS";
+		};
 		22CDC4A5253A933D00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
@@ -789,6 +796,7 @@
 			);
 			dependencies = (
 				22A7B443253AFC210032F825 /* PBXTargetDependency */,
+				22A7B505253AFE440032F825 /* PBXTargetDependency */,
 			);
 			name = WebPKitTests;
 			productName = WebPKitTests;
@@ -915,6 +923,7 @@
 					};
 					22A7B43B253AFC210032F825 = {
 						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 2254A5912534595300813B84;
 					};
 					22CDC49F253A933D00F7D212 = {
 						CreatedOnToolsVersion = 12.1;
@@ -1265,6 +1274,11 @@
 			isa = PBXTargetDependency;
 			target = 22CDC49F253A933D00F7D212 /* WebPKit-iOS */;
 			targetProxy = 22A7B442253AFC210032F825 /* PBXContainerItemProxy */;
+		};
+		22A7B505253AFE440032F825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
+			targetProxy = 22A7B504253AFE440032F825 /* PBXContainerItemProxy */;
 		};
 		22CDC4A6253A933D00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1771,6 +1785,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1799,6 +1814,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
