@@ -69,6 +69,10 @@
 		2254A59E2534595300813B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59D2534595300813B84 /* Assets.xcassets */; };
 		2254A5A12534595300813B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59F2534595300813B84 /* LaunchScreen.storyboard */; };
 		2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
+		2263BA4F253C7DCE00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		2263BA5F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBD2538929B004913CF /* AppDelegate.swift */; };
 		2282DDC02538929B004913CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBF2538929B004913CF /* ViewController.swift */; };
 		2282DDC32538929B004913CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC12538929B004913CF /* Main.storyboard */; };
@@ -309,6 +313,7 @@
 		2254A61325348EAD00813B84 /* WebP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebP.xcframework; sourceTree = "<group>"; };
 		2254A62F2534A6E800813B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2254A6412534AACE00813B84 /* WebPKitLogo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = WebPKitLogo.webp; sourceTree = "<group>"; };
+		2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+WebPEncoding.swift"; sourceTree = "<group>"; };
 		2282DDBB2538929B004913CF /* WebPKitExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2282DDBD2538929B004913CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2282DDBF2538929B004913CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -517,6 +522,22 @@
 			path = WebPKitTests;
 			sourceTree = "<group>";
 		};
+		2263BA0F253C7D2300CAC3FE /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				2263BA10253C7D3100CAC3FE /* Core */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		2263BA10253C7D3100CAC3FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		2282DDAD2538913D004913CF /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -641,6 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				2203B9192537548D0069098A /* Decoding */,
+				2263BA0F253C7D2300CAC3FE /* Encoding */,
 				22836081250C94DD00E46CD3 /* Supporting */,
 			);
 			path = WebPKit;
@@ -1246,6 +1268,7 @@
 				22CDC635253A9ADA00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22CDC4D9253A93FD00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC4DA253A93FD00F7D212 /* URL+WebPDecoding.swift in Sources */,
+				2263BA4F253C7DCE00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
 				22CDC4DB253A93FD00F7D212 /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1257,6 +1280,7 @@
 				22CDC52E253A957E00F7D212 /* NSImage+WebPDecoding.swift in Sources */,
 				22CDC52F253A957E00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC530253A957E00F7D212 /* URL+WebPDecoding.swift in Sources */,
+				2263BA5F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
 				22CDC531253A957E00F7D212 /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1268,6 +1292,7 @@
 				22CDC569253A97BB00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22CDC56A253A97BB00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC56B253A97BB00F7D212 /* URL+WebPDecoding.swift in Sources */,
+				2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
 				22CDC56C253A97BB00F7D212 /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1279,6 +1304,7 @@
 				22CDC5AB253A986800F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22CDC5AC253A986800F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC5AD253A986800F7D212 /* URL+WebPDecoding.swift in Sources */,
+				2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
 				22CDC5AE253A986800F7D212 /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
