@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22E0C7432538AE60008F5183"
-               BuildableName = "WebPKitExample-macOS.app"
-               BlueprintName = "WebPKitExample-macOS"
+               BlueprintIdentifier = "2254A5912534595300813B84"
+               BuildableName = "WebPKitExample-iOS.app"
+               BlueprintName = "WebPKitExample-iOS"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22E0C7432538AE60008F5183"
-            BuildableName = "WebPKitExample-macOS.app"
-            BlueprintName = "WebPKitExample-macOS"
+            BlueprintIdentifier = "2254A5912534595300813B84"
+            BuildableName = "WebPKitExample-iOS.app"
+            BlueprintName = "WebPKitExample-iOS"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
