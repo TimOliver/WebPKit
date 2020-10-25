@@ -73,6 +73,8 @@
 		2263BA5F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		2263BAA0253C958C00CAC3FE /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		2263BAC0253C964400CAC3FE /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
 		2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBD2538929B004913CF /* AppDelegate.swift */; };
 		2282DDC02538929B004913CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBF2538929B004913CF /* ViewController.swift */; };
 		2282DDC32538929B004913CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC12538929B004913CF /* Main.storyboard */; };
@@ -80,6 +82,11 @@
 		2282DDC82538929B004913CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC62538929B004913CF /* LaunchScreen.storyboard */; };
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
+		228628F9253F1800003E5B83 /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
+		22862919253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		2286292A253F18DB003E5B83 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
+		22862959253F226C003E5B83 /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
+		22957E0C254450FB005AB133 /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
 		22CDC4A7253A933D00F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; };
 		22CDC4BA253A93C600F7D212 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22CDC4C9253A93D800F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,6 +125,7 @@
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
 		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
+		22E30BCA25455CFF001036F7 /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
 		22F6F235253B0C0A00C0C62B /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22F6F26D253B108B00C0C62B /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4FD253A94A900F7D212 /* WebPKit.framework */; };
 		22F6F2A0253B10A400C0C62B /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
@@ -129,7 +137,6 @@
 		22F6F2B5253B10A800C0C62B /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		22F6F2B6253B10A800C0C62B /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
 		22F6F2B7253B10A800C0C62B /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
-		22F6F2D8253B10F500C0C62B /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +153,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 224DBFFD2538A1D4000A0A36;
 			remoteInfo = "WebPKitExample-watchOS WatchKit Extension";
+		};
+		2263BAFD253C97F200CAC3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2254A5912534595300813B84;
+			remoteInfo = "WebPKitExample-iOS";
+		};
+		2263BB2C253C981000CAC3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
+			remoteInfo = "Download WebP (iOS)";
+		};
+		2263BB2E253C981300CAC3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22CDC49F253A933D00F7D212;
+			remoteInfo = "WebPKit-iOS";
 		};
 		22CDC4A5253A933D00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -231,27 +259,6 @@
 			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
 			remoteInfo = "Download WebP (macOS)";
 		};
-		22F6F26E253B108B00C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC4FC253A94A900F7D212;
-			remoteInfo = "WebPKit-macOS";
-		};
-		22F6F2C7253B10E100C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
-			remoteInfo = "Download WebP (macOS)";
-		};
-		22F6F2E8253B10FC00C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22E0C7432538AE60008F5183;
-			remoteInfo = "WebPKitExample-macOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -314,6 +321,8 @@
 		2254A62F2534A6E800813B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2254A6412534AACE00813B84 /* WebPKitLogo.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = WebPKitLogo.webp; sourceTree = "<group>"; };
 		2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+WebPEncoding.swift"; sourceTree = "<group>"; };
+		2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPEncodingCGImageTests.swift; sourceTree = "<group>"; };
+		2263BABF253C964400CAC3FE /* circle-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-transparent.png"; sourceTree = "<group>"; };
 		2282DDBB2538929B004913CF /* WebPKitExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2282DDBD2538929B004913CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2282DDBF2538929B004913CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -323,7 +332,12 @@
 		2282DDC92538929B004913CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2282DDEE253894B0004913CF /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22836082250C94DD00E46CD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228628F8253F1800003E5B83 /* circle-opaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-opaque.png"; sourceTree = "<group>"; };
+		22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPEncodingCGBitmapInfoTests.swift; sourceTree = "<group>"; };
+		22862929253F18DB003E5B83 /* WebPEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPEncodingTests.swift; sourceTree = "<group>"; };
+		22862958253F226C003E5B83 /* circle-opaque.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "circle-opaque.jpg"; sourceTree = "<group>"; };
 		228E7D70250C85E500C6B140 /* WebPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPKit.h; sourceTree = "<group>"; };
+		22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-grayscale-transparent.png"; sourceTree = "<group>"; };
 		22985952253A0C6700D904A4 /* rect-horizontal.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-horizontal.webp"; sourceTree = "<group>"; };
 		22985953253A0C6700D904A4 /* rect-vertical.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-vertical.webp"; sourceTree = "<group>"; };
 		22CDC4A0253A933D00F7D212 /* WebPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +357,7 @@
 		22E0C7532538AE61008F5183 /* WebPKitExample_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPKitExample_macOS.entitlements; sourceTree = "<group>"; };
 		22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		22E0C7B42538B197008F5183 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		22E30BC925455CFF001036F7 /* circle-index-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-index-transparent.png"; sourceTree = "<group>"; };
 		22F6F268253B108B00C0C62B /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F6F362253B19C800C0C62B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		22F6F363253B19DE00C0C62B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -427,7 +442,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F6F26D253B108B00C0C62B /* WebPKit.framework in Frameworks */,
-				22F6F2D8253B10F500C0C62B /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +474,11 @@
 		2203B92725375B9E0069098A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				22E30BC925455CFF001036F7 /* circle-index-transparent.png */,
+				22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */,
+				22862958253F226C003E5B83 /* circle-opaque.jpg */,
+				2263BABF253C964400CAC3FE /* circle-transparent.png */,
+				228628F8253F1800003E5B83 /* circle-opaque.png */,
 				22985952253A0C6700D904A4 /* rect-horizontal.webp */,
 				22985953253A0C6700D904A4 /* rect-vertical.webp */,
 				2203B92825375B9E0069098A /* logo-lossy.WEBP */,
@@ -516,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				2203B9202537598C0069098A /* Decoding */,
+				2263BA9E253C957000CAC3FE /* Encoding */,
 				2203B92725375B9E0069098A /* Resources */,
 				2254A62F2534A6E800813B84 /* Info.plist */,
 			);
@@ -526,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				2263BA10253C7D3100CAC3FE /* Core */,
+				22862897253F12D6003E5B83 /* Utilities */,
 			);
 			path = Encoding;
 			sourceTree = "<group>";
@@ -536,6 +557,16 @@
 				2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2263BA9E253C957000CAC3FE /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				22862929253F18DB003E5B83 /* WebPEncodingTests.swift */,
+				2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */,
+				22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 		2282DDAD2538913D004913CF /* Supporting */ = {
@@ -621,6 +652,13 @@
 				22836082250C94DD00E46CD3 /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		22862897253F12D6003E5B83 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		228E7D63250C85E500C6B140 = {
@@ -958,9 +996,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				22F6F2C8253B10E100C0C62B /* PBXTargetDependency */,
-				22F6F26F253B108B00C0C62B /* PBXTargetDependency */,
-				22F6F2E9253B10FC00C0C62B /* PBXTargetDependency */,
+				2263BB2D253C981000CAC3FE /* PBXTargetDependency */,
+				2263BB2F253C981300CAC3FE /* PBXTargetDependency */,
+				2263BAFE253C97F200CAC3FE /* PBXTargetDependency */,
 			);
 			name = WebPKitTests;
 			productName = WebPKitTests;
@@ -1020,6 +1058,7 @@
 					};
 					22F6F267253B108B00C0C62B = {
 						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 2254A5912534595300813B84;
 					};
 				};
 			};
@@ -1145,9 +1184,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22957E0C254450FB005AB133 /* circle-grayscale-transparent.png in Resources */,
+				2263BAC0253C964400CAC3FE /* circle-transparent.png in Resources */,
 				22F6F2B6253B10A800C0C62B /* logo-lossy.WEBP in Resources */,
+				228628F9253F1800003E5B83 /* circle-opaque.png in Resources */,
 				22F6F2B7253B10A800C0C62B /* rect-horizontal.webp in Resources */,
 				22F6F2B4253B10A800C0C62B /* logo-lossless.webp in Resources */,
+				22E30BCA25455CFF001036F7 /* circle-index-transparent.png in Resources */,
+				22862959253F226C003E5B83 /* circle-opaque.jpg in Resources */,
 				22F6F2B5253B10A800C0C62B /* rect-vertical.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1324,8 +1368,11 @@
 			files = (
 				22F6F2A1253B10A400C0C62B /* WebPDecodingTests.swift in Sources */,
 				22F6F2A0253B10A400C0C62B /* WebPDecodingUIImageTests.swift in Sources */,
+				2286292A253F18DB003E5B83 /* WebPEncodingTests.swift in Sources */,
+				2263BAA0253C958C00CAC3FE /* WebPEncodingCGImageTests.swift in Sources */,
 				22F6F2A3253B10A400C0C62B /* WebPDecodingDataTests.swift in Sources */,
 				22F6F2A4253B10A400C0C62B /* WebPDecodingCGImageTests.swift in Sources */,
+				22862919253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
 				22F6F2A2253B10A400C0C62B /* WebPDecodingURLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1342,6 +1389,21 @@
 			isa = PBXTargetDependency;
 			target = 224DBFFD2538A1D4000A0A36 /* WebPKitExample-watchOS-Extension */;
 			targetProxy = 224DC0002538A1D4000A0A36 /* PBXContainerItemProxy */;
+		};
+		2263BAFE253C97F200CAC3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
+			targetProxy = 2263BAFD253C97F200CAC3FE /* PBXContainerItemProxy */;
+		};
+		2263BB2D253C981000CAC3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
+			targetProxy = 2263BB2C253C981000CAC3FE /* PBXContainerItemProxy */;
+		};
+		2263BB2F253C981300CAC3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22CDC49F253A933D00F7D212 /* WebPKit-iOS */;
+			targetProxy = 2263BB2E253C981300CAC3FE /* PBXContainerItemProxy */;
 		};
 		22CDC4A6253A933D00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1402,21 +1464,6 @@
 			isa = PBXTargetDependency;
 			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
 			targetProxy = 22F6F245253B0DEF00C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F26F253B108B00C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC4FC253A94A900F7D212 /* WebPKit-macOS */;
-			targetProxy = 22F6F26E253B108B00C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F2C8253B10E100C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
-			targetProxy = 22F6F2C7253B10E100C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F2E9253B10FC00C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22E0C7432538AE60008F5183 /* WebPKitExample-macOS */;
-			targetProxy = 22F6F2E8253B10FC00C0C62B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1874,6 +1921,7 @@
 				);
 				INFOPLIST_FILE = WebPKit/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1909,6 +1957,7 @@
 				);
 				INFOPLIST_FILE = WebPKit/Supporting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2284,10 +2333,11 @@
 		22F6F271253B108B00C0C62B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPKitExample-macOS",
@@ -2300,19 +2350,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
 			};
 			name = Debug;
 		};
 		22F6F272253B108B00C0C62B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPKitExample-macOS",
@@ -2325,8 +2378,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
 			};
 			name = Release;
 		};
