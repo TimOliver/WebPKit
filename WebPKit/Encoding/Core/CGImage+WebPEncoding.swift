@@ -145,8 +145,8 @@ extension CGImage {
             kCVImageBufferColorPrimariesKey: kCVImageBufferColorPrimaries_ITU_R_709_2,
             kCVImageBufferTransferFunctionKey: kCVImageBufferTransferFunction_ITU_R_709_2,
             kCVImageBufferICCProfileKey: CGColorSpace(name: CGColorSpace.itur_709)!.iccData!,
-            kCVImageBufferChromaLocationTopFieldKey: kCVImageBufferChromaLocation_Center,
-            kCVImageBufferAlphaChannelIsOpaque: true,
+            kCVImageBufferChromaLocationTopFieldKey: kCVImageBufferChromaLocation_DV420,
+            //kCVImageBufferAlphaChannelIsOpaque: false,
         ]
         CVBufferSetAttachments(cvPixelBuffer!, pbAttachments as CFDictionary, CVAttachmentMode.shouldPropagate)
 
@@ -155,7 +155,7 @@ extension CGImage {
         rgbCGImgFormat.bitsPerComponent = UInt32(bitsPerComponent)
         rgbCGImgFormat.bitsPerPixel = UInt32(bitsPerPixel)
         rgbCGImgFormat.bitmapInfo = bitmapInfo
-        rgbCGImgFormat.colorSpace = Unmanaged.passRetained(colorSpace!)
+        rgbCGImgFormat.colorSpace = Unmanaged.passUnretained(colorSpace!)
 
         // Set the default background color to be black
         var backgroundColor: CGFloat = 0.0
@@ -190,7 +190,7 @@ extension CGImage {
         alphaBuffer.data = UnsafeMutableRawPointer.allocate(byteCount: width * height, alignment: 0)
         alphaBuffer.width = vImagePixelCount(width)
         alphaBuffer.height = vImagePixelCount(height)
-        alphaBuffer.rowBytes = bytesPerRow
+        alphaBuffer.rowBytes = bytesPerRow / bytesPerPixel
 
         // Copy the pixel data to the new buffer
         withUnsafeBytes(of: &alphaBuffer) { alphaPointer in
