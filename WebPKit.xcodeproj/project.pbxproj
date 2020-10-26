@@ -119,10 +119,10 @@
 		22CDC5F9253A99A800F7D212 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC5F8253A99A800F7D212 /* UIKit.framework */; };
 		22CDC5FB253A99B100F7D212 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC5FA253A99B100F7D212 /* WatchKit.framework */; };
 		22CDC635253A9ADA00F7D212 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		22D98E7E25472B9F00D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */; };
-		22D98E8E25472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */; };
-		22D98E8F25472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */; };
-		22D98E9025472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */; };
+		22D98E7E25472B9F00D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22D98E8E25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22D98E8F25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22D98E9025472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7462538AE60008F5183 /* AppDelegate.swift */; };
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
@@ -352,7 +352,7 @@
 		22CDC5F6253A99A200F7D212 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		22CDC5F8253A99A800F7D212 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22CDC5FA253A99B100F7D212 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
-		22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGBitmapInfo+WebPEncoding.swift"; sourceTree = "<group>"; };
+		22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+PixelFormat.swift"; sourceTree = "<group>"; };
 		22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7462538AE60008F5183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E0C7482538AE60008F5183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -662,7 +662,7 @@
 		22862897253F12D6003E5B83 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				22D98E5E2547240500D2D4EE /* CGBitmapInfo+WebPEncoding.swift */,
+				22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1316,7 +1316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC635253A9ADA00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
-				22D98E7E25472B9F00D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */,
+				22D98E7E25472B9F00D2D4EE /* CGImage+PixelFormat.swift in Sources */,
 				22CDC4D9253A93FD00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC4DA253A93FD00F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA4F253C7DCE00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1329,7 +1329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC52E253A957E00F7D212 /* NSImage+WebPDecoding.swift in Sources */,
-				22D98E8E25472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */,
+				22D98E8E25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
 				22CDC52F253A957E00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC530253A957E00F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA5F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1342,7 +1342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC569253A97BB00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
-				22D98E9025472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */,
+				22D98E9025472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
 				22CDC56A253A97BB00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC56B253A97BB00F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1355,7 +1355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC5AB253A986800F7D212 /* UIImage+WebPDecoding.swift in Sources */,
-				22D98E8F25472BA000D2D4EE /* CGBitmapInfo+WebPEncoding.swift in Sources */,
+				22D98E8F25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
 				22CDC5AC253A986800F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC5AD253A986800F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
