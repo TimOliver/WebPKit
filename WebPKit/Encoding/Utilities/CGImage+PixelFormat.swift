@@ -31,14 +31,8 @@ extension CGImage {
         // See how many colors is encoded in this image
         guard let numberOfColorComponents = colorSpace?.numberOfComponents else { return nil }
 
-        // Check if this image only has 1 component (Either grayscale or alpha)
-        if numberOfColorComponents == 1 { return hasAlpha ? .grayscaleAlpha : .grayscale }
-
-        // Anything other than 3 colors is unsupported at this time
-        if numberOfColorComponents != 3 { return nil }
-
         // HasAlpha - if it has any usable alpha data (eg, skipped alpha channels don't count)
-        let hasAlpha: Bool = self.hasAlpha
+        let hasAlpha: Bool = !(alphaInfo == .none || alphaInfo == .noneSkipFirst || alphaInfo == .noneSkipLast)
 
         // AlphaFirst – the alpha channel is next to the red channel, argb and bgra are both alpha first formats.
         let alphaFirst: Bool = alphaInfo == .premultipliedFirst || alphaInfo == .first || alphaInfo == .noneSkipFirst
@@ -51,6 +45,12 @@ extension CGImage {
         // BigEndian – red comes before blue, argb and rgba are big endian formats.
         // Big endian ordered pixels are RGB (XRGB, RGBX, ARGB, RGBA, RGB).
         let endianLittle: Bool = bitmapInfo.contains(.byteOrder32Little)
+
+        // Check if this image only has 1 component (Either grayscale or alpha)
+        if numberOfColorComponents == 1 { return hasAlpha ? .grayscaleAlpha : .grayscale }
+
+        // Anything other than 3 colors is unsupported at this time
+        if numberOfColorComponents != 3 { return nil }
 
         // Determine the pixel format of this image, with alpha
         if hasAlpha == false {
@@ -67,16 +67,5 @@ extension CGImage {
 
         // Unknown format
         return nil
-    }
-
-    /// Returns whether this image includes an alpha channel
-    public var hasAlpha: Bool {
-        // Check no channel parameters
-        if alphaInfo == .none ||
-            alphaInfo == .noneSkipFirst ||
-            alphaInfo == .noneSkipLast { return false }
-
-        // Has an alpha channel
-        return true
     }
 }
