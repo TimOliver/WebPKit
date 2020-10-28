@@ -14,7 +14,7 @@ import WebP
 
 /// Presets that can be used to help
 /// configure how an image is encoded to WebP
-enum WebPEncodePreset: UInt32 {
+public enum WebPEncodePreset: UInt32 {
     case `default`=0  // The default preset
     case picture      // Digital pictures, like portraits, or inner shots
     case photo        // Outdoor photographs, with natural lighting
@@ -23,6 +23,8 @@ enum WebPEncodePreset: UInt32 {
     case text
 }
 
+/// The list of possible errors that can occur
+/// when trying to encode to WebP
 public enum WebPEncodingError: UInt32, Error {
     case outOfMemory=0
     case bitstreamOutOfMemory
@@ -47,71 +49,100 @@ public enum WebPEncodingError: UInt32, Error {
 /// to write WebP images
 extension CGImage {
 
-    public func webpData() throws -> Data {
+    /// Returns the image as a lossy WebP file.
+    /// - Parameters:
+    ///   - preset: A preset that helps configure the encoder for the type of picture.
+    ///   - quality: The encoding quality of the picture. (Between 0-100)
+    /// - Returns: An encoded WebP image file
+    public func webpData(preset: WebPEncodePreset = .default, quality: Float = 100) throws -> Data {
 
-        // Create an encoding config
+        // Create and initialize an encoding config
         var config = WebPConfig()
-
-        // Initialize the config
         if WebPConfigInit(&config) == 0 {
             throw WebPEncodingError.initConfigFailed
         }
 
-        // Configure the preset with a preset and target quality
-        if WebPConfigPreset(&config, WebPPreset(rawValue: WebPEncodePreset.default.rawValue), 100) == 0 {
+        // Set up the config with a preset and target quality
+        if WebPConfigPreset(&config, WebPPreset(rawValue: preset.rawValue), quality) == 0 {
             throw WebPEncodingError.invalidConfiguration
         }
 
-//        if WebPConfigLosslessPreset(&config, 9) == 0 {
-//            throw WebPEncodingError.initConfigFailed
-//        }
+        return try webpData(config: &config)
+    }
 
-        // Verify the config
+    /// Returns the image as a lossless WebP file.
+    /// - Parameters:
+    ///   - losslessLevel: The desired efficiency level of the image encoding.
+    ///                     Between 0 (fastest, lowest compression) and 9 (slower, best compression).
+    ///                     A good default level is '6', providing a fair tradeoff between compression
+    ///                     speed and final compressed size.
+    /// - Returns: An encoded WebP image file
+    public func webpLosslessData(level: Int = 6) throws -> Data {
+
+        // Create and initialize an encoding config
+        var config = WebPConfig()
+        if WebPConfigInit(&config) == 0 {
+            throw WebPEncodingError.initConfigFailed
+        }
+
+        // Set up the config as a lossless image with the provided level
+        if WebPConfigLosslessPreset(&config, Int32(level)) == 0 {
+            throw WebPEncodingError.initConfigFailed
+        }
+
+        return try webpData(config: &config)
+    }
+
+    /// Returns the image as a WebP file, as described in the provided config object.
+    /// - Parameter config: A properly configured WebPConfig object to control the encoding.
+    /// - Returns: An encoded WebP image file
+    private func webpData(config: inout WebPConfig) throws -> Data {
+
+        // Verify the configuration isn't invalid
         if WebPValidateConfig(&config) == 0 { throw WebPEncodingError.invalidConfiguration }
 
-        // Create a picture object to encode
+        // Create a picture object to hold the image data
         var picture = WebPPicture()
         if WebPPictureInit(&picture) == 0 { throw WebPEncodingError.initPictureFailed }
+        defer { WebPPictureFree(&picture) }
 
         // Configure the picture with this image size
-        picture.use_argb = 1
         picture.width = Int32(width)
         picture.height = Int32(height)
 
         // Try to use WebP's capabilities to import our pixel data
-        // into the picture struct
+        // into the picture struct.
         if !importPixelData(into: &picture) {
-            // If the data was in a color format WebP can't convert,
-            // perform our own color conversion and then import the converted data
+            // If the data was in a color format WebP can't convert as-is,
+            // perform our own color conversion and then import the converted data.
             if !importConvertedPixelData(into: &picture) {
                 throw WebPEncodingError.invalidPictureData
             }
         }
 
         // Create a memory writer as a destination for the encoded data
-        var memoryWriter = WebPMemoryWriter()
-        WebPMemoryWriterInit(&memoryWriter)
+        var writer = WebPMemoryWriter()
+        WebPMemoryWriterInit(&writer)
         picture.writer = WebPMemoryWrite
-        withUnsafePointer(to: &memoryWriter) { ptr in
+        withUnsafePointer(to: &writer) { ptr in
             picture.custom_ptr = UnsafeMutableRawPointer(mutating: ptr)
         }
 
-        // Perform the encoding
-        let result = WebPEncode(&config, &picture)
-
-        // Free up the picture
-        WebPPictureFree(&picture)
-
-        // Report if the conversion failed
-        if result != 1 {
+        // Perform the conversion to WebP
+        if WebPEncode(&config, &picture) == 0 {
             throw WebPEncodingError(rawValue: picture.error_code.rawValue) ??
-                    WebPEncodingError.imageRenderFailed
+                WebPEncodingError.imageRenderFailed
         }
 
-        // Return the data
-        return Data(bytes: memoryWriter.mem, count: memoryWriter.size)
+        // Wrap the data in a Data object that will be in
+        // charge of freeing the data when done.
+        return Data(bytesNoCopy: writer.mem,
+                    count: writer.size,
+                    deallocator: .free)
     }
 }
+
+// MARK: Private Members
 
 private extension CGImage {
 
@@ -151,7 +182,7 @@ private extension CGImage {
     }
 
     // If the image was in an unsupported format that WebP can't presently work with,
-    // convert it to RGB(A) and then import it.
+    // perform a color conversion in Core Graphics, and then import the converted data.
     func importConvertedPixelData(into picture: inout WebPPicture) -> Bool {
         // Capture whether we need to allocate for an alpha channel
         let hasAlpha = !(alphaInfo == .none || alphaInfo == .noneSkipFirst || alphaInfo == .noneSkipLast)
@@ -183,11 +214,12 @@ private extension CGImage {
         // Draw the image into this new context
         context.draw(self, in: CGRect(origin: .zero, size: CGSize(width: width, height: height)))
 
-        // Import the image into the WebP struct
+        // Import the image into the WebP Picture struct
         if hasAlpha {
             return WebPPictureImportRGBA(&picture, pixels, Int32(bytesPerRow)) != 0
+        } else {
+            return WebPPictureImportRGBX(&picture, pixels, Int32(bytesPerRow)) != 0
         }
-        return WebPPictureImportRGBX(&picture, pixels, Int32(bytesPerRow)) != 0
     }
 }
 
