@@ -113,6 +113,15 @@ extension CGImage {
         // Check the header before proceeding to ensure this is a valid WebP file
         guard data.isWebP else { throw WebPDecodingError.invalidHeader }
 
+        // Get properties of WebP image so we can
+        // configure the decoding as needed
+        var features = WebPBitstreamFeatures()
+        var status = data.withUnsafeBytes { ptr -> VP8StatusCode in
+            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
+            return WebPGetFeatures(boundPtr, ptr.count, &features)
+        }
+        guard status == VP8_STATUS_OK else { throw WebPDecodingError(rawValue: status.rawValue)! }
+
         // Init the config
         var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
@@ -150,7 +159,7 @@ extension CGImage {
         }
 
         // Decode the image
-        let status = data.withUnsafeBytes { ptr -> VP8StatusCode in
+        status = data.withUnsafeBytes { ptr -> VP8StatusCode in
             guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
             return WebPDecode(boundPtr, ptr.count, &config)
         }
