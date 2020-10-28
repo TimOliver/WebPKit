@@ -53,9 +53,7 @@ extension CGImage {
         if numberOfColorComponents != 3 { return nil }
 
         // Determine the pixel format of this image, with alpha
-        if hasAlpha == false {
-            return endianLittle ? .bgr : .rgb
-        } else if alphaFirst && endianLittle {
+        if alphaFirst && endianLittle {
             return hasAlpha ? .bgra : .bgrx
         } else if alphaFirst {
             return .argb
@@ -63,6 +61,8 @@ extension CGImage {
             return .abgr
         } else if alphaLast {
             return hasAlpha ? .rgba : .rgbx
+        } else if hasAlpha == false {
+            return endianLittle ? .bgr : .rgb
         }
 
         // The format isn't recognized
