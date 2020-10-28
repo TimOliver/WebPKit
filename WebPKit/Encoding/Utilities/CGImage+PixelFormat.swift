@@ -65,7 +65,7 @@ extension CGImage {
             return hasAlpha ? .rgba : .rgbx
         }
 
-        // Unknown format
+        // The format isn't recognized
         return nil
     }
 }

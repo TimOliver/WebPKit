@@ -17,13 +17,4 @@ class WebPEncodingCGBitmapInfoTests: WebPEncodingTests {
         XCTAssertEqual(transparentPNGImage.pixelFormat, .rgba)
         XCTAssertEqual(indexedTransparentPNGImage.pixelFormat, .rgba)
     }
-
-    // Test if the images alpha properties are correct
-    func testAlphaImages() {
-        XCTAssertFalse(opaquePNGImage.hasAlpha)
-        XCTAssertFalse(opaqueJPEGImage.hasAlpha)
-        XCTAssertTrue(transparentPNGImage.hasAlpha)
-        XCTAssertTrue(grayscaleTransparentPNGImage.hasAlpha)
-        XCTAssertTrue(indexedTransparentPNGImage.hasAlpha)
-    }
 }
