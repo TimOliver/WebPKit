@@ -67,6 +67,7 @@ extension CGImage {
             throw WebPEncodingError.invalidConfiguration
         }
 
+        // Compress the image
         return try webpData(config: &config)
     }
 
@@ -90,6 +91,7 @@ extension CGImage {
             throw WebPEncodingError.initConfigFailed
         }
 
+        // Compress the image
         return try webpData(config: &config)
     }
 
@@ -207,9 +209,7 @@ private extension CGImage {
                                       bitsPerComponent: 8,
                                       bytesPerRow: bytesPerRow,
                                       space: colorSpace,
-                                      bitmapInfo: bitmapInfo) else {
-            return false
-        }
+                                      bitmapInfo: bitmapInfo) else { return false }
 
         // Draw the image into this new context
         context.draw(self, in: CGRect(origin: .zero, size: CGSize(width: width, height: height)))
