@@ -72,6 +72,21 @@
 		222D47AA254C5E92009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		222D47AB254C5E92009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
 		222D47AC254C5E92009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
+		222D47E3254C6032009F8DDB /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		222D4808254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		222D4809254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
+		222D480A254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		222D480B254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		222D480C254C608B009F8DDB /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		222D480D254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		222D480E254C608B009F8DDB /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
+		222D4821254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		222D4822254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
+		222D4823254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		222D4824254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		222D4825254C608B009F8DDB /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		222D4826254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		222D4827254C608B009F8DDB /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -140,24 +155,9 @@
 		22DE9511254C5CBC00BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		22DE9512254C5CBC00BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22DE9513254C5CBC00BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		22DE9526254C5CC300BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
-		22DE953C254C5CD500BA6A93 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
-		22DE953D254C5CD500BA6A93 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		22DE953E254C5CD500BA6A93 /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		22DE953F254C5CD500BA6A93 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		22DE9540254C5CD500BA6A93 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		22DE9541254C5CD500BA6A93 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		22DE9542254C5CD500BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		22DE9556254C5CDD00BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		22DE9557254C5CDD00BA6A93 /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		22DE9558254C5CDD00BA6A93 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		22DE9559254C5CDD00BA6A93 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		22DE955A254C5CDD00BA6A93 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		22DE955B254C5CDD00BA6A93 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		22DE955C254C5CDD00BA6A93 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
 		22DE956F254C5CDE00BA6A93 /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
 		22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
@@ -1600,20 +1600,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE9542254C5CD500BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
+				222D4827254C608B009F8DDB /* WebPEncodingTests.swift in Sources */,
+				222D4825254C608B009F8DDB /* WebPDecodingTests.swift in Sources */,
 				22DE95F8254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
-				22DE953D254C5CD500BA6A93 /* WebPDecodingTests.swift in Sources */,
+				222D4823254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
 				22DE9513254C5CBC00BA6A93 /* UIImage+WebPDecoding.swift in Sources */,
 				22DE9511254C5CBC00BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
 				22DE956F254C5CDE00BA6A93 /* WebPDecodingUIImageTests.swift in Sources */,
 				22DE95F9254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
-				22DE953C254C5CD500BA6A93 /* WebPEncodingTests.swift in Sources */,
+				222D4822254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */,
+				222D4826254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */,
+				222D4824254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */,
 				22DE9512254C5CBC00BA6A93 /* CGImage+PixelFormat.swift in Sources */,
-				22DE9540254C5CD500BA6A93 /* WebPDecodingDataTests.swift in Sources */,
+				222D4821254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */,
 				22DE9510254C5CBC00BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
-				22DE953F254C5CD500BA6A93 /* WebPDecodingURLTests.swift in Sources */,
-				22DE9541254C5CD500BA6A93 /* WebPDecodingCGImageTests.swift in Sources */,
-				22DE953E254C5CD500BA6A93 /* WebPEncodingCGImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1621,19 +1621,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE955B254C5CDD00BA6A93 /* WebPDecodingDataTests.swift in Sources */,
-				22DE955A254C5CDD00BA6A93 /* WebPDecodingURLTests.swift in Sources */,
-				22DE9558254C5CDD00BA6A93 /* WebPDecodingTests.swift in Sources */,
-				22DE9526254C5CC300BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
+				222D4808254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */,
 				22DE95E5254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
+				222D480D254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */,
+				222D480E254C608B009F8DDB /* WebPEncodingTests.swift in Sources */,
 				22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */,
-				22DE955C254C5CDD00BA6A93 /* WebPEncodingTests.swift in Sources */,
+				222D480C254C608B009F8DDB /* WebPDecodingTests.swift in Sources */,
 				22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
 				22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */,
-				22DE9556254C5CDD00BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
-				22DE9557254C5CDD00BA6A93 /* WebPEncodingCGImageTests.swift in Sources */,
+				222D480A254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
+				222D47E3254C6032009F8DDB /* CGImage+WebPDecoding.swift in Sources */,
+				222D4809254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */,
+				222D480B254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */,
 				22DE95E4254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
-				22DE9559254C5CDD00BA6A93 /* WebPDecodingCGImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
