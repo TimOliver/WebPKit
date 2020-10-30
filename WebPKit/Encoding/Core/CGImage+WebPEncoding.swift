@@ -35,7 +35,7 @@ public enum WebPEncodePreset: UInt32 {
     case photo        // Outdoor photographs, with natural lighting
     case drawing      // Hand or line drawing, with high-contrast details
     case icon         // Small-sized colorful images
-    case text
+    case text         // Text based images
 }
 
 /// The list of possible errors that can occur
@@ -174,7 +174,7 @@ private extension CGImage {
         // do a potentially heavy copy operation.
         let availablePixelFormats: [PixelFormat] = [.rgb, .rgba, .rgbx, .bgra, .bgrx]
         guard let pixelFormat = pixelFormat,
-              availablePixelFormats.contains(pixelFormat) else { return false}
+              availablePixelFormats.contains(pixelFormat) else { return false }
 
         // Now we've confirmed it's in a format we can support, fetch the data
         guard let data = dataProvider?.data else { return false }
