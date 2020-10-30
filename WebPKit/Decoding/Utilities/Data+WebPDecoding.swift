@@ -24,11 +24,11 @@ import Foundation
 
 /// Extends the Foundation Data class with
 /// functionality for identifying WebP formatted data.
-extension Data {
+public extension Data {
 
     /// Checks the contents of the data to see if the
     /// header matches that of the WebP file format.
-    public var isWebP: Bool {
+    var isWebP: Bool {
         guard self.count >= 12 else {
             return false
         }
