@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import WebPKit
 
 class WebPEncodingCGImageTests: WebPEncodingTests {
 

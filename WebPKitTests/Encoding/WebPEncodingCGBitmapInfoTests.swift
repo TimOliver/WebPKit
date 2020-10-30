@@ -6,14 +6,13 @@
 //
 
 import XCTest
-import WebPKit
 
 class WebPEncodingCGBitmapInfoTests: WebPEncodingTests {
 
     func testRGBAImages() throws {
         XCTAssertEqual(grayscaleTransparentPNGImage.pixelFormat, .grayscaleAlpha)
-        XCTAssertEqual(opaqueJPEGImage.pixelFormat, .rgb)
-        XCTAssertEqual(opaquePNGImage.pixelFormat, .rgb)
+        XCTAssertEqual(opaqueJPEGImage.pixelFormat, .rgbx)
+        XCTAssertEqual(opaquePNGImage.pixelFormat, .rgbx)
         XCTAssertEqual(transparentPNGImage.pixelFormat, .rgba)
         XCTAssertEqual(indexedTransparentPNGImage.pixelFormat, .rgba)
     }

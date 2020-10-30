@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1220"
+   LastUpgradeVersion = "1210"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2254A5912534595300813B84"
-               BuildableName = "WebPKitExample-iOS.app"
-               BlueprintName = "WebPKitExample-iOS"
+               BlueprintIdentifier = "22DE93E5254C5AE900BA6A93"
+               BuildableName = "WebPKitTestHost-macOS.app"
+               BlueprintName = "WebPKitTestHost-macOS"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22DE946A254C5BC200BA6A93"
-               BuildableName = "WebPKitTests-iOS.xctest"
-               BlueprintName = "WebPKitTests-iOS"
+               BlueprintIdentifier = "22DE94AB254C5C1500BA6A93"
+               BuildableName = "WebPKitTests-macOS.xctest"
+               BlueprintName = "WebPKitTests-macOS"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -54,9 +54,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2254A5912534595300813B84"
-            BuildableName = "WebPKitExample-iOS.app"
-            BlueprintName = "WebPKitExample-iOS"
+            BlueprintIdentifier = "22DE93E5254C5AE900BA6A93"
+            BuildableName = "WebPKitTestHost-macOS.app"
+            BlueprintName = "WebPKitTestHost-macOS"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -71,9 +71,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2254A5912534595300813B84"
-            BuildableName = "WebPKitExample-iOS.app"
-            BlueprintName = "WebPKitExample-iOS"
+            BlueprintIdentifier = "22DE93E5254C5AE900BA6A93"
+            BuildableName = "WebPKitTestHost-macOS.app"
+            BlueprintName = "WebPKitTestHost-macOS"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
