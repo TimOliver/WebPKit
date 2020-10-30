@@ -71,23 +71,6 @@
 		224BB95E254C6CB5004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		224BB95F254C6CB5004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		224BB960254C6CB5004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
-		224BB99E254C6CD3004F8E5F /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
-		224BB99F254C6CD3004F8E5F /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
-		224BB9A0254C6CD3004F8E5F /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
-		224BB9A1254C6CD3004F8E5F /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
-		224BB9A2254C6CD3004F8E5F /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
-		224BB9A3254C6CD3004F8E5F /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
-		224BB9A4254C6CD3004F8E5F /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
-		224BB9A5254C6CD3004F8E5F /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
-		224BB9A6254C6CD3004F8E5F /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
-		224BBA2A254C6DA3004F8E5F /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		224BBA2B254C6DA3004F8E5F /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		224BBA2C254C6DA3004F8E5F /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		224BBA2D254C6DA3004F8E5F /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		224BBA2E254C6DA3004F8E5F /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
-		224BBA2F254C6DA3004F8E5F /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
-		224BBA30254C6DA3004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		224BBA31254C6DA3004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
 		224BBA56254C6DC6004F8E5F /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
 		224BBA57254C6DC6004F8E5F /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
 		224BBA58254C6DC6004F8E5F /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
@@ -97,6 +80,26 @@
 		224BBA5C254C6DC6004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
 		224BBA5D254C6DC6004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
 		224BBADD254C7033004F8E5F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
+		224BBAF0254C70F5004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		224BBAF1254C70F5004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		224BBAF2254C70F5004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		224BBAF3254C70F5004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		224BBAF4254C70F5004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		224BBB1E254C70F9004F8E5F /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		224BBC83254C7452004F8E5F /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		224BBC84254C7452004F8E5F /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
+		224BBC85254C7452004F8E5F /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		224BBC86254C7452004F8E5F /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		224BBC87254C7452004F8E5F /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
+		224BBC88254C7452004F8E5F /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
+		224BBC89254C7452004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		224BBC8A254C7452004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		224BBC9D254C7469004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		224BBCB0254C746D004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		224BBCC3254C7470004F8E5F /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		224BBCD6254C7476004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		224BBCD7254C7476004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		224BBCD8254C7476004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -1274,15 +1277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224BB99E254C6CD3004F8E5F /* circle-index-transparent.png in Resources */,
-				224BB99F254C6CD3004F8E5F /* circle-grayscale-transparent.png in Resources */,
-				224BB9A0254C6CD3004F8E5F /* circle-opaque.jpg in Resources */,
-				224BB9A1254C6CD3004F8E5F /* circle-transparent.png in Resources */,
-				224BB9A2254C6CD3004F8E5F /* circle-opaque.png in Resources */,
-				224BB9A3254C6CD3004F8E5F /* rect-horizontal.webp in Resources */,
-				224BB9A4254C6CD3004F8E5F /* rect-vertical.webp in Resources */,
-				224BB9A5254C6CD3004F8E5F /* logo-lossy.WEBP in Resources */,
-				224BB9A6254C6CD3004F8E5F /* logo-lossless.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1494,14 +1488,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224BBA2A254C6DA3004F8E5F /* WebPDecodingTests.swift in Sources */,
-				224BBA2B254C6DA3004F8E5F /* WebPDecodingURLTests.swift in Sources */,
-				224BBA2C254C6DA3004F8E5F /* WebPDecodingDataTests.swift in Sources */,
-				224BBA2D254C6DA3004F8E5F /* WebPDecodingCGImageTests.swift in Sources */,
-				224BBA2E254C6DA3004F8E5F /* WebPDecodingUIImageTests.swift in Sources */,
-				224BBA2F254C6DA3004F8E5F /* WebPEncodingTests.swift in Sources */,
-				224BBA30254C6DA3004F8E5F /* WebPEncodingCGImageTests.swift in Sources */,
-				224BBA31254C6DA3004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
+				224BBCD8254C7476004F8E5F /* URL+WebPDecoding.swift in Sources */,
+				224BBCB0254C746D004F8E5F /* Data+WebPDecoding.swift in Sources */,
+				224BBCD7254C7476004F8E5F /* CGImage+WebPEncoding.swift in Sources */,
+				224BBC83254C7452004F8E5F /* WebPDecodingTests.swift in Sources */,
+				224BBC84254C7452004F8E5F /* WebPDecodingURLTests.swift in Sources */,
+				224BBC85254C7452004F8E5F /* WebPDecodingDataTests.swift in Sources */,
+				224BBCC3254C7470004F8E5F /* NSImage+WebPDecoding.swift in Sources */,
+				224BBC86254C7452004F8E5F /* WebPDecodingCGImageTests.swift in Sources */,
+				224BBC87254C7452004F8E5F /* WebPDecodingUIImageTests.swift in Sources */,
+				224BBCD6254C7476004F8E5F /* CGImage+PixelFormat.swift in Sources */,
+				224BBC9D254C7469004F8E5F /* CGImage+WebPDecoding.swift in Sources */,
+				224BBC88254C7452004F8E5F /* WebPEncodingTests.swift in Sources */,
+				224BBC89254C7452004F8E5F /* WebPEncodingCGImageTests.swift in Sources */,
+				224BBC8A254C7452004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1604,11 +1604,17 @@
 			files = (
 				224BBA56254C6DC6004F8E5F /* WebPDecodingTests.swift in Sources */,
 				224BBA57254C6DC6004F8E5F /* WebPDecodingURLTests.swift in Sources */,
+				224BBAF4254C70F5004F8E5F /* CGImage+PixelFormat.swift in Sources */,
 				224BBA58254C6DC6004F8E5F /* WebPDecodingDataTests.swift in Sources */,
 				224BBA59254C6DC6004F8E5F /* WebPDecodingCGImageTests.swift in Sources */,
+				224BBAF0254C70F5004F8E5F /* URL+WebPDecoding.swift in Sources */,
+				224BBAF2254C70F5004F8E5F /* Data+WebPDecoding.swift in Sources */,
 				224BBA5A254C6DC6004F8E5F /* WebPDecodingUIImageTests.swift in Sources */,
 				224BBA5B254C6DC6004F8E5F /* WebPEncodingTests.swift in Sources */,
+				224BBAF3254C70F5004F8E5F /* CGImage+WebPDecoding.swift in Sources */,
 				224BBA5C254C6DC6004F8E5F /* WebPEncodingCGImageTests.swift in Sources */,
+				224BBAF1254C70F5004F8E5F /* CGImage+WebPEncoding.swift in Sources */,
+				224BBB1E254C70F9004F8E5F /* UIImage+WebPDecoding.swift in Sources */,
 				224BBA5D254C6DC6004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1776,7 +1782,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1804,7 +1810,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1826,11 +1832,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1843,6 +1848,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
 			};
 			name = Debug;
 		};
@@ -1850,11 +1856,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1866,6 +1871,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
 			};
 			name = Release;
 		};
