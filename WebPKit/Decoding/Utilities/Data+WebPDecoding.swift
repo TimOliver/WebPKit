@@ -29,9 +29,12 @@ public extension Data {
     /// Checks the contents of the data to see if the
     /// header matches that of the WebP file format.
     var isWebP: Bool {
+        // Ensure the size of the data is large enough
+        // for us to properly check.
         guard self.count >= 12 else {
             return false
         }
+
         return withUnsafeBytes { bytes in
             // The first 4 bytes are the ASCII letters "RIFF"
             // Skipping 4 bytes for the file size, the next 4 bytes after
