@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22DE934B254C596100BA6A93"
-               BuildableName = "WebPKitTestHost-iOS.app"
-               BlueprintName = "WebPKitTestHost-iOS"
+               BuildableName = "WebPKitTestHost.app"
+               BlueprintName = "WebPKitTestHost"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "22DE946A254C5BC200BA6A93"
+               BuildableName = "WebPKitTests.xctest"
+               BlueprintName = "WebPKitTests"
+               ReferencedContainer = "container:WebPKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,16 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22DE934B254C596100BA6A93"
-            BuildableName = "WebPKitTestHost-iOS.app"
-            BlueprintName = "WebPKitTestHost-iOS"
-            ReferencedContainer = "container:WebPKit.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22DE934B254C596100BA6A93"
-            BuildableName = "WebPKitTestHost-iOS.app"
-            BlueprintName = "WebPKitTestHost-iOS"
+            BuildableName = "WebPKitTestHost.app"
+            BlueprintName = "WebPKitTestHost"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
