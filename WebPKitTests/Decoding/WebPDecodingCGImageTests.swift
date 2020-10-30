@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import CoreGraphics
 
 class WebPDecodingCGImageTests: WebPDecodingTests {
 
