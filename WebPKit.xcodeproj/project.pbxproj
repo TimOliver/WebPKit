@@ -63,14 +63,6 @@
 		222D47A1254C5E83009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		222D47A2254C5E83009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
 		222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
-		224BB879254C6B4E004F8E5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BB878254C6B4E004F8E5F /* AppDelegate.swift */; };
-		224BB880254C6B4F004F8E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224BB87E254C6B4F004F8E5F /* Main.storyboard */; };
-		224BB95B254C6CB5004F8E5F /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		224BB95C254C6CB5004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
-		224BB95D254C6CB5004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		224BB95E254C6CB5004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
-		224BB95F254C6CB5004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
-		224BB960254C6CB5004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		224BBA56254C6DC6004F8E5F /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
 		224BBA57254C6DC6004F8E5F /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
 		224BBA58254C6DC6004F8E5F /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
@@ -79,27 +71,13 @@
 		224BBA5B254C6DC6004F8E5F /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
 		224BBA5C254C6DC6004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
 		224BBA5D254C6DC6004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		224BBADD254C7033004F8E5F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		224BBAF0254C70F5004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		224BBAF1254C70F5004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		224BBAF2254C70F5004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
 		224BBAF3254C70F5004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		224BBAF4254C70F5004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		224BBB1E254C70F9004F8E5F /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		224BBC83254C7452004F8E5F /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		224BBC84254C7452004F8E5F /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		224BBC85254C7452004F8E5F /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		224BBC86254C7452004F8E5F /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		224BBC87254C7452004F8E5F /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
-		224BBC88254C7452004F8E5F /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
-		224BBC89254C7452004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		224BBC8A254C7452004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		224BBC9D254C7469004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
-		224BBCB0254C746D004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		224BBCC3254C7470004F8E5F /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		224BBCD6254C7476004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
-		224BBCD7254C7476004F8E5F /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
-		224BBCD8254C7476004F8E5F /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		224BBEB1254C796F004F8E5F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -163,13 +141,6 @@
 		22D98E8F25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22D98E9025472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22DE934F254C596100BA6A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE934E254C596100BA6A93 /* AppDelegate.swift */; };
-		22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
-		22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		22DE95BA254C5D6200BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
-		22DE95BB254C5D6200BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
-		22DE9620254C5D9100BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
-		22DE9621254C5D9100BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		22DE9634254C5DB900BA6A93 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7462538AE60008F5183 /* AppDelegate.swift */; };
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
@@ -180,13 +151,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		224BB888254C6B50004F8E5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 224BB875254C6B4E004F8E5F;
-			remoteInfo = WebPKitTestHost;
-		};
 		224DBFF12538A1D3000A0A36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
@@ -331,12 +295,6 @@
 		2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingUIImageTests.swift; sourceTree = "<group>"; };
 		2203B96B253882300069098A /* WebPDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingTests.swift; sourceTree = "<group>"; };
-		224BB876254C6B4E004F8E5F /* WebPKitTestHost-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitTestHost-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		224BB878254C6B4E004F8E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		224BB87F254C6B4F004F8E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		224BB881254C6B4F004F8E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		224BB882254C6B4F004F8E5F /* WebPKitTestHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPKitTestHost.entitlements; sourceTree = "<group>"; };
-		224BB887254C6B50004F8E5F /* WebPKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DBFEC2538A1D2000A0A36 /* WebPKitExample-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-watchOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DBFF52538A1D3000A0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -388,10 +346,10 @@
 		22CDC5F8253A99A800F7D212 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22CDC5FA253A99B100F7D212 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+PixelFormat.swift"; sourceTree = "<group>"; };
-		22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitTestHost-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE934C254C596100BA6A93 /* WebPKitTestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebPKitTestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DE934E254C596100BA6A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DE935C254C596200BA6A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE946B254C5BC200BA6A93 /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7462538AE60008F5183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E0C7482538AE60008F5183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -408,21 +366,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		224BB873254C6B4E004F8E5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224BBADD254C7033004F8E5F /* WebP.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		224BB884254C6B50004F8E5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		224DBFFB2538A1D4000A0A36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,7 +433,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE9634254C5DB900BA6A93 /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224BBEB1254C796F004F8E5F /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,17 +493,6 @@
 				2203B92925375B9E0069098A /* logo-lossless.webp */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		224BBA70254C6DE6004F8E5F /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				224BB878254C6B4E004F8E5F /* AppDelegate.swift */,
-				224BB87E254C6B4F004F8E5F /* Main.storyboard */,
-				224BB881254C6B4F004F8E5F /* Info.plist */,
-				224BB882254C6B4F004F8E5F /* WebPKitTestHost.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		224DBFF32538A1D3000A0A36 /* App */ = {
@@ -768,10 +700,8 @@
 				22CDC4FD253A94A900F7D212 /* WebPKit.framework */,
 				22CDC546253A977700F7D212 /* WebPKit.framework */,
 				22CDC581253A97FD00F7D212 /* WebPKit.framework */,
-				22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */,
-				22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */,
-				224BB876254C6B4E004F8E5F /* WebPKitTestHost-macOS.app */,
-				224BB887254C6B50004F8E5F /* WebPKitTests-macOS.xctest */,
+				22DE934C254C596100BA6A93 /* WebPKitTestHost.app */,
+				22DE946B254C5BC200BA6A93 /* WebPKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,7 +720,6 @@
 			isa = PBXGroup;
 			children = (
 				22DE93D2254C5A8E00BA6A93 /* iOS */,
-				224BBA70254C6DE6004F8E5F /* macOS */,
 			);
 			path = HostApp;
 			sourceTree = "<group>";
@@ -906,41 +835,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		224BB875254C6B4E004F8E5F /* WebPKitTestHost-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 224BB899254C6B50004F8E5F /* Build configuration list for PBXNativeTarget "WebPKitTestHost-macOS" */;
-			buildPhases = (
-				224BB872254C6B4E004F8E5F /* Sources */,
-				224BB873254C6B4E004F8E5F /* Frameworks */,
-				224BB874254C6B4E004F8E5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "WebPKitTestHost-macOS";
-			productName = WebPKitTestHost;
-			productReference = 224BB876254C6B4E004F8E5F /* WebPKitTestHost-macOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		224BB886254C6B50004F8E5F /* WebPKitTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 224BB89C254C6B50004F8E5F /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */;
-			buildPhases = (
-				224BB883254C6B50004F8E5F /* Sources */,
-				224BB884254C6B50004F8E5F /* Frameworks */,
-				224BB885254C6B50004F8E5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				224BB889254C6B50004F8E5F /* PBXTargetDependency */,
-			);
-			name = "WebPKitTests-macOS";
-			productName = WebPKitTestHostTests;
-			productReference = 224BB887254C6B50004F8E5F /* WebPKitTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		224DBFEB2538A1D2000A0A36 /* WebPKitExample-watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224DC0162538A1D4000A0A36 /* Build configuration list for PBXNativeTarget "WebPKitExample-watchOS" */;
@@ -1108,9 +1002,9 @@
 			productReference = 22CDC581253A97FD00F7D212 /* WebPKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */ = {
+		22DE934B254C596100BA6A93 /* WebPKitTestHost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-iOS" */;
+			buildConfigurationList = 22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost" */;
 			buildPhases = (
 				22DE9348254C596100BA6A93 /* Sources */,
 				22DE9349254C596100BA6A93 /* Frameworks */,
@@ -1120,14 +1014,14 @@
 			);
 			dependencies = (
 			);
-			name = "WebPKitTestHost-iOS";
+			name = WebPKitTestHost;
 			productName = "WebPKitTestHost-iOS";
-			productReference = 22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */;
+			productReference = 22DE934C254C596100BA6A93 /* WebPKitTestHost.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22DE946A254C5BC200BA6A93 /* WebPKitTests-iOS */ = {
+		22DE946A254C5BC200BA6A93 /* WebPKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-iOS" */;
+			buildConfigurationList = 22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests" */;
 			buildPhases = (
 				22DE9467254C5BC200BA6A93 /* Sources */,
 				22DE9468254C5BC200BA6A93 /* Frameworks */,
@@ -1138,9 +1032,9 @@
 			dependencies = (
 				22DE9471254C5BC200BA6A93 /* PBXTargetDependency */,
 			);
-			name = "WebPKitTests-iOS";
+			name = WebPKitTests;
 			productName = WebPKitTests;
-			productReference = 22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */;
+			productReference = 22DE946B254C5BC200BA6A93 /* WebPKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		22E0C7432538AE60008F5183 /* WebPKitExample-macOS */ = {
@@ -1171,13 +1065,6 @@
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					224BB875254C6B4E004F8E5F = {
-						CreatedOnToolsVersion = 12.1;
-					};
-					224BB886254C6B50004F8E5F = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 224BB875254C6B4E004F8E5F;
-					};
 					224DBFEB2538A1D2000A0A36 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -1256,30 +1143,13 @@
 				22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */,
 				22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */,
 				22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */,
-				22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */,
-				22DE946A254C5BC200BA6A93 /* WebPKitTests-iOS */,
-				224BB875254C6B4E004F8E5F /* WebPKitTestHost-macOS */,
-				224BB886254C6B50004F8E5F /* WebPKitTests-macOS */,
+				22DE934B254C596100BA6A93 /* WebPKitTestHost */,
+				22DE946A254C5BC200BA6A93 /* WebPKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		224BB874254C6B4E004F8E5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224BB880254C6B4F004F8E5F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		224BB885254C6B50004F8E5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		224DBFEA2538A1D2000A0A36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1470,41 +1340,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		224BB872254C6B4E004F8E5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224BB95B254C6CB5004F8E5F /* NSImage+WebPDecoding.swift in Sources */,
-				224BB95C254C6CB5004F8E5F /* CGImage+WebPDecoding.swift in Sources */,
-				224BB95D254C6CB5004F8E5F /* Data+WebPDecoding.swift in Sources */,
-				224BB95E254C6CB5004F8E5F /* URL+WebPDecoding.swift in Sources */,
-				224BB95F254C6CB5004F8E5F /* CGImage+WebPEncoding.swift in Sources */,
-				224BB960254C6CB5004F8E5F /* CGImage+PixelFormat.swift in Sources */,
-				224BB879254C6B4E004F8E5F /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		224BB883254C6B50004F8E5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224BBCD8254C7476004F8E5F /* URL+WebPDecoding.swift in Sources */,
-				224BBCB0254C746D004F8E5F /* Data+WebPDecoding.swift in Sources */,
-				224BBCD7254C7476004F8E5F /* CGImage+WebPEncoding.swift in Sources */,
-				224BBC83254C7452004F8E5F /* WebPDecodingTests.swift in Sources */,
-				224BBC84254C7452004F8E5F /* WebPDecodingURLTests.swift in Sources */,
-				224BBC85254C7452004F8E5F /* WebPDecodingDataTests.swift in Sources */,
-				224BBCC3254C7470004F8E5F /* NSImage+WebPDecoding.swift in Sources */,
-				224BBC86254C7452004F8E5F /* WebPDecodingCGImageTests.swift in Sources */,
-				224BBC87254C7452004F8E5F /* WebPDecodingUIImageTests.swift in Sources */,
-				224BBCD6254C7476004F8E5F /* CGImage+PixelFormat.swift in Sources */,
-				224BBC9D254C7469004F8E5F /* CGImage+WebPDecoding.swift in Sources */,
-				224BBC88254C7452004F8E5F /* WebPEncodingTests.swift in Sources */,
-				224BBC89254C7452004F8E5F /* WebPEncodingCGImageTests.swift in Sources */,
-				224BBC8A254C7452004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		224DBFFA2538A1D4000A0A36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1588,13 +1423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE95BA254C5D6200BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
-				22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */,
-				22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
-				22DE95BB254C5D6200BA6A93 /* CGImage+PixelFormat.swift in Sources */,
-				22DE9620254C5D9100BA6A93 /* URL+WebPDecoding.swift in Sources */,
 				22DE934F254C596100BA6A93 /* AppDelegate.swift in Sources */,
-				22DE9621254C5D9100BA6A93 /* Data+WebPDecoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1631,11 +1460,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		224BB889254C6B50004F8E5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 224BB875254C6B4E004F8E5F /* WebPKitTestHost-macOS */;
-			targetProxy = 224BB888254C6B50004F8E5F /* PBXContainerItemProxy */;
-		};
 		224DBFF22538A1D3000A0A36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 224DBFEE2538A1D3000A0A36 /* WebPKitExample-watchOS-App */;
@@ -1688,7 +1512,7 @@
 		};
 		22DE9471254C5BC200BA6A93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */;
+			target = 22DE934B254C596100BA6A93 /* WebPKitTestHost */;
 			targetProxy = 22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */;
 		};
 		22F6F212253B0BCB00C0C62B /* PBXTargetDependency */ = {
@@ -1714,14 +1538,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		224BB87E254C6B4F004F8E5F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				224BB87F254C6B4F004F8E5F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		224DBFF42538A1D3000A0A36 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1773,108 +1589,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		224BB89A254C6B50004F8E5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebPKitTests/Supporting/HostApp/macOS/WebPKitTestHost.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebPKitExample-macOS",
-				);
-				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTestHost.macOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		224BB89B254C6B50004F8E5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebPKitTests/Supporting/HostApp/macOS/WebPKitTestHost.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebPKitExample-macOS",
-				);
-				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTestHost.macOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		224BB89D254C6B50004F8E5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
-			};
-			name = Debug;
-		};
-		224BB89E254C6B50004F8E5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
-			};
-			name = Release;
-		};
 		224DC00C2538A1D4000A0A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2666,7 +2380,6 @@
 		22DE9473254C5BC200BA6A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
@@ -2683,14 +2396,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-iOS.app/WebPKitTestHost-iOS";
 			};
 			name = Debug;
 		};
 		22DE9474254C5BC200BA6A93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
@@ -2706,7 +2417,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-iOS.app/WebPKitTestHost-iOS";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2783,24 +2493,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		224BB899254C6B50004F8E5F /* Build configuration list for PBXNativeTarget "WebPKitTestHost-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				224BB89A254C6B50004F8E5F /* Debug */,
-				224BB89B254C6B50004F8E5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		224BB89C254C6B50004F8E5F /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				224BB89D254C6B50004F8E5F /* Debug */,
-				224BB89E254C6B50004F8E5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		224DC0142538A1D4000A0A36 /* Build configuration list for PBXNativeTarget "WebPKitExample-watchOS-Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2927,7 +2619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-iOS" */ = {
+		22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22DE935E254C596200BA6A93 /* Debug */,
@@ -2936,7 +2628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-iOS" */ = {
+		22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22DE9473254C5BC200BA6A93 /* Debug */,
