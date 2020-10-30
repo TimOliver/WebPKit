@@ -78,6 +78,12 @@
 		224BBAF4254C70F5004F8E5F /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		224BBB1E254C70F9004F8E5F /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
 		224BBEB1254C796F004F8E5F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
+		224BC00B254C817D004F8E5F /* UIImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */; };
+		224BC00D254C817E004F8E5F /* UIImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */; };
+		224BC00E254C817E004F8E5F /* UIImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */; };
+		224BC020254C81DE004F8E5F /* WebPEncodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BC01F254C81DE004F8E5F /* WebPEncodingUIImageTests.swift */; };
+		224BC031254C8218004F8E5F /* UIImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */; };
+		224BC065254C83B7004F8E5F /* NSImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BC042254C838E004F8E5F /* NSImage+WebPEncoding.swift */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -295,6 +301,9 @@
 		2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingUIImageTests.swift; sourceTree = "<group>"; };
 		2203B96B253882300069098A /* WebPDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPDecodingTests.swift; sourceTree = "<group>"; };
+		224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WebPEncoding.swift"; sourceTree = "<group>"; };
+		224BC01F254C81DE004F8E5F /* WebPEncodingUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPEncodingUIImageTests.swift; sourceTree = "<group>"; };
+		224BC042254C838E004F8E5F /* NSImage+WebPEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPEncoding.swift"; sourceTree = "<group>"; };
 		224DBFEC2538A1D2000A0A36 /* WebPKitExample-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-watchOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224DBFF52538A1D3000A0A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -553,6 +562,8 @@
 		2263BA0F253C7D2300CAC3FE /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
+				224BBFE9254C80BB004F8E5F /* UIImage+WebPEncoding.swift */,
+				224BC042254C838E004F8E5F /* NSImage+WebPEncoding.swift */,
 				2263BA10253C7D3100CAC3FE /* Core */,
 				22862897253F12D6003E5B83 /* Utilities */,
 			);
@@ -573,6 +584,7 @@
 				22862929253F18DB003E5B83 /* WebPEncodingTests.swift */,
 				2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */,
 				22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */,
+				224BC01F254C81DE004F8E5F /* WebPEncodingUIImageTests.swift */,
 			);
 			path = Encoding;
 			sourceTree = "<group>";
@@ -1373,6 +1385,7 @@
 			files = (
 				22CDC635253A9ADA00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22D98E7E25472B9F00D2D4EE /* CGImage+PixelFormat.swift in Sources */,
+				224BC00B254C817D004F8E5F /* UIImage+WebPEncoding.swift in Sources */,
 				22CDC4D9253A93FD00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC4DA253A93FD00F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA4F253C7DCE00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1384,6 +1397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224BC065254C83B7004F8E5F /* NSImage+WebPEncoding.swift in Sources */,
 				22CDC52E253A957E00F7D212 /* NSImage+WebPDecoding.swift in Sources */,
 				22D98E8E25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
 				22CDC52F253A957E00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
@@ -1399,6 +1413,7 @@
 			files = (
 				22CDC569253A97BB00F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22D98E9025472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
+				224BC00E254C817E004F8E5F /* UIImage+WebPEncoding.swift in Sources */,
 				22CDC56A253A97BB00F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC56B253A97BB00F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1412,6 +1427,7 @@
 			files = (
 				22CDC5AB253A986800F7D212 /* UIImage+WebPDecoding.swift in Sources */,
 				22D98E8F25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */,
+				224BC00D254C817E004F8E5F /* UIImage+WebPEncoding.swift in Sources */,
 				22CDC5AC253A986800F7D212 /* CGImage+WebPDecoding.swift in Sources */,
 				22CDC5AD253A986800F7D212 /* URL+WebPDecoding.swift in Sources */,
 				2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */,
@@ -1436,6 +1452,8 @@
 				224BBAF4254C70F5004F8E5F /* CGImage+PixelFormat.swift in Sources */,
 				224BBA58254C6DC6004F8E5F /* WebPDecodingDataTests.swift in Sources */,
 				224BBA59254C6DC6004F8E5F /* WebPDecodingCGImageTests.swift in Sources */,
+				224BC020254C81DE004F8E5F /* WebPEncodingUIImageTests.swift in Sources */,
+				224BC031254C8218004F8E5F /* UIImage+WebPEncoding.swift in Sources */,
 				224BBAF0254C70F5004F8E5F /* URL+WebPDecoding.swift in Sources */,
 				224BBAF2254C70F5004F8E5F /* Data+WebPDecoding.swift in Sources */,
 				224BBA5A254C6DC6004F8E5F /* WebPDecodingUIImageTests.swift in Sources */,

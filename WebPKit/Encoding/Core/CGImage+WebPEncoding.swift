@@ -58,6 +58,7 @@ public enum WebPEncodingError: UInt32, Error {
     case configPresetFailed
     case imageRenderFailed
     case invalidPictureData
+    case nilImage
 }
 
 /// Extends CGImage with the ability
