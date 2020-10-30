@@ -60,13 +60,13 @@ public enum WebPScalingMode {
 
 /// Extends CGImage with the ability
 /// to decode images from the WebP file format
-extension CGImage {
+public extension CGImage {
 
     /// Reads the header of a WebP image file and extracts
     /// the pixel resolution of the image without performing a full decode.
     /// - Parameter url: The file URL of the WebP image
     /// - Returns: The size of the image, or nil if it failed
-    public static func sizeOfWebP(at url: URL)  -> CGSize? {
+    static func sizeOfWebP(at url: URL)  -> CGSize? {
         guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
             return nil
         }
@@ -77,7 +77,7 @@ extension CGImage {
     /// the pixel resolution of the image without performing a full decode.
     /// - Parameter data: The WebP image data
     /// - Returns: The size of the image, or nil if it failed
-    public static func sizeOfWebP(with data: Data) -> CGSize? {
+    static func sizeOfWebP(with data: Data) -> CGSize? {
         var width: Int32 = 0, height: Int32 = 0
 
         if !data.withUnsafeBytes({ bytes -> Bool in
@@ -93,7 +93,7 @@ extension CGImage {
     /// - Parameter url: The URL path to the file
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(contentsOfFile url: URL,
+    static func webpImage(contentsOfFile url: URL,
                                  width: CGFloat? = nil,
                                  height: CGFloat? = nil,
                                  scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
@@ -106,7 +106,7 @@ extension CGImage {
     /// - Parameter data: The data to decode
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
-    public static func webpImage(data: Data,
+    static func webpImage(data: Data,
                                  width: CGFloat? = nil,
                                  height: CGFloat? = nil,
                                  scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {

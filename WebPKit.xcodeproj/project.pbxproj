@@ -65,7 +65,6 @@
 		222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
 		224BB879254C6B4E004F8E5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BB878254C6B4E004F8E5F /* AppDelegate.swift */; };
 		224BB880254C6B4F004F8E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224BB87E254C6B4F004F8E5F /* Main.storyboard */; };
-		224BB936254C6C3B004F8E5F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		224BB95B254C6CB5004F8E5F /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		224BB95C254C6CB5004F8E5F /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		224BB95D254C6CB5004F8E5F /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
@@ -97,6 +96,7 @@
 		224BBA5B254C6DC6004F8E5F /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
 		224BBA5C254C6DC6004F8E5F /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
 		224BBA5D254C6DC6004F8E5F /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		224BBADD254C7033004F8E5F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -409,7 +409,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224BB936254C6C3B004F8E5F /* WebP.framework in Frameworks */,
+				224BBADD254C7033004F8E5F /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1772,7 +1772,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebPKitTestHost/WebPKitTestHost.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WebPKitTests/Supporting/HostApp/macOS/WebPKitTestHost.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1800,7 +1800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebPKitTestHost/WebPKitTestHost.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WebPKitTests/Supporting/HostApp/macOS/WebPKitTestHost.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
