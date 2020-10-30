@@ -63,23 +63,6 @@
 		222D47A1254C5E83009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
 		222D47A2254C5E83009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
 		222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
-		222D47A4254C5E92009F8DDB /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
-		222D47A5254C5E92009F8DDB /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
-		222D47A6254C5E92009F8DDB /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
-		222D47A7254C5E92009F8DDB /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
-		222D47A8254C5E92009F8DDB /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
-		222D47A9254C5E92009F8DDB /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
-		222D47AA254C5E92009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
-		222D47AB254C5E92009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
-		222D47AC254C5E92009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
-		222D47E3254C6032009F8DDB /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
-		222D4808254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		222D4809254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		222D480A254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		222D480B254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		222D480C254C608B009F8DDB /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		222D480D254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		222D480E254C608B009F8DDB /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
 		222D4821254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
 		222D4822254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
 		222D4823254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
@@ -154,9 +137,6 @@
 		22DE9511254C5CBC00BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		22DE9512254C5CBC00BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22DE9513254C5CBC00BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
-		22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
-		22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
-		22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		22DE956F254C5CDE00BA6A93 /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
 		22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
@@ -166,8 +146,6 @@
 		22DE95CF254C5D6600BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22DE95D0254C5D6600BA6A93 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
 		22DE95D1254C5D6600BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
-		22DE95E4254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
-		22DE95E5254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
 		22DE95F8254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		22DE95F9254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
 		22DE960C254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
@@ -262,13 +240,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 22DE934B254C596100BA6A93;
 			remoteInfo = "WebPKitTestHost-iOS";
-		};
-		22DE94B1254C5C1500BA6A93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22DE93E5254C5AE900BA6A93;
-			remoteInfo = "WebPKitTestHost-macOS";
 		};
 		22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -393,7 +364,6 @@
 		22DE935C254C596200BA6A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22DE93E6254C5AE900BA6A93 /* WebPKitTestHost-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitTestHost-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7462538AE60008F5183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E0C7482538AE60008F5183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -490,13 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22DE9468254C5BC200BA6A93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22DE94A9254C5C1500BA6A93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -762,7 +725,6 @@
 				22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */,
 				22DE93E6254C5AE900BA6A93 /* WebPKitTestHost-macOS.app */,
 				22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */,
-				22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1115,24 +1077,6 @@
 			productReference = 22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22DE94AB254C5C1500BA6A93 /* WebPKitTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22DE94B3254C5C1600BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */;
-			buildPhases = (
-				22DE94A8254C5C1500BA6A93 /* Sources */,
-				22DE94A9254C5C1500BA6A93 /* Frameworks */,
-				22DE94AA254C5C1500BA6A93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22DE94B2254C5C1500BA6A93 /* PBXTargetDependency */,
-			);
-			name = "WebPKitTests-macOS";
-			productName = WebPKitTests;
-			productReference = 22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		22E0C7432538AE60008F5183 /* WebPKitExample-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E0C7562538AE61008F5183 /* Build configuration list for PBXNativeTarget "WebPKitExample-macOS" */;
@@ -1210,10 +1154,6 @@
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 22DE934B254C596100BA6A93;
 					};
-					22DE94AB254C5C1500BA6A93 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 22DE93E5254C5AE900BA6A93;
-					};
 					22E0C7432538AE60008F5183 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -1249,7 +1189,6 @@
 				22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */,
 				22DE93E5254C5AE900BA6A93 /* WebPKitTestHost-macOS */,
 				22DE946A254C5BC200BA6A93 /* WebPKitTests-iOS */,
-				22DE94AB254C5C1500BA6A93 /* WebPKitTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1357,22 +1296,6 @@
 				222D47A1254C5E83009F8DDB /* rect-vertical.webp in Resources */,
 				222D47A2254C5E83009F8DDB /* logo-lossy.WEBP in Resources */,
 				222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22DE94AA254C5C1500BA6A93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				222D47A4254C5E92009F8DDB /* circle-index-transparent.png in Resources */,
-				222D47A5254C5E92009F8DDB /* circle-grayscale-transparent.png in Resources */,
-				222D47A6254C5E92009F8DDB /* circle-opaque.jpg in Resources */,
-				222D47A7254C5E92009F8DDB /* circle-transparent.png in Resources */,
-				222D47A8254C5E92009F8DDB /* circle-opaque.png in Resources */,
-				222D47A9254C5E92009F8DDB /* rect-horizontal.webp in Resources */,
-				222D47AA254C5E92009F8DDB /* rect-vertical.webp in Resources */,
-				222D47AB254C5E92009F8DDB /* logo-lossy.WEBP in Resources */,
-				222D47AC254C5E92009F8DDB /* logo-lossless.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1595,26 +1518,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22DE94A8254C5C1500BA6A93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				222D4808254C608B009F8DDB /* WebPDecodingDataTests.swift in Sources */,
-				22DE95E5254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
-				222D480D254C608B009F8DDB /* WebPEncodingCGImageTests.swift in Sources */,
-				222D480E254C608B009F8DDB /* WebPEncodingTests.swift in Sources */,
-				22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */,
-				222D480C254C608B009F8DDB /* WebPDecodingTests.swift in Sources */,
-				22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
-				22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */,
-				222D480A254C608B009F8DDB /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
-				222D47E3254C6032009F8DDB /* CGImage+WebPDecoding.swift in Sources */,
-				222D4809254C608B009F8DDB /* WebPDecodingURLTests.swift in Sources */,
-				222D480B254C608B009F8DDB /* WebPDecodingCGImageTests.swift in Sources */,
-				22DE95E4254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22E0C7402538AE60008F5183 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1681,11 +1584,6 @@
 			isa = PBXTargetDependency;
 			target = 22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */;
 			targetProxy = 22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */;
-		};
-		22DE94B2254C5C1500BA6A93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22DE93E5254C5AE900BA6A93 /* WebPKitTestHost-macOS */;
-			targetProxy = 22DE94B1254C5C1500BA6A93 /* PBXContainerItemProxy */;
 		};
 		22F6F212253B0BCB00C0C62B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2648,49 +2546,6 @@
 			};
 			name = Release;
 		};
-		22DE94B4254C5C1600BA6A93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
-			};
-			name = Debug;
-		};
-		22DE94B5254C5C1600BA6A93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
-			};
-			name = Release;
-		};
 		22E0C7542538AE61008F5183 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2912,15 +2767,6 @@
 			buildConfigurations = (
 				22DE9473254C5BC200BA6A93 /* Debug */,
 				22DE9474254C5BC200BA6A93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22DE94B3254C5C1600BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22DE94B4254C5C1600BA6A93 /* Debug */,
-				22DE94B5254C5C1600BA6A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
