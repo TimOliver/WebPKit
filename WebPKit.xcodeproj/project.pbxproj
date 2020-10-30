@@ -54,6 +54,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		222D479B254C5E83009F8DDB /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
+		222D479C254C5E83009F8DDB /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
+		222D479D254C5E83009F8DDB /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
+		222D479E254C5E83009F8DDB /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
+		222D479F254C5E83009F8DDB /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
+		222D47A0254C5E83009F8DDB /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
+		222D47A1254C5E83009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
+		222D47A2254C5E83009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
+		222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
+		222D47A4254C5E92009F8DDB /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
+		222D47A5254C5E92009F8DDB /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
+		222D47A6254C5E92009F8DDB /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
+		222D47A7254C5E92009F8DDB /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
+		222D47A8254C5E92009F8DDB /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
+		222D47A9254C5E92009F8DDB /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
+		222D47AA254C5E92009F8DDB /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
+		222D47AB254C5E92009F8DDB /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
+		222D47AC254C5E92009F8DDB /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
 		224DBFF02538A1D3000A0A36 /* WebPKitExample-watchOS-App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 224DBFEF2538A1D3000A0A36 /* WebPKitExample-watchOS-App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		224DBFF62538A1D3000A0A36 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF42538A1D3000A0A36 /* Interface.storyboard */; };
 		224DBFF82538A1D3000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DBFF72538A1D3000A0A36 /* Assets.xcassets */; };
@@ -73,8 +91,6 @@
 		2263BA5F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		2263BA6F253C7DCF00CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
 		2263BA70253C7DD000CAC3FE /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
-		2263BAA0253C958C00CAC3FE /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
-		2263BAC0253C964400CAC3FE /* circle-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 2263BABF253C964400CAC3FE /* circle-transparent.png */; };
 		2282DDBE2538929B004913CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBD2538929B004913CF /* AppDelegate.swift */; };
 		2282DDC02538929B004913CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282DDBF2538929B004913CF /* ViewController.swift */; };
 		2282DDC32538929B004913CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC12538929B004913CF /* Main.storyboard */; };
@@ -82,11 +98,6 @@
 		2282DDC82538929B004913CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC62538929B004913CF /* LaunchScreen.storyboard */; };
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
-		228628F9253F1800003E5B83 /* circle-opaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 228628F8253F1800003E5B83 /* circle-opaque.png */; };
-		22862919253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
-		2286292A253F18DB003E5B83 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
-		22862959253F226C003E5B83 /* circle-opaque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22862958253F226C003E5B83 /* circle-opaque.jpg */; };
-		22957E0C254450FB005AB133 /* circle-grayscale-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */; };
 		22CDC4A7253A933D00F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; };
 		22CDC4BA253A93C600F7D212 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22CDC4C9253A93D800F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -123,24 +134,56 @@
 		22D98E8E25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22D98E8F25472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
 		22D98E9025472BA000D2D4EE /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22DE934F254C596100BA6A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE934E254C596100BA6A93 /* AppDelegate.swift */; };
+		22DE93E9254C5AE900BA6A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE93E8254C5AE900BA6A93 /* AppDelegate.swift */; };
+		22DE9510254C5CBC00BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		22DE9511254C5CBC00BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		22DE9512254C5CBC00BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22DE9513254C5CBC00BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		22DE9526254C5CC300BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		22DE953C254C5CD500BA6A93 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
+		22DE953D254C5CD500BA6A93 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		22DE953E254C5CD500BA6A93 /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		22DE953F254C5CD500BA6A93 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
+		22DE9540254C5CD500BA6A93 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		22DE9541254C5CD500BA6A93 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		22DE9542254C5CD500BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		22DE9556254C5CDD00BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */; };
+		22DE9557254C5CDD00BA6A93 /* WebPEncodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA9F253C958C00CAC3FE /* WebPEncodingCGImageTests.swift */; };
+		22DE9558254C5CDD00BA6A93 /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
+		22DE9559254C5CDD00BA6A93 /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
+		22DE955A254C5CDD00BA6A93 /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
+		22DE955B254C5CDD00BA6A93 /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
+		22DE955C254C5CDD00BA6A93 /* WebPEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22862929253F18DB003E5B83 /* WebPEncodingTests.swift */; };
+		22DE956F254C5CDE00BA6A93 /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
+		22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
+		22DE95BA254C5D6200BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		22DE95BB254C5D6200BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22DE95CE254C5D6600BA6A93 /* CGImage+WebPEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BA11253C7D4500CAC3FE /* CGImage+WebPEncoding.swift */; };
+		22DE95CF254C5D6600BA6A93 /* CGImage+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */; };
+		22DE95D0254C5D6600BA6A93 /* NSImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */; };
+		22DE95D1254C5D6600BA6A93 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
+		22DE95E4254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		22DE95E5254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		22DE95F8254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		22DE95F9254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		22DE960C254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		22DE960D254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		22DE9620254C5D9100BA6A93 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
+		22DE9621254C5D9100BA6A93 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
+		22DE9634254C5DB900BA6A93 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
+		22DE9647254C5DBF00BA6A93 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7462538AE60008F5183 /* AppDelegate.swift */; };
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
 		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
-		22E30BCA25455CFF001036F7 /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
 		22F6F235253B0C0A00C0C62B /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
-		22F6F26D253B108B00C0C62B /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4FD253A94A900F7D212 /* WebPKit.framework */; };
-		22F6F2A0253B10A400C0C62B /* WebPDecodingUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B964253881B60069098A /* WebPDecodingUIImageTests.swift */; };
-		22F6F2A1253B10A400C0C62B /* WebPDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B96B253882300069098A /* WebPDecodingTests.swift */; };
-		22F6F2A2253B10A400C0C62B /* WebPDecodingURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B921253759B10069098A /* WebPDecodingURLTests.swift */; };
-		22F6F2A3253B10A400C0C62B /* WebPDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B94C253769AC0069098A /* WebPDecodingDataTests.swift */; };
-		22F6F2A4253B10A400C0C62B /* WebPDecodingCGImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95325376AC60069098A /* WebPDecodingCGImageTests.swift */; };
-		22F6F2B4253B10A800C0C62B /* logo-lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92925375B9E0069098A /* logo-lossless.webp */; };
-		22F6F2B5253B10A800C0C62B /* rect-vertical.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985953253A0C6700D904A4 /* rect-vertical.webp */; };
-		22F6F2B6253B10A800C0C62B /* logo-lossy.WEBP in Resources */ = {isa = PBXBuildFile; fileRef = 2203B92825375B9E0069098A /* logo-lossy.WEBP */; };
-		22F6F2B7253B10A800C0C62B /* rect-horizontal.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22985952253A0C6700D904A4 /* rect-horizontal.webp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,27 +200,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 224DBFFD2538A1D4000A0A36;
 			remoteInfo = "WebPKitExample-watchOS WatchKit Extension";
-		};
-		2263BAFD253C97F200CAC3FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2254A5912534595300813B84;
-			remoteInfo = "WebPKitExample-iOS";
-		};
-		2263BB2C253C981000CAC3FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
-			remoteInfo = "Download WebP (iOS)";
-		};
-		2263BB2E253C981300CAC3FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC49F253A933D00F7D212;
-			remoteInfo = "WebPKit-iOS";
 		};
 		22CDC4A5253A933D00F7D212 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -234,6 +256,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
 			remoteInfo = "Download WebP (watchOS)";
+		};
+		22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DE934B254C596100BA6A93;
+			remoteInfo = "WebPKitTestHost-iOS";
+		};
+		22DE94B1254C5C1500BA6A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DE93E5254C5AE900BA6A93;
+			remoteInfo = "WebPKitTestHost-macOS";
 		};
 		22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -353,6 +389,14 @@
 		22CDC5F8253A99A800F7D212 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22CDC5FA253A99B100F7D212 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		22D98E5E2547240500D2D4EE /* CGImage+PixelFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+PixelFormat.swift"; sourceTree = "<group>"; };
+		22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitTestHost-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE934E254C596100BA6A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22DE935C254C596200BA6A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DE93E6254C5AE900BA6A93 /* WebPKitTestHost-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitTestHost-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE93E8254C5AE900BA6A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22DE93F1254C5AEA00BA6A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebPKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E0C7462538AE60008F5183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E0C7482538AE60008F5183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -363,7 +407,6 @@
 		22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPDecoding.swift"; sourceTree = "<group>"; };
 		22E0C7B42538B197008F5183 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22E30BC925455CFF001036F7 /* circle-index-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-index-transparent.png"; sourceTree = "<group>"; };
-		22F6F268253B108B00C0C62B /* WebPKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F6F362253B19C800C0C62B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		22F6F363253B19DE00C0C62B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22F6F364253B19F500C0C62B /* WebPKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WebPKit.podspec; sourceTree = "<group>"; };
@@ -433,20 +476,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22DE9349254C596100BA6A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE9634254C5DB900BA6A93 /* WebP.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE93E3254C5AE900BA6A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE9647254C5DBF00BA6A93 /* WebP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE9468254C5BC200BA6A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE94A9254C5C1500BA6A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E0C7412538AE60008F5183 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22CDC504253A94A900F7D212 /* WebPKit.framework in Frameworks */,
 				22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22F6F265253B108B00C0C62B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F6F26D253B108B00C0C62B /* WebPKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +607,7 @@
 				2203B9202537598C0069098A /* Decoding */,
 				2263BA9E253C957000CAC3FE /* Encoding */,
 				2203B92725375B9E0069098A /* Resources */,
-				2254A62F2534A6E800813B84 /* Info.plist */,
+				22DE93A0254C59DD00BA6A93 /* Supporting */,
 			);
 			path = WebPKitTests;
 			sourceTree = "<group>";
@@ -676,6 +741,7 @@
 				22E0C7452538AE60008F5183 /* WebPKitExample-macOS */,
 				2282DDBC2538929B004913CF /* WebPKitExample-tvOS */,
 				224DC01D2538A1F1000A0A36 /* WebPKitExample-watchOS */,
+				22DE93E7254C5AE900BA6A93 /* WebPKitTestHost-macOS */,
 				228E7D6E250C85E500C6B140 /* Products */,
 				2282DE042538964F004913CF /* Frameworks */,
 				22F6F363253B19DE00C0C62B /* README.md */,
@@ -697,7 +763,10 @@
 				22CDC4FD253A94A900F7D212 /* WebPKit.framework */,
 				22CDC546253A977700F7D212 /* WebPKit.framework */,
 				22CDC581253A97FD00F7D212 /* WebPKit.framework */,
-				22F6F268253B108B00C0C62B /* WebPKitTests.xctest */,
+				22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */,
+				22DE93E6254C5AE900BA6A93 /* WebPKitTestHost-macOS.app */,
+				22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */,
+				22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -710,6 +779,49 @@
 				22836081250C94DD00E46CD3 /* Supporting */,
 			);
 			path = WebPKit;
+			sourceTree = "<group>";
+		};
+		22DE9347254C590100BA6A93 /* HostApp */ = {
+			isa = PBXGroup;
+			children = (
+				22DE9406254C5AF300BA6A93 /* macOS */,
+				22DE93D2254C5A8E00BA6A93 /* iOS */,
+			);
+			path = HostApp;
+			sourceTree = "<group>";
+		};
+		22DE93A0254C59DD00BA6A93 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				22DE9347254C590100BA6A93 /* HostApp */,
+				2254A62F2534A6E800813B84 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		22DE93D2254C5A8E00BA6A93 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				22DE934E254C596100BA6A93 /* AppDelegate.swift */,
+				22DE935C254C596200BA6A93 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		22DE93E7254C5AE900BA6A93 /* WebPKitTestHost-macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "WebPKitTestHost-macOS";
+			sourceTree = "<group>";
+		};
+		22DE9406254C5AF300BA6A93 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				22DE93E8254C5AE900BA6A93 /* AppDelegate.swift */,
+				22DE93F1254C5AEA00BA6A93 /* Info.plist */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		22E0C7452538AE60008F5183 /* WebPKitExample-macOS */ = {
@@ -972,6 +1084,76 @@
 			productReference = 22CDC581253A97FD00F7D212 /* WebPKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-iOS" */;
+			buildPhases = (
+				22DE9348254C596100BA6A93 /* Sources */,
+				22DE9349254C596100BA6A93 /* Frameworks */,
+				22DE934A254C596100BA6A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebPKitTestHost-iOS";
+			productName = "WebPKitTestHost-iOS";
+			productReference = 22DE934C254C596100BA6A93 /* WebPKitTestHost-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22DE93E5254C5AE900BA6A93 /* WebPKitTestHost-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE93F3254C5AEA00BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-macOS" */;
+			buildPhases = (
+				22DE93E2254C5AE900BA6A93 /* Sources */,
+				22DE93E3254C5AE900BA6A93 /* Frameworks */,
+				22DE93E4254C5AE900BA6A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebPKitTestHost-macOS";
+			productName = "WebPKitTestHost-macOS";
+			productReference = 22DE93E6254C5AE900BA6A93 /* WebPKitTestHost-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22DE946A254C5BC200BA6A93 /* WebPKitTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-iOS" */;
+			buildPhases = (
+				22DE9467254C5BC200BA6A93 /* Sources */,
+				22DE9468254C5BC200BA6A93 /* Frameworks */,
+				22DE9469254C5BC200BA6A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22DE9471254C5BC200BA6A93 /* PBXTargetDependency */,
+			);
+			name = "WebPKitTests-iOS";
+			productName = WebPKitTests;
+			productReference = 22DE946B254C5BC200BA6A93 /* WebPKitTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22DE94AB254C5C1500BA6A93 /* WebPKitTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE94B3254C5C1600BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */;
+			buildPhases = (
+				22DE94A8254C5C1500BA6A93 /* Sources */,
+				22DE94A9254C5C1500BA6A93 /* Frameworks */,
+				22DE94AA254C5C1500BA6A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22DE94B2254C5C1500BA6A93 /* PBXTargetDependency */,
+			);
+			name = "WebPKitTests-macOS";
+			productName = WebPKitTests;
+			productReference = 22DE94AC254C5C1500BA6A93 /* WebPKitTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		22E0C7432538AE60008F5183 /* WebPKitExample-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E0C7562538AE61008F5183 /* Build configuration list for PBXNativeTarget "WebPKitExample-macOS" */;
@@ -990,26 +1172,6 @@
 			productName = "WebPKitExample-macOS";
 			productReference = 22E0C7442538AE60008F5183 /* WebPKitExample-macOS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		22F6F267253B108B00C0C62B /* WebPKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22F6F270253B108B00C0C62B /* Build configuration list for PBXNativeTarget "WebPKitTests" */;
-			buildPhases = (
-				22F6F264253B108B00C0C62B /* Sources */,
-				22F6F265253B108B00C0C62B /* Frameworks */,
-				22F6F266253B108B00C0C62B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2263BB2D253C981000CAC3FE /* PBXTargetDependency */,
-				2263BB2F253C981300CAC3FE /* PBXTargetDependency */,
-				2263BAFE253C97F200CAC3FE /* PBXTargetDependency */,
-			);
-			name = WebPKitTests;
-			productName = WebPKitTests;
-			productReference = 22F6F268253B108B00C0C62B /* WebPKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1059,12 +1221,22 @@
 					22CDC7A5253AC5FC00F7D212 = {
 						CreatedOnToolsVersion = 12.1;
 					};
+					22DE934B254C596100BA6A93 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					22DE93E5254C5AE900BA6A93 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					22DE946A254C5BC200BA6A93 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 22DE934B254C596100BA6A93;
+					};
+					22DE94AB254C5C1500BA6A93 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 22DE93E5254C5AE900BA6A93;
+					};
 					22E0C7432538AE60008F5183 = {
 						CreatedOnToolsVersion = 12.2;
-					};
-					22F6F267253B108B00C0C62B = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 2254A5912534595300813B84;
 					};
 				};
 			};
@@ -1095,7 +1267,10 @@
 				22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */,
 				22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */,
 				22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */,
-				22F6F267253B108B00C0C62B /* WebPKitTests */,
+				22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */,
+				22DE93E5254C5AE900BA6A93 /* WebPKitTestHost-macOS */,
+				22DE946A254C5BC200BA6A93 /* WebPKitTests-iOS */,
+				22DE94AB254C5C1500BA6A93 /* WebPKitTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1176,6 +1351,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22DE934A254C596100BA6A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE93E4254C5AE900BA6A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE9469254C5BC200BA6A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222D479B254C5E83009F8DDB /* circle-index-transparent.png in Resources */,
+				222D479C254C5E83009F8DDB /* circle-grayscale-transparent.png in Resources */,
+				222D479D254C5E83009F8DDB /* circle-opaque.jpg in Resources */,
+				222D479E254C5E83009F8DDB /* circle-transparent.png in Resources */,
+				222D479F254C5E83009F8DDB /* circle-opaque.png in Resources */,
+				222D47A0254C5E83009F8DDB /* rect-horizontal.webp in Resources */,
+				222D47A1254C5E83009F8DDB /* rect-vertical.webp in Resources */,
+				222D47A2254C5E83009F8DDB /* logo-lossy.WEBP in Resources */,
+				222D47A3254C5E83009F8DDB /* logo-lossless.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE94AA254C5C1500BA6A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222D47A4254C5E92009F8DDB /* circle-index-transparent.png in Resources */,
+				222D47A5254C5E92009F8DDB /* circle-grayscale-transparent.png in Resources */,
+				222D47A6254C5E92009F8DDB /* circle-opaque.jpg in Resources */,
+				222D47A7254C5E92009F8DDB /* circle-transparent.png in Resources */,
+				222D47A8254C5E92009F8DDB /* circle-opaque.png in Resources */,
+				222D47A9254C5E92009F8DDB /* rect-horizontal.webp in Resources */,
+				222D47AA254C5E92009F8DDB /* rect-vertical.webp in Resources */,
+				222D47AB254C5E92009F8DDB /* logo-lossy.WEBP in Resources */,
+				222D47AC254C5E92009F8DDB /* logo-lossless.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E0C7422538AE60008F5183 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1183,22 +1404,6 @@
 				22E0C7512538AE61008F5183 /* Main.storyboard in Resources */,
 				22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */,
 				22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22F6F266253B108B00C0C62B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22957E0C254450FB005AB133 /* circle-grayscale-transparent.png in Resources */,
-				2263BAC0253C964400CAC3FE /* circle-transparent.png in Resources */,
-				22F6F2B6253B10A800C0C62B /* logo-lossy.WEBP in Resources */,
-				228628F9253F1800003E5B83 /* circle-opaque.png in Resources */,
-				22F6F2B7253B10A800C0C62B /* rect-horizontal.webp in Resources */,
-				22F6F2B4253B10A800C0C62B /* logo-lossless.webp in Resources */,
-				22E30BCA25455CFF001036F7 /* circle-index-transparent.png in Resources */,
-				22862959253F226C003E5B83 /* circle-opaque.jpg in Resources */,
-				22F6F2B5253B10A800C0C62B /* rect-vertical.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1363,27 +1568,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22DE9348254C596100BA6A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE95BA254C5D6200BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
+				22DE95B9254C5D6200BA6A93 /* UIImage+WebPDecoding.swift in Sources */,
+				22DE95B8254C5D6200BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
+				22DE95BB254C5D6200BA6A93 /* CGImage+PixelFormat.swift in Sources */,
+				22DE9620254C5D9100BA6A93 /* URL+WebPDecoding.swift in Sources */,
+				22DE934F254C596100BA6A93 /* AppDelegate.swift in Sources */,
+				22DE9621254C5D9100BA6A93 /* Data+WebPDecoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE93E2254C5AE900BA6A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE95CE254C5D6600BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
+				22DE95CF254C5D6600BA6A93 /* CGImage+PixelFormat.swift in Sources */,
+				22DE95D1254C5D6600BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
+				22DE93E9254C5AE900BA6A93 /* AppDelegate.swift in Sources */,
+				22DE960C254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
+				22DE95D0254C5D6600BA6A93 /* NSImage+WebPDecoding.swift in Sources */,
+				22DE960D254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE9467254C5BC200BA6A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE9542254C5CD500BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
+				22DE95F8254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
+				22DE953D254C5CD500BA6A93 /* WebPDecodingTests.swift in Sources */,
+				22DE9513254C5CBC00BA6A93 /* UIImage+WebPDecoding.swift in Sources */,
+				22DE9511254C5CBC00BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
+				22DE956F254C5CDE00BA6A93 /* WebPDecodingUIImageTests.swift in Sources */,
+				22DE95F9254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
+				22DE953C254C5CD500BA6A93 /* WebPEncodingTests.swift in Sources */,
+				22DE9512254C5CBC00BA6A93 /* CGImage+PixelFormat.swift in Sources */,
+				22DE9540254C5CD500BA6A93 /* WebPDecodingDataTests.swift in Sources */,
+				22DE9510254C5CBC00BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
+				22DE953F254C5CD500BA6A93 /* WebPDecodingURLTests.swift in Sources */,
+				22DE9541254C5CD500BA6A93 /* WebPDecodingCGImageTests.swift in Sources */,
+				22DE953E254C5CD500BA6A93 /* WebPEncodingCGImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE94A8254C5C1500BA6A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE955B254C5CDD00BA6A93 /* WebPDecodingDataTests.swift in Sources */,
+				22DE955A254C5CDD00BA6A93 /* WebPDecodingURLTests.swift in Sources */,
+				22DE9558254C5CDD00BA6A93 /* WebPDecodingTests.swift in Sources */,
+				22DE9526254C5CC300BA6A93 /* CGImage+WebPDecoding.swift in Sources */,
+				22DE95E5254C5D9000BA6A93 /* Data+WebPDecoding.swift in Sources */,
+				22DE9528254C5CC300BA6A93 /* CGImage+PixelFormat.swift in Sources */,
+				22DE955C254C5CDD00BA6A93 /* WebPEncodingTests.swift in Sources */,
+				22DE9529254C5CC300BA6A93 /* CGImage+WebPEncoding.swift in Sources */,
+				22DE9527254C5CC300BA6A93 /* NSImage+WebPDecoding.swift in Sources */,
+				22DE9556254C5CDD00BA6A93 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
+				22DE9557254C5CDD00BA6A93 /* WebPEncodingCGImageTests.swift in Sources */,
+				22DE95E4254C5D9000BA6A93 /* URL+WebPDecoding.swift in Sources */,
+				22DE9559254C5CDD00BA6A93 /* WebPDecodingCGImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E0C7402538AE60008F5183 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22E0C7492538AE60008F5183 /* ContentView.swift in Sources */,
 				22E0C7472538AE60008F5183 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22F6F264253B108B00C0C62B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F6F2A1253B10A400C0C62B /* WebPDecodingTests.swift in Sources */,
-				22F6F2A0253B10A400C0C62B /* WebPDecodingUIImageTests.swift in Sources */,
-				2286292A253F18DB003E5B83 /* WebPEncodingTests.swift in Sources */,
-				2263BAA0253C958C00CAC3FE /* WebPEncodingCGImageTests.swift in Sources */,
-				22F6F2A3253B10A400C0C62B /* WebPDecodingDataTests.swift in Sources */,
-				22F6F2A4253B10A400C0C62B /* WebPDecodingCGImageTests.swift in Sources */,
-				22862919253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift in Sources */,
-				22F6F2A2253B10A400C0C62B /* WebPDecodingURLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1399,21 +1658,6 @@
 			isa = PBXTargetDependency;
 			target = 224DBFFD2538A1D4000A0A36 /* WebPKitExample-watchOS-Extension */;
 			targetProxy = 224DC0002538A1D4000A0A36 /* PBXContainerItemProxy */;
-		};
-		2263BAFE253C97F200CAC3FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2254A5912534595300813B84 /* WebPKitExample-iOS */;
-			targetProxy = 2263BAFD253C97F200CAC3FE /* PBXContainerItemProxy */;
-		};
-		2263BB2D253C981000CAC3FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
-			targetProxy = 2263BB2C253C981000CAC3FE /* PBXContainerItemProxy */;
-		};
-		2263BB2F253C981300CAC3FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC49F253A933D00F7D212 /* WebPKit-iOS */;
-			targetProxy = 2263BB2E253C981300CAC3FE /* PBXContainerItemProxy */;
 		};
 		22CDC4A6253A933D00F7D212 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1454,6 +1698,16 @@
 			isa = PBXTargetDependency;
 			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
 			targetProxy = 22CDC819253AF38400F7D212 /* PBXContainerItemProxy */;
+		};
+		22DE9471254C5BC200BA6A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DE934B254C596100BA6A93 /* WebPKitTestHost-iOS */;
+			targetProxy = 22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */;
+		};
+		22DE94B2254C5C1500BA6A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DE93E5254C5AE900BA6A93 /* WebPKitTestHost-macOS */;
+			targetProxy = 22DE94B1254C5C1500BA6A93 /* PBXContainerItemProxy */;
 		};
 		22F6F212253B0BCB00C0C62B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2271,6 +2525,194 @@
 			};
 			name = Release;
 		};
+		22DE935E254C596200BA6A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTestHost-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22DE935F254C596200BA6A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTestHost-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22DE93F4254C5AEA00BA6A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPKitExample-macOS",
+				);
+				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTestHost-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		22DE93F5254C5AEA00BA6A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPKitExample-macOS",
+				);
+				INFOPLIST_FILE = WebPKitTests/Supporting/HostApp/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tim.WebPKitTestHost-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		22DE9473254C5BC200BA6A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-iOS.app/WebPKitTestHost-iOS";
+			};
+			name = Debug;
+		};
+		22DE9474254C5BC200BA6A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-iOS.app/WebPKitTestHost-iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22DE94B4254C5C1600BA6A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
+			};
+			name = Debug;
+		};
+		22DE94B5254C5C1600BA6A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = WebPKitTests/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitTestHost-macOS.app/Contents/MacOS/WebPKitTestHost-macOS";
+			};
+			name = Release;
+		};
 		22E0C7542538AE61008F5183 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2337,61 +2779,6 @@
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		22F6F271253B108B00C0C62B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebPKitExample-macOS",
-				);
-				INFOPLIST_FILE = WebPKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
-			};
-			name = Debug;
-		};
-		22F6F272253B108B00C0C62B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebPKitExample-macOS",
-				);
-				INFOPLIST_FILE = WebPKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.WebPKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebPKitExample-iOS.app/WebPKitExample-iOS";
 			};
 			name = Release;
 		};
@@ -2524,20 +2911,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		22DE935D254C596200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE935E254C596200BA6A93 /* Debug */,
+				22DE935F254C596200BA6A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DE93F3254C5AEA00BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTestHost-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE93F4254C5AEA00BA6A93 /* Debug */,
+				22DE93F5254C5AEA00BA6A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DE9472254C5BC200BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE9473254C5BC200BA6A93 /* Debug */,
+				22DE9474254C5BC200BA6A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DE94B3254C5C1600BA6A93 /* Build configuration list for PBXNativeTarget "WebPKitTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE94B4254C5C1600BA6A93 /* Debug */,
+				22DE94B5254C5C1600BA6A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22E0C7562538AE61008F5183 /* Build configuration list for PBXNativeTarget "WebPKitExample-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22E0C7542538AE61008F5183 /* Debug */,
 				22E0C7552538AE61008F5183 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22F6F270253B108B00C0C62B /* Build configuration list for PBXNativeTarget "WebPKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22F6F271253B108B00C0C62B /* Debug */,
-				22F6F272253B108B00C0C62B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
