@@ -31,16 +31,11 @@ URL="https://github.com/TimOliver/WebP-Cocoa/releases/download/${VERSION}/libweb
 # Move to project folder
 cd ${FOLDER}
 
-# If the folder is present, but empty, delete it
+# If the folder is empty, download a copy of the framework and install
 if [ ! "$(ls $FRAMEWORK)" ]; then
-    rm -r $FRAMEWORK
-fi
-
-# Download a copy of the framework and install
-if [[ ! -d ${FRAMEWORK} ]]; then
     curl -L -sS ${URL} > framework.zip
     unzip framework.zip
-    cp -r libwebp*/${FRAMEWORK} .
+    cp -a libwebp*/${FRAMEWORK}/. ${FRAMEWORK}/
     rm -r libwebp*/
     rm framework.zip
 fi
