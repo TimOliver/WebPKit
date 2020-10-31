@@ -62,7 +62,7 @@ let size = CGImage.sizeOfWebP(with: Data())
 import WebPKit 
 
 // Load from data in memory
-let webpImage = UIImage(webpData: Data()
+let webpImage = UIImage(webpData: Data())
 
 // Load from disk
 let webpImage = UIImage(contentsOfWebPFile: URL())
