@@ -8,9 +8,10 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/WebPKit/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/WebPKit.svg?style=flat)](http://cocoadocs.org/docsets/WebPKit)
 
-`WebPKit` is an open source framework that wraps Google's [WebP library](https://developers.google.com/speed/webp) to provide native-feeling Cocoa APIs for working with WebP image files on all of Apple's platforms.
+`WebPKit` is an open source Swift framework that wraps around Google's [WebP library](https://developers.google.com/speed/webp) to provide a native-feeling Cocoa APIs for working with WebP image files on all of Apple's platforms.
 
-`WebPKit` allows for easily encoding and decoding WebP files to `UIImage` or `NSImage` objects. It also includes advanced features such as decoding WebP images to custom sizes.
+`WebPKit` works by extending certain Cocoa classes to enable decoding WebP image data from disk, or encoding WebP image data from memory. It also provides additional functionality such as being able to verify the contents of a WebP file before decoding, as well as using WebP's decoding features to enable custom sizing.
+
 
 # Features
 * Read image files in the WebP format.
@@ -76,7 +77,7 @@ let webpImage = UIImage.webpNamed("MyWebPImage")
 import WebPKit 
 
 // Load from data in memory
-let webpImage = NSImage(webpData: Data()
+let webpImage = NSImage(webpData: Data())
 
 // Load from disk
 let webpImage = NSImage(contentsOfWebPFile: URL())
@@ -139,5 +140,3 @@ A huge shout-out also goes to the `SDWebImage` team for [maintaining CocoaPods a
 # License
 
 `WebPKit` is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
-
-
