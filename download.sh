@@ -28,8 +28,15 @@ FOLDER="WebPKitExample-${1}"
 FRAMEWORK="WebP.${2}"
 URL="https://github.com/TimOliver/WebP-Cocoa/releases/download/${VERSION}/libwebp-${VERSION}-framework-${3}-webp.zip"
 
+# Move to project folder
 cd ${FOLDER}
 
+# If the folder is present, but empty, delete it
+if [ ! "$(ls $FRAMEWORK)" ]; then
+    rm -r $FRAMEWORK
+fi
+
+# Download a copy of the framework and install
 if [[ ! -d ${FRAMEWORK} ]]; then
     curl -L -sS ${URL} > framework.zip
     unzip framework.zip
