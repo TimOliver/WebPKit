@@ -110,6 +110,7 @@
 		2282DDC82538929B004913CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC62538929B004913CF /* LaunchScreen.storyboard */; };
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
+		228FEBEA254CED9300885886 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22CDC4A7253A933D00F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; };
 		22CDC4BA253A93C600F7D212 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22CDC4C9253A93D800F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -442,6 +443,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228FEBEA254CED9300885886 /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
