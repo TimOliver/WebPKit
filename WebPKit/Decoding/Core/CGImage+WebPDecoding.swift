@@ -125,17 +125,15 @@ public extension CGImage {
         // Init the config
         var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
-        config.output.colorspace = MODE_rgbA;
-        config.options.bypass_filtering = 1;
-        config.options.no_fancy_upsampling = 1;
-        config.options.use_threads = 1;
+        config.output.colorspace = MODE_rgbA // Pre-multipled alpha (Alpha channel is disregarded for opaque images)
+        config.options.bypass_filtering = 1
+        config.options.no_fancy_upsampling = 1
+        config.options.use_threads = 1
 
         // If desired, set the config to decode at a custom size
         if width != nil || height != nil {
             // Fetch the size of the image so we can calculate aspect ratio
-            guard let originalSize = sizeOfWebP(with: data) else {
-                throw WebPDecodingError.notEnoughData
-            }
+            let originalSize = CGSize(width: Int(features.width), height: Int(features.height))
 
             // Configure the target size, using the original size as default
             var size = CGSize.zero
@@ -173,17 +171,21 @@ public extension CGImage {
                                           size: Int(config.output.width * config.output.height) * bytesPerRow,
                                           releaseData: releaseData)
 
+        // Configure the rendering information for the image
         let colorspace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(rawValue: CGBitmapInfo.byteOrder32Big.rawValue | CGImageAlphaInfo.premultipliedLast.rawValue)
+        var bitmapInfo = CGBitmapInfo.byteOrder32Big.rawValue
+        bitmapInfo |= features.has_alpha == 1 ? CGImageAlphaInfo.premultipliedLast.rawValue :
+                                                CGImageAlphaInfo.noneSkipLast.rawValue
         let renderingIntent = CGColorRenderingIntent.defaultIntent
 
+        // Render the image
         guard let imageRef = CGImage(width: Int(config.output.width),
                                height: Int(config.output.height),
                                bitsPerComponent: 8,
                                bitsPerPixel: 32,
                                bytesPerRow: 4 * Int(config.output.width),
                                space: colorspace,
-                               bitmapInfo: bitmapInfo,
+                               bitmapInfo: CGBitmapInfo(rawValue: bitmapInfo),
                                provider: dataProvider!,
                                decode: nil,
                                shouldInterpolate: false,
@@ -191,7 +193,6 @@ public extension CGImage {
 
         return imageRef
     }
-
 }
 
 #endif

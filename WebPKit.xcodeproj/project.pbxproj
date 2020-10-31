@@ -111,6 +111,7 @@
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
 		228FEBEA254CED9300885886 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
+		228FEC4B254CF2AE00885886 /* WebPKitLogoOpaque.webp in Resources */ = {isa = PBXBuildFile; fileRef = 228FEC4A254CF2AE00885886 /* WebPKitLogoOpaque.webp */; };
 		22CDC4A7253A933D00F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC4A0253A933D00F7D212 /* WebPKit.framework */; };
 		22CDC4BA253A93C600F7D212 /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2254A61325348EAD00813B84 /* WebP.xcframework */; };
 		22CDC4C9253A93D800F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -345,6 +346,7 @@
 		22862958253F226C003E5B83 /* circle-opaque.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "circle-opaque.jpg"; sourceTree = "<group>"; };
 		228E7D70250C85E500C6B140 /* WebPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPKit.h; sourceTree = "<group>"; };
 		22957E0B254450FB005AB133 /* circle-grayscale-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-grayscale-transparent.png"; sourceTree = "<group>"; };
+		228FEC4A254CF2AE00885886 /* WebPKitLogoOpaque.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = WebPKitLogoOpaque.webp; sourceTree = "<group>"; };
 		22985952253A0C6700D904A4 /* rect-horizontal.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-horizontal.webp"; sourceTree = "<group>"; };
 		22985953253A0C6700D904A4 /* rect-vertical.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rect-vertical.webp"; sourceTree = "<group>"; };
 		22CDC4A0253A933D00F7D212 /* WebPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -545,6 +547,7 @@
 				2282DDD3253892B9004913CF /* Sources */,
 				2282DDAD2538913D004913CF /* Supporting */,
 				2254A61325348EAD00813B84 /* WebP.xcframework */,
+				228FEC4A254CF2AE00885886 /* WebPKitLogoOpaque.webp */,
 				2254A6412534AACE00813B84 /* WebPKitLogo.webp */,
 			);
 			path = "WebPKitExample-iOS";
@@ -1196,6 +1199,7 @@
 				2254A5A12534595300813B84 /* LaunchScreen.storyboard in Resources */,
 				2254A59E2534595300813B84 /* Assets.xcassets in Resources */,
 				2254A59C2534595300813B84 /* Main.storyboard in Resources */,
+				228FEC4B254CF2AE00885886 /* WebPKitLogoOpaque.webp in Resources */,
 				2254A6422534AACE00813B84 /* WebPKitLogo.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
