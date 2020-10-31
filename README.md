@@ -126,11 +126,13 @@ SPM support is coming soon. Stay tuned!
 
 Support for WebP image files had been a growing feature request in my comic reader app [iComics](http://icomics/co) for a number of years. With iComics being in Objective-C, I was able to use [one of the many libraries](https://github.com/mattt/WebPImageSerialization) on GitHub out there to easily support it.
 
-But while that was the case for Objective-C, while I've been working on iComics 2, I started to realise that there still wasn't a great amount of WebP support for Apple's more modern platforms and features. 
+But while that was the case for Objective-C, while I've been working on iComics 2, I started to realise that there still wasn't a great amount of WebP support for Swift, as well as Apple's modern platforms and features in general. 
 
-Google's own precompiled binaries don't support either Swift or Mac Catalyst, and all the Swift libraries I found didn't provide features I needed, like CocoaPods support, or decoding at different sizes.
+Google's own precompiled WebP binaries don't support either Swift or Mac Catalyst, and while I found a few different WebP Swift libraries out there, none covered all of the requirements that I was hoping for (Things like CocoaPods support, accurate alpha channel control, and decoding at intermediate sizes).
 
-For a feature that will be an extremely fundamental pillar in iComics 2, I decided that it would be worth the time and investment to make a *really* good WebP framework for the Apple ecosystem.
+For a feature that will be an extremely fundamental pillar in iComics 2, I decided that it would be worth the time and investment to go back and make a *really* good WebP framework from scratch, that followed the API design of Apple's frameworks for easy integration, but also gave me the control to include all of the advanced features I need from the start.
+
+I'm incrdedibly happy with how this framework turned out. It turns out it was no where near as much code as I was expecting, and it all fit nicely as extensions on existing Apple classes. Moving forward, I hope this framework can be valuable for other Apple developers as well.
 
 # Credits
 
