@@ -24,9 +24,6 @@ import Foundation
 import CoreGraphics
 import Accelerate
 
-#if canImport(WebP)
-import WebP
-
 /// Presets that can be used to help
 /// configure how an image is encoded to WebP
 public enum WebPEncodePreset: UInt32 {
@@ -60,6 +57,9 @@ public enum WebPEncodingError: UInt32, Error {
     case invalidPictureData
     case nilImage
 }
+
+#if canImport(WebP)
+import WebP
 
 /// Extends CGImage with the ability
 /// to write WebP images
