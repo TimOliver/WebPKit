@@ -18,6 +18,7 @@
 * Write in-memory images to the WebP format.
 * Supports *all* of Apple's platforms (including Mac Catalyst).
 * Additional convenience methods for quickly verifying WebP data before decoding.
+* Decode WebP images directly to custom sizes (Good for saving memory)
 * 100% Swift, and fully unit-tested.
 
 # Requirements
