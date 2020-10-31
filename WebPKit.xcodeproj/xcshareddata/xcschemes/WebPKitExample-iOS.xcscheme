@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2254A62A2534A6E800813B84"
+               BlueprintIdentifier = "22DE946A254C5BC200BA6A93"
                BuildableName = "WebPKitTests.xctest"
                BlueprintName = "WebPKitTests"
                ReferencedContainer = "container:WebPKit.xcodeproj">
