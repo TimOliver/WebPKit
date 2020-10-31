@@ -67,5 +67,12 @@ fastlane/test_output
 
 iOSInjectionProject/
 /build*/
-*.xcframework
-*.framework
+
+# Custom rules for ensuring the pre-built WebP frameworks aren't committed to this project
+# Ignore all files inside the framework folders
+*.xcframework/*
+*.framework/*
+
+# Disregard ignore rule for the gitkeep files which allow these empty folders to be added
+!*.xcframework/.gitkeep
+!*.framework/.gitkeep
