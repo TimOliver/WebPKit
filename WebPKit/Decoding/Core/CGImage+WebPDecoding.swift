@@ -113,20 +113,27 @@ public extension CGImage {
         // Check the header before proceeding to ensure this is a valid WebP file
         guard data.isWebP else { throw WebPDecodingError.invalidHeader }
 
+        // Get properties of WebP image so we can
+        // configure the decoding as needed
+        var features = WebPBitstreamFeatures()
+        var status = data.withUnsafeBytes { ptr -> VP8StatusCode in
+            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
+            return WebPGetFeatures(boundPtr, ptr.count, &features)
+        }
+        guard status == VP8_STATUS_OK else { throw WebPDecodingError(rawValue: status.rawValue)! }
+
         // Init the config
         var config = WebPDecoderConfig()
         guard WebPInitDecoderConfig(&config) != 0 else { throw WebPDecodingError.initConfigFailed }
-        config.output.colorspace = MODE_rgbA;
-        config.options.bypass_filtering = 1;
-        config.options.no_fancy_upsampling = 1;
-        config.options.use_threads = 1;
+        config.output.colorspace = MODE_rgbA // Pre-multipled alpha (Alpha channel is disregarded for opaque images)
+        config.options.bypass_filtering = 1
+        config.options.no_fancy_upsampling = 1
+        config.options.use_threads = 1
 
         // If desired, set the config to decode at a custom size
         if width != nil || height != nil {
             // Fetch the size of the image so we can calculate aspect ratio
-            guard let originalSize = sizeOfWebP(with: data) else {
-                throw WebPDecodingError.notEnoughData
-            }
+            let originalSize = CGSize(width: Int(features.width), height: Int(features.height))
 
             // Configure the target size, using the original size as default
             var size = CGSize.zero
@@ -150,7 +157,7 @@ public extension CGImage {
         }
 
         // Decode the image
-        let status = data.withUnsafeBytes { ptr -> VP8StatusCode in
+        status = data.withUnsafeBytes { ptr -> VP8StatusCode in
             guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
             return WebPDecode(boundPtr, ptr.count, &config)
         }
@@ -164,17 +171,21 @@ public extension CGImage {
                                           size: Int(config.output.width * config.output.height) * bytesPerRow,
                                           releaseData: releaseData)
 
+        // Configure the rendering information for the image
         let colorspace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(rawValue: CGBitmapInfo.byteOrder32Big.rawValue | CGImageAlphaInfo.premultipliedLast.rawValue)
+        var bitmapInfo = CGBitmapInfo.byteOrder32Big.rawValue
+        bitmapInfo |= features.has_alpha == 1 ? CGImageAlphaInfo.premultipliedLast.rawValue :
+                                                CGImageAlphaInfo.noneSkipLast.rawValue
         let renderingIntent = CGColorRenderingIntent.defaultIntent
 
+        // Render the image
         guard let imageRef = CGImage(width: Int(config.output.width),
                                height: Int(config.output.height),
                                bitsPerComponent: 8,
                                bitsPerPixel: 32,
                                bytesPerRow: 4 * Int(config.output.width),
                                space: colorspace,
-                               bitmapInfo: bitmapInfo,
+                               bitmapInfo: CGBitmapInfo(rawValue: bitmapInfo),
                                provider: dataProvider!,
                                decode: nil,
                                shouldInterpolate: false,
@@ -182,7 +193,6 @@ public extension CGImage {
 
         return imageRef
     }
-
 }
 
 #endif
