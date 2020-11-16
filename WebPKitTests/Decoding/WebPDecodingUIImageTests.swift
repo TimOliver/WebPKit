@@ -26,8 +26,25 @@ class WebPDecodingUIImageTests: WebPDecodingTests {
 
     // Test loading WebP files from the resource bundle
     func testLoadingUIImageFromResourceBundle() {
-        XCTAssertNotNil(UIImage.webpNamed("logo-lossy.WEBP", bundle: testBundle))
-        XCTAssertNotNil(UIImage.webpNamed("logo-lossless", bundle: testBundle))
+        // Check lossy image
+        let lossyImage = UIImage.webpNamed("logo-lossy.WEBP", bundle: testBundle)
+        XCTAssertNotNil(lossyImage)
+
+        // Compare to system WebP on iOS 14
+        let lossyImageSystem = UIImage(named: "logo-lossy.WEBP", in: testBundle, with: nil)
+        XCTAssertNotNil(lossyImageSystem)
+
+        // Check both have a valid and equal size
+        XCTAssertEqual(lossyImage!.size, lossyImageSystem!.size)
+
+        // Check lossless image
+        let losslessImage = UIImage.webpNamed("logo-lossless", bundle: testBundle)
+        XCTAssertNotNil(losslessImage)
+
+        let losslessImageSystem = UIImage(named: "logo-lossless.webp", in: testBundle, with: nil)
+        XCTAssertNotNil(losslessImageSystem)
+
+        XCTAssertEqual(losslessImage!.size, losslessImageSystem!.size)
     }
 
     // Test that images loaded multiple times point to the same instance
