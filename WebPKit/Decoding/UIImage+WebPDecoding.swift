@@ -46,7 +46,7 @@ public extension UIImage {
     ///   - width: Optionally, a custom width to decode the image to.
     ///   - height: Optionally, a custom height to decode the image to.
     ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
-    convenience init?(webpData: Data, scale: CGFloat? = nil, width: CGFloat? = nil,
+    convenience init?(webpData: Data, scale: CGFloat? = 1.0, width: CGFloat? = nil,
                       height: CGFloat? = nil, scalingMode: WebPScalingMode = .aspectFit) {
 
         // Depending on platform, retrieve the screen scale
@@ -75,7 +75,7 @@ public extension UIImage {
     ///   - width: Optionally, a custom width to decode the image to.
     ///   - height: Optionally, a custom height to decode the image to.
     ///   - scalingMode: When decoding to a custom size, the type of scaling that will be applied.
-    convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = nil, width: CGFloat? = nil,
+    convenience init?(contentsOfWebPFile url: URL, scale: CGFloat? = 1.0, width: CGFloat? = nil,
                       height: CGFloat? = nil, scalingMode: WebPScalingMode = .aspectFit) {
         // Depending on platform, retrieve the screen scale
         #if os(watchOS)
