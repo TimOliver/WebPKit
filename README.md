@@ -8,7 +8,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/WebPKit/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/WebPKit.svg?style=flat)](http://cocoadocs.org/docsets/WebPKit)
 
-`WebPKit` is an open source Swift framework that wraps around Google's [WebP library](https://developers.google.com/speed/webp) to provide a native-feeling Cocoa APIs for working with WebP image files on all of Apple's platforms.
+`WebPKit` is an open source Swift framework that wraps around Google's [WebP library](https://developers.google.com/speed/webp) to provide a native-feeling Cocoa API for working with WebP image files on all of Apple's platforms.
 
 `WebPKit` works by extending certain Cocoa classes to enable decoding WebP image data from disk, or encoding WebP image data from memory. It also provides additional functionality such as being able to verify the contents of a WebP file before decoding, as well as using WebP's decoding features to enable custom sizing.
 
