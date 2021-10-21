@@ -1,11 +1,11 @@
 # WebPKit
 
-<img src="https://github.com/TimOliver/WebPKit/raw/master/screenshot.png" alt="WebPKit running on various devices" width="850" />
+<img src="https://github.com/TimOliver/WebPKit/raw/main/screenshot.png" alt="WebPKit running on various devices" width="850" />
 
 [![CI](https://github.com/TimOliver/WebPKit/workflows/CI/badge.svg)](https://github.com/TimOliver/WebPKit/actions?query=workflow%3ACI)
 [![Version](https://img.shields.io/cocoapods/v/WebPKit.svg?style=flat)](http://cocoadocs.org/docsets/TOCropViewController)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/WebPKit/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/WebPKit/main/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/WebPKit.svg?style=flat)](http://cocoadocs.org/docsets/WebPKit)
 
 `WebPKit` is an open source Swift framework that wraps around Google's [WebP library](https://developers.google.com/speed/webp) to provide a native-feeling Cocoa API for working with WebP image files on all of Apple's platforms.
