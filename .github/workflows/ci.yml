@@ -12,4 +12,4 @@ jobs:
     - name: Install WebP.framework
       run: 'sh download.sh iOS xcframework ios-catalyst'
     - name: Run unit tests
-      run: 'xcodebuild -scheme WebPKitTests -project ./WebPKit.xcodeproj -sdk iphonesimulator clean build test'
+      run: 'xcodebuild -scheme WebPKitTests -project ./WebPKit.xcodeproj -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 12" clean build test'
