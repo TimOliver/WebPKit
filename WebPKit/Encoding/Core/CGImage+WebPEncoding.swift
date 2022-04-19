@@ -1,7 +1,7 @@
 //
 //  CGImage+WebPEncoding.swift
 //
-//  Copyright 2020 Timothy Oliver. All rights reserved.
+//  Copyright 2020-2022 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -60,6 +60,11 @@ public enum WebPEncodingError: UInt32, Error {
 
 #if canImport(WebP)
 import WebP
+#elseif canImport(libwebp)
+import libwebp
+#else
+#error("libwebp couldn't be found")
+#endif
 
 /// Extends CGImage with the ability
 /// to write WebP images
@@ -238,5 +243,3 @@ private extension CGImage {
         }
     }
 }
-
-#endif
