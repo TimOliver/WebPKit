@@ -3,55 +3,8 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 22CDC754253ABFCB00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (iOS)" */;
-			buildPhases = (
-				22CDC763253ABFD400F7D212 /* Download WebP.xcframework */,
-			);
-			dependencies = (
-			);
-			name = "Download WebP (iOS)";
-			productName = "Download WebP (iOS)";
-		};
-		22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 22CDC77F253AC5B400F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (macOS)" */;
-			buildPhases = (
-				22CDC78F253AC5BB00F7D212 /* Download WebP.framework */,
-			);
-			dependencies = (
-			);
-			name = "Download WebP (macOS)";
-			productName = "Download WebP (macOS)";
-		};
-		22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 22CDC793253AC5D900F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (tvOS)" */;
-			buildPhases = (
-				22CDC7A4253AC5E000F7D212 /* Download WebP.framework */,
-			);
-			dependencies = (
-			);
-			name = "Download WebP (tvOS)";
-			productName = "Download WebP (tvOS)";
-		};
-		22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 22CDC7A6253AC5FC00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (watchOS)" */;
-			buildPhases = (
-				22CDC7B8253AC5FF00F7D212 /* Download WebP.framework */,
-			);
-			dependencies = (
-			);
-			name = "Download WebP (watchOS)";
-			productName = "Download WebP (watchOS)";
-		};
-/* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		222D479B254C5E83009F8DDB /* circle-index-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E30BC925455CFF001036F7 /* circle-index-transparent.png */; };
@@ -91,7 +44,6 @@
 		224DC0062538A1D4000A0A36 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DC0052538A1D4000A0A36 /* ExtensionDelegate.swift */; };
 		224DC00A2538A1D4000A0A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DC0092538A1D4000A0A36 /* Assets.xcassets */; };
 		224DC0362538A408000A0A36 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
-		224DC0642538A6E1000A0A36 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224DC0632538A6E1000A0A36 /* WebP.framework */; };
 		2254A5952534595300813B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5942534595300813B84 /* AppDelegate.swift */; };
 		2254A5992534595300813B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254A5982534595300813B84 /* ViewController.swift */; };
 		2254A59C2534595300813B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254A59A2534595300813B84 /* Main.storyboard */; };
@@ -108,7 +60,6 @@
 		2282DDC52538929B004913CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC42538929B004913CF /* Assets.xcassets */; };
 		2282DDC82538929B004913CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2282DDC62538929B004913CF /* LaunchScreen.storyboard */; };
 		2282DDE325389453004913CF /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
-		2282DE052538964F004913CF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
 		228FEDBC254CFA4300885886 /* WebPKitLogoOpaque.webp in Resources */ = {isa = PBXBuildFile; fileRef = 228FEDBB254CFA4300885886 /* WebPKitLogoOpaque.webp */; };
 		228FEDBD254CFA4300885886 /* WebPKitLogoOpaque.webp in Resources */ = {isa = PBXBuildFile; fileRef = 228FEDBB254CFA4300885886 /* WebPKitLogoOpaque.webp */; };
 		228FEDBE254CFA4300885886 /* WebPKitLogoOpaque.webp in Resources */ = {isa = PBXBuildFile; fileRef = 228FEDBB254CFA4300885886 /* WebPKitLogoOpaque.webp */; };
@@ -126,21 +77,18 @@
 		22CDC52F253A957E00F7D212 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		22CDC530253A957E00F7D212 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		22CDC531253A957E00F7D212 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		22CDC539253A959700F7D212 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22CDC54D253A977700F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC546253A977700F7D212 /* WebPKit.framework */; };
 		22CDC561253A97B600F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22CDC569253A97BB00F7D212 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
 		22CDC56A253A97BB00F7D212 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		22CDC56B253A97BB00F7D212 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		22CDC56C253A97BB00F7D212 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		22CDC574253A97C300F7D212 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224DC0632538A6E1000A0A36 /* WebP.framework */; };
 		22CDC588253A97FD00F7D212 /* WebPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC581253A97FD00F7D212 /* WebPKit.framework */; };
 		22CDC5A3253A986000F7D212 /* WebPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 228E7D70250C85E500C6B140 /* WebPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22CDC5AB253A986800F7D212 /* UIImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B95725386D5D0069098A /* UIImage+WebPDecoding.swift */; };
 		22CDC5AC253A986800F7D212 /* CGImage+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93C2537621E0069098A /* CGImage+WebPDecoding.swift */; };
 		22CDC5AD253A986800F7D212 /* URL+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B910253753D20069098A /* URL+WebPDecoding.swift */; };
 		22CDC5AE253A986800F7D212 /* Data+WebPDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203B93525375E690069098A /* Data+WebPDecoding.swift */; };
-		22CDC5B6253A987700F7D212 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282DDEE253894B0004913CF /* WebP.framework */; };
 		22CDC5ED253A999600F7D212 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC5EC253A999500F7D212 /* UIKit.framework */; };
 		22CDC5F7253A99A200F7D212 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC5F6253A99A200F7D212 /* AppKit.framework */; };
 		22CDC5F9253A99A800F7D212 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CDC5F8253A99A800F7D212 /* UIKit.framework */; };
@@ -155,9 +103,10 @@
 		22E0C7492538AE60008F5183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0C7482538AE60008F5183 /* ContentView.swift */; };
 		22E0C74B2538AE61008F5183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74A2538AE61008F5183 /* Assets.xcassets */; };
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
-		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
 		22FB67B9280EFAE3002F7C2F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2292A5662780BE0200F192D1 /* WebP.xcframework */; };
+		22FB67BB280F00D2002F7C2F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FB67BA280F00D2002F7C2F /* WebP.xcframework */; };
+		22FB67BD280F0185002F7C2F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FB67BC280F0185002F7C2F /* WebP.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,68 +152,12 @@
 			remoteGlobalIDString = 22CDC545253A977700F7D212;
 			remoteInfo = "WebPKit-watchOS";
 		};
-		22CDC813253AF37600F7D212 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
-			remoteInfo = "Download WebP (iOS)";
-		};
-		22CDC815253AF37B00F7D212 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
-			remoteInfo = "Download WebP (macOS)";
-		};
-		22CDC817253AF38100F7D212 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC792253AC5D900F7D212;
-			remoteInfo = "Download WebP (tvOS)";
-		};
-		22CDC819253AF38400F7D212 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
-			remoteInfo = "Download WebP (watchOS)";
-		};
 		22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22DE934B254C596100BA6A93;
 			remoteInfo = "WebPKitTestHost-iOS";
-		};
-		22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC753253ABFCB00F7D212;
-			remoteInfo = "Download WebP (iOS)";
-		};
-		22F6F222253B0BD500C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC792253AC5D900F7D212;
-			remoteInfo = "Download WebP (tvOS)";
-		};
-		22F6F224253B0BEA00C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC7A5253AC5FC00F7D212;
-			remoteInfo = "Download WebP (watchOS)";
-		};
-		22F6F245253B0DEF00C0C62B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 228E7D64250C85E500C6B140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22CDC77E253AC5B400F7D212;
-			remoteInfo = "Download WebP (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -318,7 +211,6 @@
 		224DC0052538A1D4000A0A36 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		224DC0092538A1D4000A0A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224DC00B2538A1D4000A0A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		224DC0632538A6E1000A0A36 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		2254A5922534595300813B84 /* WebPKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2254A5942534595300813B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2254A5982534595300813B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -339,7 +231,6 @@
 		2282DDC42538929B004913CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2282DDC72538929B004913CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2282DDC92538929B004913CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2282DDEE253894B0004913CF /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22836082250C94DD00E46CD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228628F8253F1800003E5B83 /* circle-opaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-opaque.png"; sourceTree = "<group>"; };
 		22862918253F1858003E5B83 /* WebPEncodingCGBitmapInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPEncodingCGBitmapInfoTests.swift; sourceTree = "<group>"; };
@@ -372,11 +263,12 @@
 		22E0C7522538AE61008F5183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E0C7532538AE61008F5183 /* WebPKitExample_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPKitExample_macOS.entitlements; sourceTree = "<group>"; };
 		22E0C7842538AF96008F5183 /* NSImage+WebPDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+WebPDecoding.swift"; sourceTree = "<group>"; };
-		22E0C7B42538B197008F5183 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		22E30BC925455CFF001036F7 /* circle-index-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-index-transparent.png"; sourceTree = "<group>"; };
 		22F6F362253B19C800C0C62B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		22F6F363253B19DE00C0C62B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22F6F364253B19F500C0C62B /* WebPKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WebPKit.podspec; sourceTree = "<group>"; };
+		22FB67BA280F00D2002F7C2F /* WebP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebP.xcframework; sourceTree = "<group>"; };
+		22FB67BC280F0185002F7C2F /* WebP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebP.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC54D253A977700F7D212 /* WebPKit.framework in Frameworks */,
-				224DC0642538A6E1000A0A36 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC588253A97FD00F7D212 /* WebPKit.framework in Frameworks */,
-				2282DE052538964F004913CF /* WebP.framework in Frameworks */,
+				22FB67BD280F0185002F7C2F /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC5F7253A99A200F7D212 /* AppKit.framework in Frameworks */,
-				22CDC539253A959700F7D212 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC5FB253A99B100F7D212 /* WatchKit.framework in Frameworks */,
-				22CDC574253A97C300F7D212 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC5F9253A99A800F7D212 /* UIKit.framework in Frameworks */,
-				22CDC5B6253A987700F7D212 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDC504253A94A900F7D212 /* WebPKit.framework in Frameworks */,
-				22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */,
+				22FB67BB280F00D2002F7C2F /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +422,6 @@
 			children = (
 				224DBFF32538A1D3000A0A36 /* App */,
 				224DC0022538A1D4000A0A36 /* Extension */,
-				224DC0632538A6E1000A0A36 /* WebP.framework */,
 			);
 			path = "WebPKitExample-watchOS";
 			sourceTree = "<group>";
@@ -620,7 +507,7 @@
 				2282DDD5253892DA004913CF /* Resources */,
 				2282DDD4253892D1004913CF /* Sources */,
 				2282DDD6253892E7004913CF /* Supporting */,
-				2282DDEE253894B0004913CF /* WebP.framework */,
+				22FB67BC280F0185002F7C2F /* WebP.xcframework */,
 			);
 			path = "WebPKitExample-tvOS";
 			sourceTree = "<group>";
@@ -766,7 +653,7 @@
 				22E0C76B2538AED1008F5183 /* Sources */,
 				22E0C76A2538AEBF008F5183 /* Resources */,
 				22E0C7632538AEA3008F5183 /* Supporting */,
-				22E0C7B42538B197008F5183 /* WebP.framework */,
+				22FB67BA280F00D2002F7C2F /* WebP.xcframework */,
 			);
 			path = "WebPKitExample-macOS";
 			sourceTree = "<group>";
@@ -897,7 +784,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22F6F225253B0BEA00C0C62B /* PBXTargetDependency */,
 				22CDC64F253A9CF400F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-watchOS-Extension";
@@ -916,7 +802,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22F6F212253B0BCB00C0C62B /* PBXTargetDependency */,
 				22CDC4A6253A933D00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-iOS";
@@ -935,7 +820,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22F6F223253B0BD500C0C62B /* PBXTargetDependency */,
 				22CDC587253A97FD00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-tvOS";
@@ -955,7 +839,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC814253AF37600F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-iOS";
 			productName = WebPKitFramework;
@@ -974,7 +857,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC816253AF37B00F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-macOS";
 			productName = WebPKitFramework;
@@ -993,7 +875,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC81A253AF38400F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-watchOS";
 			productName = WebPKitFramework;
@@ -1012,7 +893,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22CDC818253AF38100F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKit-tvOS";
 			productName = WebPKitFramework;
@@ -1065,7 +945,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22F6F246253B0DEF00C0C62B /* PBXTargetDependency */,
 				22CDC503253A94A900F7D212 /* PBXTargetDependency */,
 			);
 			name = "WebPKitExample-macOS";
@@ -1109,18 +988,6 @@
 					22CDC580253A97FD00F7D212 = {
 						CreatedOnToolsVersion = 12.1;
 					};
-					22CDC753253ABFCB00F7D212 = {
-						CreatedOnToolsVersion = 12.1;
-					};
-					22CDC77E253AC5B400F7D212 = {
-						CreatedOnToolsVersion = 12.1;
-					};
-					22CDC792253AC5D900F7D212 = {
-						CreatedOnToolsVersion = 12.1;
-					};
-					22CDC7A5253AC5FC00F7D212 = {
-						CreatedOnToolsVersion = 12.1;
-					};
 					22DE934B254C596100BA6A93 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -1156,10 +1023,6 @@
 				22CDC4FC253A94A900F7D212 /* WebPKit-macOS */,
 				22CDC580253A97FD00F7D212 /* WebPKit-tvOS */,
 				22CDC545253A977700F7D212 /* WebPKit-watchOS */,
-				22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */,
-				22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */,
-				22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */,
-				22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */,
 				22DE934B254C596100BA6A93 /* WebPKitTestHost */,
 				22DE946A254C5BC200BA6A93 /* WebPKitTests */,
 			);
@@ -1281,85 +1144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22CDC763253ABFD400F7D212 /* Download WebP.xcframework */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Download WebP.xcframework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh download.sh iOS xcframework ios-catalyst\n";
-		};
-		22CDC78F253AC5BB00F7D212 /* Download WebP.framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Download WebP.framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh download.sh macOS framework macos\n";
-		};
-		22CDC7A4253AC5E000F7D212 /* Download WebP.framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Download WebP.framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh download.sh tvOS framework tvos\n";
-		};
-		22CDC7B8253AC5FF00F7D212 /* Download WebP.framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Download WebP.framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh download.sh watchOS framework watchos\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		224DBFFA2538A1D4000A0A36 /* Sources */ = {
@@ -1518,50 +1302,10 @@
 			target = 22CDC545253A977700F7D212 /* WebPKit-watchOS */;
 			targetProxy = 22CDC64E253A9CF400F7D212 /* PBXContainerItemProxy */;
 		};
-		22CDC814253AF37600F7D212 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
-			targetProxy = 22CDC813253AF37600F7D212 /* PBXContainerItemProxy */;
-		};
-		22CDC816253AF37B00F7D212 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
-			targetProxy = 22CDC815253AF37B00F7D212 /* PBXContainerItemProxy */;
-		};
-		22CDC818253AF38100F7D212 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */;
-			targetProxy = 22CDC817253AF38100F7D212 /* PBXContainerItemProxy */;
-		};
-		22CDC81A253AF38400F7D212 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
-			targetProxy = 22CDC819253AF38400F7D212 /* PBXContainerItemProxy */;
-		};
 		22DE9471254C5BC200BA6A93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22DE934B254C596100BA6A93 /* WebPKitTestHost */;
 			targetProxy = 22DE9470254C5BC200BA6A93 /* PBXContainerItemProxy */;
-		};
-		22F6F212253B0BCB00C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC753253ABFCB00F7D212 /* Download WebP (iOS) */;
-			targetProxy = 22F6F211253B0BCB00C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F223253B0BD500C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC792253AC5D900F7D212 /* Download WebP (tvOS) */;
-			targetProxy = 22F6F222253B0BD500C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F225253B0BEA00C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC7A5253AC5FC00F7D212 /* Download WebP (watchOS) */;
-			targetProxy = 22F6F224253B0BEA00C0C62B /* PBXContainerItemProxy */;
-		};
-		22F6F246253B0DEF00C0C62B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22CDC77E253AC5B400F7D212 /* Download WebP (macOS) */;
-			targetProxy = 22F6F245253B0DEF00C0C62B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2287,78 +2031,6 @@
 			};
 			name = Release;
 		};
-		22CDC755253ABFCB00F7D212 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22CDC756253ABFCB00F7D212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		22CDC780253AC5B400F7D212 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22CDC781253AC5B400F7D212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		22CDC794253AC5D900F7D212 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22CDC795253AC5D900F7D212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		22CDC7A7253AC5FC00F7D212 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22CDC7A8253AC5FC00F7D212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LF3GMKZAB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		22DE935E254C596200BA6A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2609,42 +2281,6 @@
 			buildConfigurations = (
 				22CDC58B253A97FD00F7D212 /* Debug */,
 				22CDC58C253A97FD00F7D212 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22CDC754253ABFCB00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22CDC755253ABFCB00F7D212 /* Debug */,
-				22CDC756253ABFCB00F7D212 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22CDC77F253AC5B400F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22CDC780253AC5B400F7D212 /* Debug */,
-				22CDC781253AC5B400F7D212 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22CDC793253AC5D900F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (tvOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22CDC794253AC5D900F7D212 /* Debug */,
-				22CDC795253AC5D900F7D212 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22CDC7A6253AC5FC00F7D212 /* Build configuration list for PBXAggregateTarget "Download WebP (watchOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22CDC7A7253AC5FC00F7D212 /* Debug */,
-				22CDC7A8253AC5FC00F7D212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
