@@ -23,7 +23,7 @@
 # Downloads and integrates precompiled versions of WebP.framework 
 # from TimOliver/WebP-Cocoa before building any of the project targets.
 
-VERSION="v1.2.1"
+VERSION="v1.2.2"
 FOLDER="WebPKitExample-${1}"
 FRAMEWORK="WebP.xcframework"
 URL="https://github.com/TimOliver/WebP-Cocoa/releases/download/${VERSION}/libwebp-${VERSION}-framework-${2}-webp.zip"
