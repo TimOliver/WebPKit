@@ -20,7 +20,8 @@ class ViewController: UIViewController {
                                         withExtension: "webp")  else { return }
 
         // Work out the smallest dimension of this window so we can scale to it
-        let width = min(view.frame.width, view.frame.height)
+        let scale = UIScreen.main.scale
+        let width = min(view.frame.width * scale, view.frame.height * scale)
 
         // Decode a copy of the image scaled to the size of the screen
         imageView.image = UIImage(contentsOfWebPFile: url, width: width)
