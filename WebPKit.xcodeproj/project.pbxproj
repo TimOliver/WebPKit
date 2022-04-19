@@ -157,6 +157,7 @@
 		22E0C7512538AE61008F5183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E0C74F2538AE61008F5183 /* Main.storyboard */; };
 		22E0C7B52538B197008F5183 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0C7B42538B197008F5183 /* WebP.framework */; };
 		22E0C7C22538B1D6008F5183 /* WebPKitLogo.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2254A6412534AACE00813B84 /* WebPKitLogo.webp */; };
+		22FB67B9280EFAE3002F7C2F /* WebP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2292A5662780BE0200F192D1 /* WebP.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -452,6 +453,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FB67B9280EFAE3002F7C2F /* WebP.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
