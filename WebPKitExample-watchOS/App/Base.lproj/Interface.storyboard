@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -11,20 +11,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WebPKitExample_watchOS_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" radius="15" spacing="0.0" id="yT4-cX-McM">
+                        <group width="1" alignment="left" radius="15" spacing="0.0" id="ZjM-8Y-IWn">
                             <items>
-                                <imageView alignment="left" contentMode="scaleAspectFit" id="44E-CE-bKH"/>
+                                <imageView alignment="left" contentMode="scaleAspectFit" id="CyW-J4-BZw"/>
                             </items>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <edgeInsets key="margins" left="10" right="10" top="10" bottom="10"/>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="interfaceImage" destination="44E-CE-bKH" id="1yQ-A8-f1x"/>
+                        <outlet property="interfaceImage" destination="CyW-J4-BZw" id="ofT-Xx-SCJ"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="58" y="-8"/>
+            <point key="canvasLocation" x="-16" y="8"/>
         </scene>
     </scenes>
 </document>

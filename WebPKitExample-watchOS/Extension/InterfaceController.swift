@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  WebPKitExample-watchOS WatchKit Extension
 //
-//  Created by Tim Oliver on 15/10/20.
+//  Created by Tim Oliver on 20/4/2022.
 //
 
 import WatchKit
@@ -20,8 +20,9 @@ class InterfaceController: WKInterfaceController {
                                         withExtension: "webp")  else { return }
 
         // Decode a copy of the image scaled to the size of the screen
+        let scale = WKInterfaceDevice.current().screenScale
         let webpImage = UIImage(contentsOfWebPFile: url,
-                                width: contentFrame.width)
+                                width: contentFrame.width * scale)
         interfaceImage.setImage(webpImage)
     }
 }

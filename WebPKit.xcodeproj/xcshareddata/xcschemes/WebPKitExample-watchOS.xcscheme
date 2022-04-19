@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1330"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "sh ${PROJECT_DIR}/download.sh watchOS watchos&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "22FB67ED280F083C002F7C2F"
+                     BuildableName = "WebPKitExample-watchOS.app"
+                     BlueprintName = "WebPKitExample-watchOS"
+                     ReferencedContainer = "container:WebPKit.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +32,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "224DBFEE2538A1D3000A0A36"
-               BuildableName = "WebPKitExample-watchOS-App.app"
-               BlueprintName = "WebPKitExample-watchOS-App"
+               BlueprintIdentifier = "22FB67F0280F083C002F7C2F"
+               BuildableName = "WebPKitExample-watchOS WatchKit App.app"
+               BlueprintName = "WebPKitExample-watchOS WatchKit App"
                ReferencedContainer = "container:WebPKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +46,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "224DBFEB2538A1D2000A0A36"
+               BlueprintIdentifier = "22FB67ED280F083C002F7C2F"
                BuildableName = "WebPKitExample-watchOS.app"
                BlueprintName = "WebPKitExample-watchOS"
                ReferencedContainer = "container:WebPKit.xcodeproj">
@@ -58,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "224DBFEE2538A1D3000A0A36"
-            BuildableName = "WebPKitExample-watchOS-App.app"
-            BlueprintName = "WebPKitExample-watchOS-App"
+            BlueprintIdentifier = "22FB67F0280F083C002F7C2F"
+            BuildableName = "WebPKitExample-watchOS WatchKit App.app"
+            BlueprintName = "WebPKitExample-watchOS WatchKit App"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,9 +93,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "224DBFEE2538A1D3000A0A36"
-            BuildableName = "WebPKitExample-watchOS-App.app"
-            BlueprintName = "WebPKitExample-watchOS-App"
+            BlueprintIdentifier = "22FB67F0280F083C002F7C2F"
+            BuildableName = "WebPKitExample-watchOS WatchKit App.app"
+            BlueprintName = "WebPKitExample-watchOS WatchKit App"
             ReferencedContainer = "container:WebPKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

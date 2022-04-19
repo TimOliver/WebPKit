@@ -23,13 +23,14 @@
 # Downloads and integrates precompiled versions of WebP.framework 
 # from TimOliver/WebP-Cocoa before building any of the project targets.
 
-VERSION="v1.1.0"
+VERSION="v1.2.2"
 FOLDER="WebPKitExample-${1}"
-FRAMEWORK="WebP.${2}"
-URL="https://github.com/TimOliver/WebP-Cocoa/releases/download/${VERSION}/libwebp-${VERSION}-framework-${3}-webp.zip"
+FRAMEWORK="WebP.xcframework"
+URL="https://github.com/TimOliver/WebP-Cocoa/releases/download/${VERSION}/libwebp-${VERSION}-framework-${2}-webp.zip"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Move to project folder
-cd ${FOLDER}
+cd ${SCRIPT_DIR}/${FOLDER}
 
 # If the folder is empty, download a copy of the framework and install
 if [ ! "$(ls $FRAMEWORK)" ]; then
