@@ -1,7 +1,7 @@
 //
 //  CGImage+WebPDecoding.swift
 //
-//  Copyright 2020 Timothy Oliver. All rights reserved.
+//  Copyright 2020-2022 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -23,12 +23,12 @@
 import Foundation
 import CoreGraphics
 
-#if canImport(WebP) || canImport(libwebp)
-
 #if canImport(WebP)
 import WebP.Decoder
 #elseif canImport(libwebp)
 import libwebp
+#else
+#error("libwebp couldn't be found")
 #endif
 
 /// Errors that can potentially occur when
@@ -194,5 +194,3 @@ public extension CGImage {
         return imageRef
     }
 }
-
-#endif
