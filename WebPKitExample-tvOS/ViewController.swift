@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Decode and set a WebP image to
         // the image view in this view controller
         imageView.image = UIImage.webpNamed("WebPKitLogo")
@@ -38,4 +38,3 @@ class ViewController: UIViewController {
 
     }
 }
-

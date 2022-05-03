@@ -37,13 +37,19 @@ public class WebPDecodingTests: XCTestCase {
     /// A file URL to a lossless WebP test file
     public lazy var losslessWebPFileData: Data = {
         let url = testBundle.url(forResource: "logo-lossless", withExtension: "webp")!
-        return try! Data(contentsOf: url, options: .alwaysMapped)
+        guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
+            fatalError("Unable to load image data from test bundle")
+        }
+        return data
     }()
 
     /// A file URL to a lossless WebP test file
     public lazy var lossyWebPFileData: Data = {
         let url = testBundle.url(forResource: "logo-lossy", withExtension: "WEBP")!
-        return try! Data(contentsOf: url, options: .alwaysMapped)
+        guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
+            fatalError("Unable to load image data from test bundle")
+        }
+        return data
     }()
 
 }

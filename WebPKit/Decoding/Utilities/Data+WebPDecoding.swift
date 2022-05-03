@@ -43,7 +43,7 @@ public extension Data {
                 String(decoding: bytes[8..<12], as: UTF8.self) != "WEBP" {
                 return false
             }
-            
+
             return true
         }
     }

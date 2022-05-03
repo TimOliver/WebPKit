@@ -37,7 +37,7 @@ public extension URL {
     /// Returns whether this file URL points to a WebP image file.
     /// It initially checks the file name to see if it contains the WebP file extension,
     /// but if that files, it will check the contents of the file for the WebP format magic number.
-    /// - Parameter ignoringFileExtension: Whether to skip checking the extension and go straight to checking the contents
+    /// - Parameter ignoringFileExtension: Skip checking the file extension and directly scan the file first
     /// - Returns: Whether the file is in the WebP format or not
     func isWebP(ignoringFileExtension: Bool = false) -> Bool {
 

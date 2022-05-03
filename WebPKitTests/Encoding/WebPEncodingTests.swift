@@ -45,7 +45,9 @@ extension WebPEncodingTests {
     /// Return a CGImage from the image bundle
     private func image(named name: String, withExtension fileExtension: String) -> CGImage {
         let url = testBundle.url(forResource: name, withExtension: fileExtension)!
-        let data = try! Data(contentsOf: url, options: .alwaysMapped)
+        guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
+            fatalError("Could not locate file from test bundle")
+        }
         let dataProvider = CGDataProvider(data: data as CFData)!
         if fileExtension == "jpg" {
             return CGImage(jpegDataProviderSource: dataProvider, decode: nil,
