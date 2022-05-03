@@ -27,4 +27,3 @@ class ViewController: UIViewController {
         imageView.image = UIImage(contentsOfWebPFile: url, width: width)
     }
 }
-

@@ -8,7 +8,7 @@
 import XCTest
 
 class WebPDecodingURLTests: WebPDecodingTests {
-    
+
     // Test checking the file's path extension
     func testFileExtensionCheck() {
         XCTAssertTrue(losslessWebPFileURL.isWebP)

@@ -35,7 +35,7 @@ import libwebp
 /// tying to decode WebP data
 public enum WebPDecodingError: UInt32, Error {
     // VP8_STATUS errors
-    case ok=0
+    case none=0
     case outOfMemory
     case invalidParam
     case bitstreamError
@@ -66,7 +66,7 @@ public extension CGImage {
     /// the pixel resolution of the image without performing a full decode.
     /// - Parameter url: The file URL of the WebP image
     /// - Returns: The size of the image, or nil if it failed
-    static func sizeOfWebP(at url: URL)  -> CGSize? {
+    static func sizeOfWebP(at url: URL) -> CGSize? {
         guard let data = try? Data(contentsOf: url, options: .alwaysMapped) else {
             return nil
         }
@@ -94,9 +94,9 @@ public extension CGImage {
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
     static func webpImage(contentsOfFile url: URL,
-                                 width: CGFloat? = nil,
-                                 height: CGFloat? = nil,
-                                 scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
+                          width: CGFloat? = nil,
+                          height: CGFloat? = nil,
+                          scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
         let data = try Data(contentsOf: url, options: .alwaysMapped)
         return try CGImage.webpImage(data: data, width: width,
                                      height: height, scalingMode: scalingMode)
@@ -107,17 +107,18 @@ public extension CGImage {
     /// - Throws: If the data was unabled to be decoded
     /// - Returns: The decoded image as a CGImage
     static func webpImage(data: Data,
-                                 width: CGFloat? = nil,
-                                 height: CGFloat? = nil,
-                                 scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
+                          width: CGFloat? = nil,
+                          height: CGFloat? = nil,
+                          scalingMode: WebPScalingMode = .aspectFit) throws -> CGImage {
         // Check the header before proceeding to ensure this is a valid WebP file
         guard data.isWebP else { throw WebPDecodingError.invalidHeader }
 
-        // Get properties of WebP image so we can
-        // configure the decoding as needed
+        // Get properties of WebP image so we can configure the decoding as needed
         var features = WebPBitstreamFeatures()
         var status = data.withUnsafeBytes { ptr -> VP8StatusCode in
-            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
+            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else {
+                return VP8_STATUS_INVALID_PARAM
+            }
             return WebPGetFeatures(boundPtr, ptr.count, &features)
         }
         guard status == VP8_STATUS_OK else { throw WebPDecodingError(rawValue: status.rawValue)! }
@@ -130,49 +131,26 @@ public extension CGImage {
         config.options.no_fancy_upsampling = 1
         config.options.use_threads = 1
 
-        // If desired, set the config to decode at a custom size
-        if width != nil || height != nil {
-            // Fetch the size of the image so we can calculate aspect ratio
-            let originalSize = CGSize(width: Int(features.width), height: Int(features.height))
-
-            // Configure the target size, using the original size as default
-            var size = CGSize.zero
-            if scalingMode == .aspectFit { // Shrink the image to fit inside the provided size
-                let scaleSize = CGSize(width: width ?? originalSize.width, height: height ?? originalSize.height)
-                let scale = min(1.0, min(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height))
-                size.width = originalSize.width * scale
-                size.height = originalSize.height * scale
-            } else if scalingMode == .aspectFill { // Shrink the image to completely fill the provided size
-                let scaleSize = CGSize(width: min(originalSize.width, width ?? 0), height: min(originalSize.height, height ?? 0))
-                let scale = max(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
-                size.width = originalSize.width * scale
-                size.height = originalSize.height * scale
-            }
-
-            // Set the config to use custom scale decoding,
-            // and supply the calculated sizes
-            config.options.use_scaling = 1
-            config.options.scaled_width = Int32(size.width)
-            config.options.scaled_height = Int32(size.height)
-        }
+        // If a custom width or height was provided, configure the struct to decode the image to that size
+        configureScaledSize(width: width, height: height, scalingMode: scalingMode, features: features, config: &config)
 
         // Decode the image
         status = data.withUnsafeBytes { ptr -> VP8StatusCode in
-            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return VP8_STATUS_INVALID_PARAM }
+            guard let boundPtr = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else {
+                return VP8_STATUS_INVALID_PARAM
+            }
             return WebPDecode(boundPtr, ptr.count, &config)
         }
         guard status == VP8_STATUS_OK else { throw WebPDecodingError(rawValue: status.rawValue)! }
 
         // Convert the decoded pixel data to a CGImage
-        let releaseData: CGDataProviderReleaseDataCallback = {info, data, size in data.deallocate() }
+        let releaseData: CGDataProviderReleaseDataCallback = {_, data, _ in data.deallocate() }
         let bytesPerRow = 4
-        let dataProvider = CGDataProvider(dataInfo: &config,
-                                          data: config.output.u.RGBA.rgba,
+        let dataProvider = CGDataProvider(dataInfo: &config, data: config.output.u.RGBA.rgba,
                                           size: Int(config.output.width * config.output.height) * bytesPerRow,
                                           releaseData: releaseData)
 
         // Configure the rendering information for the image
-        let colorspace = CGColorSpaceCreateDeviceRGB()
         var bitmapInfo = CGBitmapInfo.byteOrder32Big.rawValue
         bitmapInfo |= features.has_alpha == 1 ? CGImageAlphaInfo.premultipliedLast.rawValue :
                                                 CGImageAlphaInfo.noneSkipLast.rawValue
@@ -183,8 +161,8 @@ public extension CGImage {
                                height: Int(config.output.height),
                                bitsPerComponent: 8,
                                bitsPerPixel: 32,
-                               bytesPerRow: 4 * Int(config.output.width),
-                               space: colorspace,
+                               bytesPerRow: bytesPerRow * Int(config.output.width),
+                               space: CGColorSpaceCreateDeviceRGB(),
                                bitmapInfo: CGBitmapInfo(rawValue: bitmapInfo),
                                provider: dataProvider!,
                                decode: nil,
@@ -192,5 +170,45 @@ public extension CGImage {
                                intent: renderingIntent) else { throw WebPDecodingError.imageRenderFailed }
 
         return imageRef
+    }
+
+    /// Updates the WebP config struct to decode this image to a custom size
+    /// - Parameters:
+    ///   - width: The width to scale this image to
+    ///   - height: The height to scale this image to
+    ///   - scalingMode: The scaling mode to fit the image to the provided size
+    ///   - features: The features struct of the current WebP file
+    ///   - config: The output config struct where the final size is configured
+    static private func configureScaledSize(width: CGFloat?,
+                                            height: CGFloat?,
+                                            scalingMode: WebPScalingMode,
+                                            features: WebPBitstreamFeatures,
+                                            config: inout WebPDecoderConfig) {
+        // Exit out if no custom size was provided
+        guard width != nil || height != nil else { return }
+
+        // Fetch the size of the image so we can calculate aspect ratio
+        let originalSize = CGSize(width: Int(features.width), height: Int(features.height))
+
+        // Configure the target size, using the original size as default
+        var size = CGSize.zero
+        if scalingMode == .aspectFit { // Shrink the image to fit inside the provided size
+            let scaleSize = CGSize(width: width ?? originalSize.width, height: height ?? originalSize.height)
+            let scale = min(1.0, min(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height))
+            size.width = originalSize.width * scale
+            size.height = originalSize.height * scale
+        } else if scalingMode == .aspectFill { // Shrink the image to completely fill the provided size
+            let scaleSize = CGSize(width: min(originalSize.width, width ?? 0),
+                                   height: min(originalSize.height, height ?? 0))
+            let scale = max(scaleSize.width/originalSize.width, scaleSize.height/originalSize.height)
+            size.width = originalSize.width * scale
+            size.height = originalSize.height * scale
+        }
+
+        // Set the config to use custom scale decoding,
+        // and supply the calculated sizes
+        config.options.use_scaling = 1
+        config.options.scaled_width = Int32(size.width)
+        config.options.scaled_height = Int32(size.height)
     }
 }
